@@ -28,7 +28,7 @@ function App() {
       setSubmitted(true);
     } catch {
       setError(
-        "Something went wrong sending your inquiry. Please try again or call/email us directly.",
+        "Something went wrong sending your request. Please try again or call us directly.",
       );
     } finally {
       setSubmitting(false);
@@ -43,11 +43,10 @@ function App() {
             Elizabethtown <span>Epoxy Flooring</span>
           </a>
           <div className="nav-links">
-            <a href="#how">How It Works</a>
-            <a href="#whatyouget">What You Get</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#faq">FAQ</a>
-            <a href="#claim" className="nav-cta">Claim This Site</a>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#areas">Service Areas</a>
+            <a href="#contact" className="nav-cta">Free Estimate</a>
           </div>
           <button
             className="nav-mobile"
@@ -58,112 +57,77 @@ function App() {
           </button>
         </div>
         <div className={`mobile-menu${menuOpen ? " show" : ""}`}>
-          <a href="#how" onClick={() => setMenuOpen(false)}>How It Works</a>
-          <a href="#whatyouget" onClick={() => setMenuOpen(false)}>What You Get</a>
-          <a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a>
-          <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
-          <a href="#claim" onClick={() => setMenuOpen(false)}>Claim This Site</a>
+          <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+          <a href="#process" onClick={() => setMenuOpen(false)}>Our Process</a>
+          <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Free Estimate</a>
         </div>
       </nav>
 
       <section className="hero">
         <div className="hero-inner">
-          <div className="hero-badge">For Epoxy Contractors in Hardin County, KY</div>
+          <div className="hero-badge">Serving Elizabethtown & Hardin County</div>
           <h1>
-            This Website is <span>For Rent</span> — and It Sends Epoxy Leads to One Local Contractor
+            Professional <span>Epoxy Flooring</span> for Your Garage, Basement & Business
           </h1>
           <p>
-            ElizabethtownEpoxyFlooring.com is built to rank on Google for "epoxy flooring
-            Elizabethtown KY" and similar searches. We rent the entire site — phone calls, form
-            submissions, the works — to <strong>one</strong> epoxy contractor in the area at a time.
-            Could be you.
+            Transform your concrete floors with durable, beautiful epoxy and polyaspartic coatings.
+            Built to last 15+ years. Free estimates for homes and businesses in the Elizabethtown area.
           </p>
-          <a href="#claim" className="hero-cta">Claim This Site</a>
+          <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
           <div className="hero-phone">
-            One contractor. Exclusive leads. Cancel anytime.
+            Free, no-obligation estimates &middot; Most jobs done in a single day
           </div>
         </div>
       </section>
 
       <div className="trust-bar">
         <div className="trust-inner">
-          <div className="trust-item"><span className="trust-icon">✓</span> Exclusive to One Contractor</div>
-          <div className="trust-item"><span className="trust-icon">✓</span> Calls Forwarded to You</div>
-          <div className="trust-item"><span className="trust-icon">✓</span> Form Leads Emailed Instantly</div>
-          <div className="trust-item"><span className="trust-icon">✓</span> Month-to-Month, No Contract</div>
+          <div className="trust-item"><span className="trust-icon">✓</span> Licensed &amp; Insured</div>
+          <div className="trust-item"><span className="trust-icon">✓</span> Free Estimates</div>
+          <div className="trust-item"><span className="trust-icon">✓</span> 15+ Year Durability</div>
+          <div className="trust-item"><span className="trust-icon">✓</span> Local Hardin County</div>
         </div>
       </div>
 
-      <section id="how">
+      <section id="services">
         <div className="section-inner">
-          <div className="section-label">How It Works</div>
-          <div className="section-title">Rent the Site, Get the Leads</div>
+          <div className="section-label">Our Services</div>
+          <div className="section-title">Epoxy &amp; Floor Coating Solutions</div>
           <div className="section-desc">
-            We own and rank this website. You pay a flat monthly fee and every lead it generates
-            goes straight to you — exclusively.
-          </div>
-          <div className="process-grid">
-            <div className="process-step">
-              <div className="step-number">01</div>
-              <h3>You Claim the Site</h3>
-              <p>Reach out below. If the site is available in your area, we'll set up a quick call.</p>
-            </div>
-            <div className="process-step">
-              <div className="step-number">02</div>
-              <h3>We Forward the Leads</h3>
-              <p>Phone number on the site forwards to your line. Form submissions email straight to you.</p>
-            </div>
-            <div className="process-step">
-              <div className="step-number">03</div>
-              <h3>You Quote & Close</h3>
-              <p>Treat every lead like your own. You set the prices, do the work, keep 100% of the revenue.</p>
-            </div>
-            <div className="process-step">
-              <div className="step-number">04</div>
-              <h3>Pay a Flat Monthly Rent</h3>
-              <p>One simple monthly rate. No per-lead fees, no surprise charges, cancel anytime.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="whatyouget" className="areas-section">
-        <div className="section-inner">
-          <div className="section-label">What You Get</div>
-          <div className="section-title">Everything You Need to Pick Up the Phone</div>
-          <div className="section-desc">
-            One flat monthly rent gets you the entire site and every lead it generates.
+            From residential garages to commercial warehouses, we deliver high-performance floor
+            coatings that look great and hold up for years.
           </div>
           <div className="services-grid">
             <div className="service-card">
-              <div className="service-icon">📞</div>
-              <h3>Exclusive Phone Calls</h3>
-              <p>The phone number on this site forwards directly to your business line. Every caller is yours — no sharing, no bidding wars.</p>
+              <div className="service-icon">🏠</div>
+              <h3>Garage Floor Epoxy</h3>
+              <p>The most popular upgrade for Elizabethtown homeowners. Resists stains, chemicals, hot tires, and daily wear. Available in dozens of colors and flake patterns.</p>
             </div>
             <div className="service-card">
-              <div className="service-icon">📨</div>
-              <h3>Form Submissions Emailed</h3>
-              <p>Every quote request from the contact form is delivered to your inbox in real time. Name, phone, project type, square footage — all the info you need to bid.</p>
+              <div className="service-icon">🏢</div>
+              <h3>Commercial Epoxy Flooring</h3>
+              <p>Heavy-duty floor coatings for warehouses, showrooms, restaurants, and retail spaces. Built to handle high traffic and meet commercial standards.</p>
             </div>
             <div className="service-card">
-              <div className="service-icon">🥇</div>
-              <h3>Top Google Rankings</h3>
-              <p>We handle ongoing SEO so the site stays visible for high-intent searches like "epoxy garage floor Elizabethtown KY."</p>
+              <div className="service-icon">🏗️</div>
+              <h3>Polyaspartic Coatings</h3>
+              <p>The fastest cure time in the industry. Polyaspartic coatings can be applied and ready for use in a single day — perfect for businesses that can't afford downtime.</p>
             </div>
             <div className="service-card">
-              <div className="service-icon">🔒</div>
-              <h3>Truly Exclusive</h3>
-              <p>Only one contractor rents this site at a time. You're never competing with 5 other companies for the same lead.</p>
+              <div className="service-icon">🔧</div>
+              <h3>Basement Floor Coating</h3>
+              <p>Seal out moisture and transform your basement into a clean, usable space. Perfect for finished basements, workshops, and home gyms.</p>
             </div>
             <div className="service-card">
-              <div className="service-icon">💰</div>
-              <h3>Flat Monthly Rate</h3>
-              <p>No per-lead pricing. No commissions on jobs you close. Pay one predictable monthly rent, keep 100% of the revenue.</p>
+              <div className="service-icon">🏭</div>
+              <h3>Industrial Floor Systems</h3>
+              <p>High-build epoxy systems for manufacturing, auto shops, and industrial facilities. Chemical resistant, slip resistant, and built to take a beating.</p>
             </div>
             <div className="service-card">
-              <div className="service-icon">🛠️</div>
-              <h3>We Handle the Tech</h3>
-              <p>Hosting, updates, SEO, call forwarding, lead delivery — all included. You focus on coating floors.</p>
+              <div className="service-icon">🎨</div>
+              <h3>Decorative Flake &amp; Metallic</h3>
+              <p>Make a statement with decorative flake patterns or stunning metallic epoxy finishes. Perfect for showrooms, man caves, and anywhere you want a high-end look.</p>
             </div>
           </div>
         </div>
@@ -171,169 +135,96 @@ function App() {
 
       <section className="why-section">
         <div className="section-inner">
-          <div className="section-label">The Math</div>
-          <div className="section-title">Why Renting a Ranked Site Beats Lead Services</div>
+          <div className="section-label">Why Choose Us</div>
+          <div className="section-title">Built to Last. Backed by Experience.</div>
           <div className="section-desc">
-            Compare it to what you're already paying for HomeAdvisor, Angi, or shared lead services.
+            We don't cut corners. Every floor we coat gets the preparation, materials, and attention it deserves.
           </div>
           <div className="why-grid">
             <div className="why-item">
-              <div className="why-number">1</div>
-              <h3>One Contractor, Not Five</h3>
-              <p>Lead-share platforms sell the same lead to 4-5 contractors. Here, every lead is exclusively yours.</p>
-            </div>
-            <div className="why-item">
-              <div className="why-number">$0</div>
-              <h3>Per-Lead Fees</h3>
-              <p>You pay one flat monthly rent. No $80 charges every time someone fills out a form.</p>
-            </div>
-            <div className="why-item">
               <div className="why-number">100%</div>
-              <h3>Of the Revenue is Yours</h3>
-              <p>We don't take a cut of the jobs you close. Land a $6,000 garage? You keep $6,000.</p>
+              <h3>Surface Preparation</h3>
+              <p>We diamond grind or shot blast every floor before coating. No shortcuts. Proper prep is why our floors last 15+ years.</p>
             </div>
             <div className="why-item">
-              <div className="why-number">∞</div>
-              <h3>Lead Volume</h3>
-              <p>Get one call or twenty in a month — your monthly rent doesn't change.</p>
+              <div className="why-number">1-Day</div>
+              <h3>Quick Turnaround</h3>
+              <p>Most residential floors are completed in a single day. Polyaspartic options can be walked on in hours, not days.</p>
+            </div>
+            <div className="why-item">
+              <div className="why-number">15+</div>
+              <h3>Years of Durability</h3>
+              <p>Our commercial-grade systems are built to handle vehicles, chemicals, and heavy foot traffic for over 15 years.</p>
+            </div>
+            <div className="why-item">
+              <div className="why-number">Free</div>
+              <h3>Estimates &amp; Consultation</h3>
+              <p>We'll visit your property, measure your space, discuss your options, and give you a transparent quote — no pressure, no obligation.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="pricing">
+      <section id="process">
         <div className="section-inner">
-          <div className="section-label">Pricing</div>
-          <div className="section-title">Simple, Custom Monthly Pricing</div>
-          <div className="section-desc">
-            One flat monthly rate based on this site's current Google traffic and lead volume —
-            no per-lead fees, no commissions, no long-term contract.
-          </div>
-          <div
-            style={{
-              maxWidth: 520,
-              margin: "0 auto",
-              background: "var(--white)",
-              border: "2px solid var(--gold)",
-              borderRadius: 12,
-              padding: 36,
-              textAlign: "center",
-              boxShadow: "0 4px 20px rgba(212, 168, 67, 0.12)",
-            }}
-          >
-            <div
-              style={{
-                fontFamily: "'Outfit', sans-serif",
-                fontSize: 12,
-                letterSpacing: 3,
-                textTransform: "uppercase",
-                color: "var(--gold-dark)",
-                fontWeight: 700,
-                marginBottom: 8,
-              }}
-            >
-              Exclusive Site Rental
+          <div className="section-label">How It Works</div>
+          <div className="section-title">From Bare Concrete to Beautiful in 4 Steps</div>
+          <div className="section-desc">Our proven process ensures a flawless, long-lasting finish every time.</div>
+          <div className="process-grid">
+            <div className="process-step">
+              <div className="step-number">01</div>
+              <h3>Free Consultation</h3>
+              <p>We visit your property, assess your floor, discuss colors and options, and provide a free estimate.</p>
             </div>
-            <div
-              style={{
-                fontFamily: "'Outfit', sans-serif",
-                fontSize: 38,
-                fontWeight: 800,
-                color: "var(--navy)",
-                lineHeight: 1.1,
-                marginBottom: 8,
-              }}
-            >
-              Custom Monthly Rate
+            <div className="process-step">
+              <div className="step-number">02</div>
+              <h3>Surface Preparation</h3>
+              <p>We diamond grind or shot blast the concrete to create the perfect surface for maximum coating adhesion.</p>
             </div>
-            <div style={{ fontSize: 14, color: "var(--muted)", marginBottom: 20 }}>
-              Priced based on current lead volume for this site
+            <div className="process-step">
+              <div className="step-number">03</div>
+              <h3>Coating Application</h3>
+              <p>We apply your chosen epoxy or polyaspartic system — base coat, flake or metallic, and clear topcoat.</p>
             </div>
-            <ul
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: "0 0 24px 0",
-                textAlign: "left",
-                display: "inline-block",
-              }}
-            >
-              {[
-                "Exclusive — only one contractor at a time",
-                "All phone calls forwarded to your line",
-                "All form submissions emailed instantly",
-                "Ongoing SEO & site maintenance included",
-                "Month-to-month, cancel with 30 days notice",
-                "No per-lead fees, no job commissions",
-              ].map((f) => (
-                <li
-                  key={f}
-                  style={{
-                    fontSize: 14,
-                    color: "var(--charcoal)",
-                    padding: "6px 0",
-                    paddingLeft: 24,
-                    position: "relative",
-                  }}
-                >
-                  <span style={{ position: "absolute", left: 0, color: "var(--gold)", fontWeight: 700 }}>✓</span>
-                  {f}
-                </li>
-              ))}
-            </ul>
-            <a href="#claim" className="hero-cta" style={{ display: "block" }}>
-              Request Current Pricing
-            </a>
+            <div className="process-step">
+              <div className="step-number">04</div>
+              <h3>Walk-On Ready</h3>
+              <p>Your new floor cures quickly. Most residential floors are ready for foot traffic within 24 hours.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="faq">
+      <section id="areas" className="areas-section">
         <div className="section-inner">
-          <div className="section-label">FAQ</div>
-          <div className="section-title">Common Questions From Contractors</div>
-          <div style={{ display: "grid", gap: 20, marginTop: 20 }}>
-            <div className="service-card">
-              <h3>How much does it cost?</h3>
-              <p>It depends on the site's traffic and rankings. Reach out and we'll send you the current monthly rate for this property along with recent call/form volume.</p>
-            </div>
-            <div className="service-card">
-              <h3>Am I locked in to a long contract?</h3>
-              <p>No. It's month-to-month. Cancel anytime with 30 days notice.</p>
-            </div>
-            <div className="service-card">
-              <h3>What if the leads aren't any good?</h3>
-              <p>You'll see real call/form data before you commit. We're happy to do a short trial period so you can verify the lead quality yourself.</p>
-            </div>
-            <div className="service-card">
-              <h3>What service area does the site cover?</h3>
-              <p>Elizabethtown, Radcliff, Vine Grove, Fort Knox, and the rest of Hardin County plus surrounding areas — basically anyone Googling for epoxy flooring within a ~60 mile radius.</p>
-            </div>
-            <div className="service-card">
-              <h3>What happens to the site if I cancel?</h3>
-              <p>We rent it to another local epoxy contractor. The site, the domain, and the rankings stay with us — you're renting access to the lead flow, not buying the site.</p>
-            </div>
-            <div className="service-card">
-              <h3>Can I customize the phone number or branding?</h3>
-              <p>The phone number gets forwarded to your line. The site stays branded as a neutral local epoxy site — that's part of why it ranks so well.</p>
-            </div>
+          <div className="section-label">Service Areas</div>
+          <div className="section-title">Proudly Serving Hardin County &amp; Beyond</div>
+          <div className="section-desc">We provide professional epoxy flooring services throughout Central Kentucky.</div>
+          <div className="areas-list">
+            {[
+              "Elizabethtown","Radcliff","Vine Grove","Fort Knox","Hodgenville",
+              "Shepherdsville","Bardstown","Lebanon Junction","Rineyville","Cecilia",
+              "Sonora","West Point","Brandenburg","Hardin County","Meade County",
+              "LaRue County","Bullitt County","Nelson County",
+            ].map((a) => (
+              <span className="area-tag" key={a}>{a}</span>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="cta-section">
-        <h2>Want Exclusive Epoxy Leads in Hardin County?</h2>
-        <p>Claim this site before another local contractor does. One simple form below.</p>
-        <a href="#claim" className="hero-cta">Claim This Site</a>
+        <h2>Ready to Transform Your Floors?</h2>
+        <p>Get a free, no-obligation estimate for your epoxy flooring project today.</p>
+        <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
       </section>
 
-      <section id="claim">
+      <section id="contact">
         <div className="section-inner">
-          <div className="section-label">Claim This Site</div>
-          <div className="section-title">Lock In Exclusive Leads in Your Area</div>
+          <div className="section-label">Contact Us</div>
+          <div className="section-title">Get Your Free Estimate</div>
           <div className="section-desc">
-            Tell us about your epoxy business. If the site is still available, we'll be in touch
-            within 24 hours with current lead volume and pricing.
+            Fill out the form below and we'll get back to you within an hour during business hours.
           </div>
           <div className="contact-grid">
             <div className="contact-form">
@@ -348,67 +239,70 @@ function App() {
                     color: "var(--navy)",
                   }}
                 >
-                  <strong style={{ fontSize: 18 }}>Thanks — request received.</strong>
+                  <strong style={{ fontSize: 18 }}>Thanks — we got your request!</strong>
                   <p style={{ marginTop: 8, fontSize: 14, color: "var(--muted)" }}>
-                    We'll reach out within 24 hours with current lead volume, pricing, and next steps.
-                    If the site has already been claimed by another contractor, we'll let you know
-                    and add you to the waitlist.
+                    We'll reach out within an hour during business hours to discuss your project
+                    and schedule your free estimate.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} id="leadForm">
                   <input type="text" name="name" placeholder="Your Name *" required />
-                  <input type="text" name="company" placeholder="Business Name *" required />
                   <input type="tel" name="phone" placeholder="Phone Number *" required />
                   <input type="email" name="email" placeholder="Email Address *" required />
-                  <input type="text" name="website" placeholder="Your Website (if any)" />
-                  <select name="years" required defaultValue="">
-                    <option value="" disabled>Years doing epoxy work *</option>
-                    <option>Less than 1 year</option>
-                    <option>1-3 years</option>
-                    <option>3-5 years</option>
-                    <option>5-10 years</option>
-                    <option>10+ years</option>
+                  <input type="text" name="zip" placeholder="ZIP Code" />
+                  <select name="service" required defaultValue="">
+                    <option value="" disabled>What type of floor? *</option>
+                    <option>Garage Floor Epoxy</option>
+                    <option>Commercial Epoxy Flooring</option>
+                    <option>Polyaspartic Coating</option>
+                    <option>Basement Floor Coating</option>
+                    <option>Industrial Floor System</option>
+                    <option>Decorative / Metallic Epoxy</option>
+                    <option>Not Sure Yet</option>
                   </select>
-                  <select name="capacity" required defaultValue="">
-                    <option value="" disabled>How many jobs/month can you handle? *</option>
-                    <option>1-3 jobs</option>
-                    <option>4-8 jobs</option>
-                    <option>9-15 jobs</option>
-                    <option>15+ jobs</option>
+                  <select name="sqft" defaultValue="">
+                    <option value="" disabled>Approximate square footage</option>
+                    <option>Under 400 sq ft (1-car garage)</option>
+                    <option>400-800 sq ft (2-car garage)</option>
+                    <option>800-1,500 sq ft</option>
+                    <option>1,500-3,000 sq ft</option>
+                    <option>3,000+ sq ft (commercial)</option>
+                    <option>Not sure</option>
                   </select>
-                  <textarea name="message" placeholder="Anything else we should know? (service area, specialties, etc.)" />
+                  <select name="timeline" defaultValue="">
+                    <option value="" disabled>Timeline</option>
+                    <option>ASAP</option>
+                    <option>Within 2 weeks</option>
+                    <option>Within 1 month</option>
+                    <option>1-3 months</option>
+                    <option>Just gathering quotes</option>
+                  </select>
+                  <textarea name="message" placeholder="Tell us about your project..." />
                   <button type="submit" disabled={submitting}>
-                    {submitting ? "Sending..." : "Claim This Site"}
+                    {submitting ? "Sending..." : "Request Free Estimate"}
                   </button>
                   {error && (
                     <p style={{ fontSize: 13, color: "#c0392b", marginTop: 10, textAlign: "center" }}>
                       {error}
                     </p>
                   )}
-                  <p style={{ fontSize: 12, color: "var(--muted)", marginTop: 8, textAlign: "center" }}>
-                    No payment now. We'll review and follow up within 24 hours.
-                  </p>
                 </form>
               )}
             </div>
             <div className="contact-info">
-              <h3>What Happens Next</h3>
+              <h3>Get In Touch</h3>
               <div className="contact-item">
-                <span className="contact-icon">1️⃣</span>
-                <span>We review your business to make sure you're a fit (licensed, insured, real epoxy work).</span>
+                <span className="contact-icon">📍</span>
+                <span>Elizabethtown, KY 42701</span>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">2️⃣</span>
-                <span>We send you the current monthly rent and recent lead volume for this site.</span>
+                <span className="contact-icon">⏰</span>
+                <span>Mon-Fri: 7am - 6pm | Sat: 8am - 2pm</span>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">3️⃣</span>
-                <span>If you're in, we forward the phone and route form leads to your inbox — usually same day.</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">4️⃣</span>
-                <span>You start getting exclusive epoxy leads from Hardin County. We handle the site.</span>
+                <span className="contact-icon">🗺️</span>
+                <span>Serving a 60-mile radius from Elizabethtown</span>
               </div>
               <div
                 style={{
@@ -426,12 +320,12 @@ function App() {
                     fontSize: 14,
                   }}
                 >
-                  One contractor at a time.
+                  Why customers choose us:
                 </strong>
                 <p style={{ fontSize: 13, marginTop: 8, color: "var(--muted)" }}>
-                  We only rent this site to one epoxy contractor in the Elizabethtown area. Once
-                  it's claimed, it's off the market until that contractor cancels. First serious
-                  inquiry usually wins.
+                  Free estimates with no pressure. Licensed and insured. Professional diamond
+                  grinding on every job. Commercial-grade materials only. Most jobs completed in
+                  a single day.
                 </p>
               </div>
             </div>
@@ -439,21 +333,30 @@ function App() {
         </div>
       </section>
 
+      <div className="map-section">
+        <iframe
+          title="Elizabethtown KY map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50532.26599088652!2d-85.89!3d37.69!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886849e5a1bcb7dd%3A0x32a5a809b98ae773!2sElizabethtown%2C%20KY%2042701!5e0!3m2!1sen!1sus!4v1"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+
       <footer>
         <div className="footer-inner">
           <div className="footer-name">
             Elizabethtown <span>Epoxy Flooring</span>
           </div>
           <div className="footer-text">
-            This site is operated as a lead-generation property and rented exclusively to one
-            licensed epoxy flooring contractor serving the Elizabethtown, KY area.
+            Professional epoxy and polyaspartic floor coatings in Elizabethtown, KY and surrounding areas.
           </div>
+          <div className="footer-text">Licensed &amp; Insured | Free Estimates | Serving Hardin County</div>
           <div className="footer-links">
-            <a href="#how">How It Works</a>
-            <a href="#whatyouget">What You Get</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#faq">FAQ</a>
-            <a href="#claim">Claim This Site</a>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#areas">Service Areas</a>
+            <a href="#contact">Contact</a>
           </div>
           <div className="footer-text" style={{ marginTop: 16, fontSize: 11 }}>
             © 2026 Elizabethtown Epoxy Flooring. All rights reserved.
