@@ -3,10 +3,36 @@ import { useState } from "react";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    if (submitting) return;
+    setError(null);
+    setSubmitting(true);
+    try {
+      const formData = new FormData(e.currentTarget);
+      const payload: Record<string, string> = {};
+      formData.forEach((v, k) => {
+        payload[k] = String(v);
+      });
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        throw new Error("Request failed");
+      }
+      setSubmitted(true);
+    } catch {
+      setError(
+        "Something went wrong sending your inquiry. Please try again or call/email us directly.",
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -19,6 +45,7 @@ function App() {
           <div className="nav-links">
             <a href="#how">How It Works</a>
             <a href="#whatyouget">What You Get</a>
+            <a href="#pricing">Pricing</a>
             <a href="#faq">FAQ</a>
             <a href="#claim" className="nav-cta">Claim This Site</a>
           </div>
@@ -33,6 +60,7 @@ function App() {
         <div className={`mobile-menu${menuOpen ? " show" : ""}`}>
           <a href="#how" onClick={() => setMenuOpen(false)}>How It Works</a>
           <a href="#whatyouget" onClick={() => setMenuOpen(false)}>What You Get</a>
+          <a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a>
           <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
           <a href="#claim" onClick={() => setMenuOpen(false)}>Claim This Site</a>
         </div>
@@ -173,6 +201,93 @@ function App() {
         </div>
       </section>
 
+      <section id="pricing">
+        <div className="section-inner">
+          <div className="section-label">Pricing</div>
+          <div className="section-title">Simple, Custom Monthly Pricing</div>
+          <div className="section-desc">
+            One flat monthly rate based on this site's current Google traffic and lead volume —
+            no per-lead fees, no commissions, no long-term contract.
+          </div>
+          <div
+            style={{
+              maxWidth: 520,
+              margin: "0 auto",
+              background: "var(--white)",
+              border: "2px solid var(--gold)",
+              borderRadius: 12,
+              padding: 36,
+              textAlign: "center",
+              boxShadow: "0 4px 20px rgba(212, 168, 67, 0.12)",
+            }}
+          >
+            <div
+              style={{
+                fontFamily: "'Outfit', sans-serif",
+                fontSize: 12,
+                letterSpacing: 3,
+                textTransform: "uppercase",
+                color: "var(--gold-dark)",
+                fontWeight: 700,
+                marginBottom: 8,
+              }}
+            >
+              Exclusive Site Rental
+            </div>
+            <div
+              style={{
+                fontFamily: "'Outfit', sans-serif",
+                fontSize: 38,
+                fontWeight: 800,
+                color: "var(--navy)",
+                lineHeight: 1.1,
+                marginBottom: 8,
+              }}
+            >
+              Custom Monthly Rate
+            </div>
+            <div style={{ fontSize: 14, color: "var(--muted)", marginBottom: 20 }}>
+              Priced based on current lead volume for this site
+            </div>
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: "0 0 24px 0",
+                textAlign: "left",
+                display: "inline-block",
+              }}
+            >
+              {[
+                "Exclusive — only one contractor at a time",
+                "All phone calls forwarded to your line",
+                "All form submissions emailed instantly",
+                "Ongoing SEO & site maintenance included",
+                "Month-to-month, cancel with 30 days notice",
+                "No per-lead fees, no job commissions",
+              ].map((f) => (
+                <li
+                  key={f}
+                  style={{
+                    fontSize: 14,
+                    color: "var(--charcoal)",
+                    padding: "6px 0",
+                    paddingLeft: 24,
+                    position: "relative",
+                  }}
+                >
+                  <span style={{ position: "absolute", left: 0, color: "var(--gold)", fontWeight: 700 }}>✓</span>
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <a href="#claim" className="hero-cta" style={{ display: "block" }}>
+              Request Current Pricing
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="faq">
         <div className="section-inner">
           <div className="section-label">FAQ</div>
@@ -263,7 +378,14 @@ function App() {
                     <option>15+ jobs</option>
                   </select>
                   <textarea name="message" placeholder="Anything else we should know? (service area, specialties, etc.)" />
-                  <button type="submit">Claim This Site</button>
+                  <button type="submit" disabled={submitting}>
+                    {submitting ? "Sending..." : "Claim This Site"}
+                  </button>
+                  {error && (
+                    <p style={{ fontSize: 13, color: "#c0392b", marginTop: 10, textAlign: "center" }}>
+                      {error}
+                    </p>
+                  )}
                   <p style={{ fontSize: 12, color: "var(--muted)", marginTop: 8, textAlign: "center" }}>
                     No payment now. We'll review and follow up within 24 hours.
                   </p>
@@ -329,6 +451,7 @@ function App() {
           <div className="footer-links">
             <a href="#how">How It Works</a>
             <a href="#whatyouget">What You Get</a>
+            <a href="#pricing">Pricing</a>
             <a href="#faq">FAQ</a>
             <a href="#claim">Claim This Site</a>
           </div>
