@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Elizabethtown Epoxy Flooring"
+version = "1.0.0"
+id = "artifacts/epoxy-site"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24903
+
+[services.development]
+run = "pnpm --filter @workspace/epoxy-site run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/epoxy-site", "run", "build" ]
+publicDir = "artifacts/epoxy-site/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24903"
+BASE_PATH = "/"
