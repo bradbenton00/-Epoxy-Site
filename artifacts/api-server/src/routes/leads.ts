@@ -4,7 +4,7 @@ import { ReplitConnectors } from "@replit/connectors-sdk";
 
 const router: IRouter = Router();
 
-const LEAD_RECIPIENT = "Beadbenton@ironpointconsulting.org";
+const LEAD_RECIPIENT = "bradbenton@ironpointconsulting.org";
 
 const FIELD_LABELS: Record<string, string> = {
   name: "Name",
