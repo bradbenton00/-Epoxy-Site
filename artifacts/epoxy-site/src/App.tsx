@@ -28,7 +28,7 @@ function App() {
       setSubmitted(true);
     } catch {
       setError(
-        "Something went wrong sending your request. Please try again or call us directly.",
+        "Something went wrong sending your request. Please try again or call us at (502) 286-9032.",
       );
     } finally {
       setSubmitting(false);
@@ -46,6 +46,7 @@ function App() {
             <a href="#services">Services</a>
             <a href="#process">Process</a>
             <a href="#areas">Service Areas</a>
+            <a href="tel:+15022869032" className="nav-phone">(502) 286-9032</a>
             <a href="#contact" className="nav-cta">Free Estimate</a>
           </div>
           <button
@@ -60,6 +61,7 @@ function App() {
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
           <a href="#process" onClick={() => setMenuOpen(false)}>Our Process</a>
           <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
+          <a href="tel:+15022869032" onClick={() => setMenuOpen(false)}>Call (502) 286-9032</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Free Estimate</a>
         </div>
       </nav>
@@ -74,7 +76,10 @@ function App() {
             Transform your concrete floors with durable, beautiful epoxy and polyaspartic coatings.
             Built to last 15+ years. Free estimates for homes and businesses in the Elizabethtown area.
           </p>
-          <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
+          <div className="hero-actions">
+            <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
+            <a href="tel:+15022869032" className="hero-cta-phone">📞 (502) 286-9032</a>
+          </div>
           <div className="hero-phone">
             Free, no-obligation estimates &middot; Most jobs done in a single day
           </div>
@@ -293,6 +298,15 @@ function App() {
             <div className="contact-info">
               <h3>Get In Touch</h3>
               <div className="contact-item">
+                <span className="contact-icon">📞</span>
+                <a
+                  href="tel:+15022869032"
+                  style={{ color: "var(--gold)", fontWeight: 700, textDecoration: "none", fontSize: 18 }}
+                >
+                  (502) 286-9032
+                </a>
+              </div>
+              <div className="contact-item">
                 <span className="contact-icon">📍</span>
                 <span>Elizabethtown, KY 42701</span>
               </div>
@@ -352,6 +366,11 @@ function App() {
             Professional epoxy and polyaspartic floor coatings in Elizabethtown, KY and surrounding areas.
           </div>
           <div className="footer-text">Licensed &amp; Insured | Free Estimates | Serving Hardin County</div>
+          <div className="footer-text" style={{ marginTop: 12, fontSize: 16 }}>
+            <a href="tel:+15022869032" style={{ color: "var(--gold)", fontWeight: 700, textDecoration: "none" }}>
+              📞 (502) 286-9032
+            </a>
+          </div>
           <div className="footer-links">
             <a href="#services">Services</a>
             <a href="#process">Process</a>

@@ -62,7 +62,41 @@ nav {
   transition: background 0.2s !important;
 }
 .nav-cta:hover { background: var(--gold-light) !important; }
+.nav-phone {
+  color: var(--gold) !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  letter-spacing: 0.3px;
+}
+.nav-phone:hover { color: var(--gold-light) !important; }
 .nav-mobile { display: none; background: none; border: none; color: var(--white); font-size: 24px; cursor: pointer; }
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hero-cta-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid var(--gold);
+  transition: all 0.2s;
+}
+.hero-cta-phone:hover {
+  background: rgba(212, 168, 67, 0.12);
+  transform: translateY(-2px);
+}
 
 .hero {
   background: linear-gradient(135deg, var(--navy) 0%, var(--charcoal) 100%);
