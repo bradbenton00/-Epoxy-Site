@@ -44,7 +44,7 @@ function App() {
           </a>
           <div className="nav-links">
             <a href="#services">Services</a>
-            <a href="#process">Process</a>
+            <a href="#gallery">Gallery</a>
             <a href="#areas">Service Areas</a>
             <a href="tel:+15022869032" className="nav-phone">(502) 286-9032</a>
             <a href="#contact" className="nav-cta">Free Estimate</a>
@@ -59,7 +59,7 @@ function App() {
         </div>
         <div className={`mobile-menu${menuOpen ? " show" : ""}`}>
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
-          <a href="#process" onClick={() => setMenuOpen(false)}>Our Process</a>
+          <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
           <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
           <a href="tel:+15022869032" onClick={() => setMenuOpen(false)}>Call (502) 286-9032</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Free Estimate</a>
@@ -196,6 +196,36 @@ function App() {
               <h3>Walk-On Ready</h3>
               <p>Your new floor cures quickly. Most residential floors are ready for foot traffic within 24 hours.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="gallery-section">
+        <div className="section-inner">
+          <div className="section-label">Project Gallery</div>
+          <div className="section-title">Recent Epoxy Floor Installations</div>
+          <div className="section-desc">
+            A look at the kind of finishes we deliver — flake systems, metallic epoxy, polyaspartic
+            coatings, and commercial floors. Photos shown for reference; we'll build out a local
+            project gallery as new jobs are completed.
+          </div>
+          <div className="gallery-grid">
+            {[
+              { src: "/gallery/garage-flake-gray.jpg", label: "Gray Flake Garage Floor", tag: "Residential" },
+              { src: "/gallery/garage-metallic-blue.jpg", label: "Metallic Blue Epoxy Garage", tag: "Decorative" },
+              { src: "/gallery/basement-polyaspartic.jpg", label: "Polyaspartic Basement Coating", tag: "Basement" },
+              { src: "/gallery/garage-after-poly.jpg", label: "Polyaspartic Garage Finish", tag: "Residential" },
+              { src: "/gallery/commercial-showroom.jpg", label: "High-Gloss Commercial Floor", tag: "Commercial" },
+              { src: "/gallery/decorative-metallic.jpg", label: "Decorative Metallic Epoxy", tag: "Decorative" },
+            ].map((g) => (
+              <div className="gallery-item" key={g.src}>
+                <img src={g.src} alt={g.label} loading="lazy" />
+                <div className="gallery-overlay">
+                  <span className="gallery-tag">{g.tag}</span>
+                  <span className="gallery-label">{g.label}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -373,7 +403,7 @@ function App() {
           </div>
           <div className="footer-links">
             <a href="#services">Services</a>
-            <a href="#process">Process</a>
+            <a href="#gallery">Gallery</a>
             <a href="#areas">Service Areas</a>
             <a href="#contact">Contact</a>
           </div>
