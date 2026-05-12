@@ -45,6 +45,7 @@ function App() {
           <div className="nav-links">
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
+            <a href="#faq">FAQ</a>
             <a href="#areas">Service Areas</a>
             <a href="tel:+15022869032" className="nav-phone">(502) 286-9032</a>
             <a href="#contact" className="nav-cta">Free Estimate</a>
@@ -60,6 +61,7 @@ function App() {
         <div className={`mobile-menu${menuOpen ? " show" : ""}`}>
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
           <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
+          <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
           <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
           <a href="tel:+15022869032" onClick={() => setMenuOpen(false)}>Call (502) 286-9032</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Free Estimate</a>
@@ -225,6 +227,68 @@ function App() {
                   <span className="gallery-label">{g.label}</span>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" className="faq-section">
+        <div className="section-inner">
+          <div className="section-label">Common Questions</div>
+          <div className="section-title">Epoxy Flooring FAQs</div>
+          <div className="section-desc">
+            Answers to the questions Elizabethtown homeowners and business owners ask us most often.
+          </div>
+          <div className="faq-list">
+            {[
+              {
+                q: "How much does epoxy flooring cost in Elizabethtown, KY?",
+                a: "For a typical 2-car garage in the Elizabethtown area (about 400-500 sq ft), professional epoxy flooring runs roughly $4-$8 per square foot installed, or about $1,800-$3,500 total. Pricing depends on the system you choose (standard epoxy vs. polyaspartic), the condition of your concrete, decorative options like flake or metallic, and prep work needed. We give free, transparent quotes — no high-pressure sales.",
+              },
+              {
+                q: "How long does epoxy flooring last?",
+                a: "A properly installed professional-grade epoxy or polyaspartic system lasts 15-20+ years in a residential garage with normal use. Commercial-grade systems hold up under heavy traffic and chemicals. The key is proper surface preparation — diamond grinding the concrete first, never just acid etching. That's why we never skip prep on any job.",
+              },
+              {
+                q: "Epoxy vs. polyaspartic — which is better for my garage?",
+                a: "Both are excellent. Epoxy is the most cost-effective option and offers the widest range of decorative looks. Polyaspartic cures faster (your garage can be back in use the same day instead of 2-3 days), is more UV stable, and has slightly better flexibility. For most Elizabethtown homeowners we recommend a hybrid system — epoxy base coat with a polyaspartic top coat — to get the best of both.",
+              },
+              {
+                q: "How long until I can park on my new garage floor?",
+                a: "With a polyaspartic system, you can walk on the floor in about 4-6 hours and park vehicles within 24 hours. Standard epoxy takes 24 hours for foot traffic and 3-5 days before you should park heavy vehicles on it. We'll give you exact timing for your specific install.",
+              },
+              {
+                q: "Do you serve Radcliff, Vine Grove, Fort Knox, and the rest of Hardin County?",
+                a: "Yes. We service all of Hardin County including Elizabethtown, Radcliff, Vine Grove, Fort Knox, Cecilia, Sonora, and Rineyville, plus surrounding counties (Meade, LaRue, Bullitt, Nelson) — roughly a 60-mile radius from Elizabethtown. There's no extra travel charge inside Hardin County.",
+              },
+              {
+                q: "Will epoxy stick to my old, stained, or cracked concrete?",
+                a: "In most cases yes. We diamond grind the surface to remove old sealers, oil stains, and weak top layers, then patch any cracks or pitting with a structural concrete repair compound before coating. Floors that look beyond saving usually clean up beautifully. We'll inspect your floor during the free estimate and tell you straight if it's a candidate.",
+              },
+              {
+                q: "Is epoxy flooring slippery when wet?",
+                a: "Standard epoxy can be slick when wet, but we add an aluminum oxide or silica anti-slip additive to the topcoat at no extra charge. The result is a floor with traction similar to a textured concrete pool deck — safe in wet conditions while still easy to clean.",
+              },
+              {
+                q: "Can you apply epoxy in cold weather?",
+                a: "Yes — we work year-round in Kentucky. Modern polyaspartic and low-temperature epoxy formulations cure properly down to about 35°F. For unheated garages in the dead of winter we use temporary heaters to maintain the working temperature. Most jobs in our area happen seamlessly from spring through fall.",
+              },
+              {
+                q: "Do you offer a warranty on your epoxy floors?",
+                a: "Yes. All of our residential installations come with a written warranty covering adhesion failure, peeling, and bubbling. Commercial systems include extended warranty options. We'll go over the specifics with you during your estimate.",
+              },
+              {
+                q: "How do I get a free estimate?",
+                a: "Easiest options: call (502) 286-9032 or fill out the form below. We'll usually respond within an hour during business hours, schedule a free on-site visit, measure your space, discuss color and finish options, and email you a written quote. No deposit, no pressure.",
+              },
+            ].map((item) => (
+              <details className="faq-item" key={item.q}>
+                <summary>
+                  <span className="faq-q">{item.q}</span>
+                  <span className="faq-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div className="faq-a">{item.a}</div>
+              </details>
             ))}
           </div>
         </div>
@@ -404,6 +468,7 @@ function App() {
           <div className="footer-links">
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
+            <a href="#faq">FAQ</a>
             <a href="#areas">Service Areas</a>
             <a href="#contact">Contact</a>
           </div>
