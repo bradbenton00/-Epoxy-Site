@@ -140,11 +140,11 @@ function App() {
             </span>
           </a>
           <div className="nav-links">
+            <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
             <a href="#reviews">Reviews</a>
             <a href="#faq">FAQ</a>
-            <a href="#areas">Service Areas</a>
             <a href="tel:+15022869032" className="nav-phone">(502) 286-9032</a>
             <a href="#contact" className="nav-cta">Free Estimate</a>
           </div>
@@ -161,6 +161,7 @@ function App() {
           </button>
         </div>
         <div className={`mobile-menu${menuOpen ? " show" : ""}`}>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
           <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
           <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
@@ -221,6 +222,71 @@ function App() {
           <div className="trust-item"><span className="trust-icon"><Icon.MapPin /></span> Local Hardin County</div>
         </div>
       </div>
+
+      <section id="about" className="about-section">
+        <div className="section-inner about-inner">
+          <div className="about-visual">
+            <div className="about-image-main">
+              <img src="/gallery/commercial-showroom.jpg" alt="High-gloss commercial epoxy floor installed in Elizabethtown KY" loading="lazy" />
+            </div>
+            <div className="about-image-stat">
+              <div className="about-stat-num">7+</div>
+              <div className="about-stat-label">Years coating floors<br/>across Hardin County</div>
+            </div>
+          </div>
+          <div className="about-text">
+            <div className="section-label">About Us</div>
+            <h2 className="section-title">Locally Owned. Built on Doing the Job Right.</h2>
+            <p className="about-lead">
+              Elizabethtown Epoxy Flooring is a locally owned and operated floor coating company
+              serving homeowners and businesses throughout Hardin County and Central Kentucky.
+            </p>
+            <p>
+              We started this company because we kept seeing the same problem in garages all
+              around Elizabethtown — beautiful epoxy jobs that started peeling and bubbling
+              within a year or two because the installer skipped the prep. Concrete that's been
+              acid-etched instead of diamond-ground will fail. Bargain-grade big-box materials
+              will yellow and chip. So we built our business on the opposite philosophy: do the
+              prep right, use commercial-grade resins, and stand behind the work in writing.
+            </p>
+            <p>
+              Every project starts with a free on-site visit. We measure your space, talk through
+              color and finish options (flake, metallic, solid, polyaspartic top coat), and email
+              you a transparent written quote within 24 hours. No sales pitch, no deposit
+              required, no surprises on install day. Most residential garages are completed in a
+              single day and ready for foot traffic the next morning.
+            </p>
+            <p>
+              Whether it's a 2-car garage in Radcliff, a basement workshop in Vine Grove, an auto
+              shop in Elizabethtown, or a 5,000 sq ft warehouse near Fort Knox — we bring the
+              same prep, the same materials, and the same workmanship to every job.
+            </p>
+            <div className="about-values">
+              <div className="about-value">
+                <div className="about-value-icon"><Icon.Shield /></div>
+                <div>
+                  <strong>Licensed &amp; Insured</strong>
+                  <span>Fully covered for residential and commercial work.</span>
+                </div>
+              </div>
+              <div className="about-value">
+                <div className="about-value-icon"><Icon.MapPin /></div>
+                <div>
+                  <strong>Local to Hardin County</strong>
+                  <span>Based in Elizabethtown, serving a 60-mile radius.</span>
+                </div>
+              </div>
+              <div className="about-value">
+                <div className="about-value-icon"><Icon.Check /></div>
+                <div>
+                  <strong>Written Warranty</strong>
+                  <span>Every install backed in writing, not just a handshake.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="services">
         <div className="section-inner">
@@ -626,6 +692,7 @@ function App() {
             </div>
             <div className="footer-col">
               <h4>Company</h4>
+              <a href="#about">About</a>
               <a href="#gallery">Gallery</a>
               <a href="#reviews">Reviews</a>
               <a href="#faq">FAQ</a>
