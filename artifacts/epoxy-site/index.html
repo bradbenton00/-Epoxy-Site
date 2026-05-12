@@ -16,25 +16,78 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+      "@id": "https://elizabethtownepoxyflooring.com/#business",
       "name": "Elizabethtown Epoxy Flooring",
-      "description": "Professional epoxy flooring services in Elizabethtown, KY. Garage floor coatings, basement epoxy, commercial floors, and polyaspartic coatings.",
+      "alternateName": "Elizabethtown Epoxy & Floor Coatings",
+      "description": "Professional epoxy and polyaspartic floor coatings in Elizabethtown, KY. Garage floor epoxy, basement floor coatings, commercial epoxy, and decorative metallic finishes. Free estimates throughout Hardin County and Central Kentucky.",
       "url": "https://elizabethtownepoxyflooring.com",
       "telephone": "+1-502-286-9032",
-      "areaServed": [
-        "Elizabethtown, KY",
-        "Radcliff, KY",
-        "Vine Grove, KY",
-        "Hardin County, KY",
-        "Fort Knox, KY"
-      ],
-      "serviceType": ["Epoxy Flooring", "Garage Floor Coating", "Polyaspartic Flooring", "Commercial Epoxy"],
+      "image": "https://elizabethtownepoxyflooring.com/gallery/garage-flake-gray.jpg",
+      "logo": "https://elizabethtownepoxyflooring.com/favicon.svg",
+      "priceRange": "$$",
+      "paymentAccepted": ["Cash", "Check", "Credit Card"],
+      "currenciesAccepted": "USD",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Elizabethtown",
         "addressRegion": "KY",
         "postalCode": "42701",
         "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.6939,
+        "longitude": -85.8594
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Elizabethtown", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
+        { "@type": "City", "name": "Radcliff", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
+        { "@type": "City", "name": "Vine Grove", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
+        { "@type": "City", "name": "Fort Knox", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
+        { "@type": "City", "name": "Hodgenville", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
+        { "@type": "City", "name": "Bardstown", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
+        { "@type": "City", "name": "Shepherdsville", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
+        { "@type": "AdministrativeArea", "name": "Hardin County, KY" },
+        { "@type": "AdministrativeArea", "name": "Meade County, KY" },
+        { "@type": "AdministrativeArea", "name": "LaRue County, KY" },
+        { "@type": "AdministrativeArea", "name": "Bullitt County, KY" },
+        { "@type": "AdministrativeArea", "name": "Nelson County, KY" }
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.6939,
+          "longitude": -85.8594
+        },
+        "geoRadius": "96560"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Epoxy Flooring Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garage Floor Epoxy Coating" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Polyaspartic Floor Coating" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Basement Floor Epoxy" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Epoxy Flooring" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industrial Epoxy Floor System" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Decorative Metallic Epoxy" } }
+        ]
       }
     }
     </script>
