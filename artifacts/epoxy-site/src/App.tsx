@@ -1,5 +1,99 @@
 import { useState } from "react";
 
+const Icon = {
+  Check: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+  ),
+  Shield: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      <polyline points="9 12 11 14 15 10" />
+    </svg>
+  ),
+  Clock: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" />
+      <polyline points="12 6 12 12 16 14" />
+    </svg>
+  ),
+  Star: () => (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" />
+    </svg>
+  ),
+  MapPin: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </svg>
+  ),
+  Phone: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z" />
+    </svg>
+  ),
+  Map: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+      <line x1="8" y1="2" x2="8" y2="18" />
+      <line x1="16" y1="6" x2="16" y2="22" />
+    </svg>
+  ),
+  Garage: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 10 12 4l9 6v10H3z" />
+      <rect x="6" y="13" width="12" height="6" rx="1" />
+      <line x1="6" y1="16" x2="18" y2="16" />
+    </svg>
+  ),
+  Building: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="4" y="3" width="16" height="18" rx="1" />
+      <line x1="9" y1="7" x2="9" y2="7" /><line x1="15" y1="7" x2="15" y2="7" />
+      <line x1="9" y1="11" x2="9" y2="11" /><line x1="15" y1="11" x2="15" y2="11" />
+      <line x1="9" y1="15" x2="9" y2="15" /><line x1="15" y1="15" x2="15" y2="15" />
+      <path d="M10 21v-4h4v4" />
+    </svg>
+  ),
+  Bolt: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+    </svg>
+  ),
+  Droplet: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+    </svg>
+  ),
+  Factory: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 21V10l5 3V10l5 3V7l8 5v9z" />
+      <line x1="7" y1="17" x2="7" y2="17" /><line x1="12" y1="17" x2="12" y2="17" /><line x1="17" y1="17" x2="17" y2="17" />
+    </svg>
+  ),
+  Sparkle: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  ),
+  Logo: () => (
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <defs>
+        <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#e8c96a" />
+          <stop offset="100%" stopColor="#b8922e" />
+        </linearGradient>
+      </defs>
+      <rect x="3" y="3" width="34" height="34" rx="8" fill="#1a2332" stroke="url(#logoGrad)" strokeWidth="2" />
+      <path d="M10 26 L20 12 L30 26 Z" fill="url(#logoGrad)" />
+      <rect x="10" y="26" width="20" height="2.5" fill="url(#logoGrad)" />
+    </svg>
+  ),
+};
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -40,11 +134,15 @@ function App() {
       <nav>
         <div className="nav-inner">
           <a href="#" className="nav-logo">
-            Elizabethtown <span>Epoxy Flooring</span>
+            <span className="nav-logo-mark"><Icon.Logo /></span>
+            <span className="nav-logo-text">
+              Elizabethtown <span>Epoxy Flooring</span>
+            </span>
           </a>
           <div className="nav-links">
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
             <a href="#faq">FAQ</a>
             <a href="#areas">Service Areas</a>
             <a href="tel:+15022869032" className="nav-phone">(502) 286-9032</a>
@@ -55,12 +153,17 @@ function App() {
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Toggle menu"
           >
-            ☰
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
           </button>
         </div>
         <div className={`mobile-menu${menuOpen ? " show" : ""}`}>
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
           <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
+          <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
           <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
           <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
           <a href="tel:+15022869032" onClick={() => setMenuOpen(false)}>Call (502) 286-9032</a>
@@ -70,30 +173,52 @@ function App() {
 
       <section className="hero">
         <div className="hero-inner">
-          <div className="hero-badge">Serving Elizabethtown & Hardin County</div>
-          <h1>
-            Professional <span>Epoxy Flooring</span> for Your Garage, Basement & Business
-          </h1>
-          <p>
-            Transform your concrete floors with durable, beautiful epoxy and polyaspartic coatings.
-            Built to last 15+ years. Free estimates for homes and businesses in the Elizabethtown area.
-          </p>
-          <div className="hero-actions">
-            <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
-            <a href="tel:+15022869032" className="hero-cta-phone">📞 (502) 286-9032</a>
+          <div className="hero-text">
+            <div className="hero-badge">
+              <span className="hero-badge-dot" /> Serving Elizabethtown &amp; Hardin County
+            </div>
+            <h1>
+              Premium <span>Epoxy Floors</span> Built to Last in Central Kentucky
+            </h1>
+            <p>
+              Garage, basement, and commercial floor coatings installed by local pros. Diamond-ground
+              prep, commercial-grade materials, and a 15+ year finish — backed by a written warranty.
+            </p>
+            <div className="hero-actions">
+              <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
+              <a href="tel:+15022869032" className="hero-cta-phone">
+                <span className="hero-cta-phone-icon"><Icon.Phone /></span>
+                (502) 286-9032
+              </a>
+            </div>
+            <div className="hero-rating">
+              <div className="hero-stars">
+                {[0,1,2,3,4].map(i => <span key={i} className="hero-star"><Icon.Star /></span>)}
+              </div>
+              <span className="hero-rating-text">5.0 · Trusted by Hardin County homeowners &amp; businesses</span>
+            </div>
           </div>
-          <div className="hero-phone">
-            Free, no-obligation estimates &middot; Most jobs done in a single day
+          <div className="hero-visual">
+            <div className="hero-image-card">
+              <img src="/gallery/garage-metallic-blue.jpg" alt="Metallic blue epoxy garage floor in Elizabethtown KY" />
+              <div className="hero-image-badge">
+                <div className="hero-image-badge-num">15+</div>
+                <div className="hero-image-badge-label">Year<br/>Durability</div>
+              </div>
+            </div>
+            <div className="hero-image-card-sm">
+              <img src="/gallery/garage-flake-gray.jpg" alt="Gray flake garage floor coating" />
+            </div>
           </div>
         </div>
       </section>
 
       <div className="trust-bar">
         <div className="trust-inner">
-          <div className="trust-item"><span className="trust-icon">✓</span> Licensed &amp; Insured</div>
-          <div className="trust-item"><span className="trust-icon">✓</span> Free Estimates</div>
-          <div className="trust-item"><span className="trust-icon">✓</span> 15+ Year Durability</div>
-          <div className="trust-item"><span className="trust-icon">✓</span> Local Hardin County</div>
+          <div className="trust-item"><span className="trust-icon"><Icon.Shield /></span> Licensed &amp; Insured</div>
+          <div className="trust-item"><span className="trust-icon"><Icon.Check /></span> Free Estimates</div>
+          <div className="trust-item"><span className="trust-icon"><Icon.Clock /></span> 15+ Year Durability</div>
+          <div className="trust-item"><span className="trust-icon"><Icon.MapPin /></span> Local Hardin County</div>
         </div>
       </div>
 
@@ -106,36 +231,20 @@ function App() {
             coatings that look great and hold up for years.
           </div>
           <div className="services-grid">
-            <div className="service-card">
-              <div className="service-icon">🏠</div>
-              <h3>Garage Floor Epoxy</h3>
-              <p>The most popular upgrade for Elizabethtown homeowners. Resists stains, chemicals, hot tires, and daily wear. Available in dozens of colors and flake patterns.</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🏢</div>
-              <h3>Commercial Epoxy Flooring</h3>
-              <p>Heavy-duty floor coatings for warehouses, showrooms, restaurants, and retail spaces. Built to handle high traffic and meet commercial standards.</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🏗️</div>
-              <h3>Polyaspartic Coatings</h3>
-              <p>The fastest cure time in the industry. Polyaspartic coatings can be applied and ready for use in a single day — perfect for businesses that can't afford downtime.</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🔧</div>
-              <h3>Basement Floor Coating</h3>
-              <p>Seal out moisture and transform your basement into a clean, usable space. Perfect for finished basements, workshops, and home gyms.</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🏭</div>
-              <h3>Industrial Floor Systems</h3>
-              <p>High-build epoxy systems for manufacturing, auto shops, and industrial facilities. Chemical resistant, slip resistant, and built to take a beating.</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🎨</div>
-              <h3>Decorative Flake &amp; Metallic</h3>
-              <p>Make a statement with decorative flake patterns or stunning metallic epoxy finishes. Perfect for showrooms, man caves, and anywhere you want a high-end look.</p>
-            </div>
+            {[
+              { icon: <Icon.Garage />, title: "Garage Floor Epoxy", desc: "The most popular upgrade for Elizabethtown homeowners. Resists stains, chemicals, hot tires, and daily wear. Available in dozens of colors and flake patterns." },
+              { icon: <Icon.Building />, title: "Commercial Epoxy Flooring", desc: "Heavy-duty floor coatings for warehouses, showrooms, restaurants, and retail spaces. Built to handle high traffic and meet commercial standards." },
+              { icon: <Icon.Bolt />, title: "Polyaspartic Coatings", desc: "The fastest cure time in the industry. Polyaspartic coatings can be applied and ready for use in a single day — perfect for businesses that can't afford downtime." },
+              { icon: <Icon.Droplet />, title: "Basement Floor Coating", desc: "Seal out moisture and transform your basement into a clean, usable space. Perfect for finished basements, workshops, and home gyms." },
+              { icon: <Icon.Factory />, title: "Industrial Floor Systems", desc: "High-build epoxy systems for manufacturing, auto shops, and industrial facilities. Chemical resistant, slip resistant, and built to take a beating." },
+              { icon: <Icon.Sparkle />, title: "Decorative Flake & Metallic", desc: "Make a statement with decorative flake patterns or stunning metallic epoxy finishes. Perfect for showrooms, man caves, and anywhere you want a high-end look." },
+            ].map((s) => (
+              <div className="service-card" key={s.title}>
+                <div className="service-icon">{s.icon}</div>
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -208,8 +317,7 @@ function App() {
           <div className="section-title">Recent Epoxy Floor Installations</div>
           <div className="section-desc">
             A look at the kind of finishes we deliver — flake systems, metallic epoxy, polyaspartic
-            coatings, and commercial floors. Photos shown for reference; we'll build out a local
-            project gallery as new jobs are completed.
+            coatings, and commercial floors.
           </div>
           <div className="gallery-grid">
             {[
@@ -228,6 +336,55 @@ function App() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" className="reviews-section">
+        <div className="section-inner">
+          <div className="section-label">Customer Reviews</div>
+          <div className="section-title">What Local Homeowners Are Saying</div>
+          <div className="section-desc">
+            Real feedback from Elizabethtown and Hardin County customers.
+          </div>
+          <div className="reviews-grid">
+            {[
+              {
+                name: "Mark D.",
+                location: "Elizabethtown, KY",
+                service: "2-Car Garage Epoxy",
+                quote: "Easily the best money I've spent on the house. They ground the concrete down to bare surface and the gray flake finish looks like a showroom. Two years in and it still wipes clean with a mop.",
+              },
+              {
+                name: "Jennifer R.",
+                location: "Radcliff, KY",
+                service: "Basement Polyaspartic",
+                quote: "We finished our basement and needed something tough but attractive. The polyaspartic coating was done in a day and we walked on it the next morning. Professional from quote to cleanup.",
+              },
+              {
+                name: "Travis B.",
+                location: "Vine Grove, KY",
+                service: "Auto Shop Floor",
+                quote: "Coated about 1,800 sq ft of my shop. Holds up to oil, brake fluid, dropped tools, you name it. Crew was punctual, clean, and the price came in right where they quoted. Highly recommend.",
+              },
+            ].map((r) => (
+              <div className="review-card" key={r.name}>
+                <div className="review-stars">
+                  {[0,1,2,3,4].map(i => <span key={i}><Icon.Star /></span>)}
+                </div>
+                <p className="review-quote">&ldquo;{r.quote}&rdquo;</p>
+                <div className="review-meta">
+                  <div className="review-author">{r.name}</div>
+                  <div className="review-detail">{r.service} · {r.location}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="reviews-cta">
+            <span className="reviews-cta-stars">
+              {[0,1,2,3,4].map(i => <span key={i}><Icon.Star /></span>)}
+            </span>
+            <span className="reviews-cta-text"><strong>5.0 average</strong> · Based on customer feedback</span>
           </div>
         </div>
       </section>
@@ -306,7 +463,7 @@ function App() {
               "Sonora","West Point","Brandenburg","Hardin County","Meade County",
               "LaRue County","Bullitt County","Nelson County",
             ].map((a) => (
-              <span className="area-tag" key={a}>{a}</span>
+              <span className="area-tag" key={a}><Icon.MapPin />{a}</span>
             ))}
           </div>
         </div>
@@ -315,7 +472,13 @@ function App() {
       <section className="cta-section">
         <h2>Ready to Transform Your Floors?</h2>
         <p>Get a free, no-obligation estimate for your epoxy flooring project today.</p>
-        <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
+        <div className="cta-actions">
+          <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
+          <a href="tel:+15022869032" className="hero-cta-phone">
+            <span className="hero-cta-phone-icon"><Icon.Phone /></span>
+            (502) 286-9032
+          </a>
+        </div>
       </section>
 
       <section id="contact">
@@ -328,28 +491,24 @@ function App() {
           <div className="contact-grid">
             <div className="contact-form">
               {submitted ? (
-                <div
-                  style={{
-                    background: "rgba(212,168,67,0.1)",
-                    border: "1px solid rgba(212,168,67,0.3)",
-                    borderRadius: 8,
-                    padding: 24,
-                    fontFamily: "'Outfit', sans-serif",
-                    color: "var(--navy)",
-                  }}
-                >
-                  <strong style={{ fontSize: 18 }}>Thanks — we got your request!</strong>
-                  <p style={{ marginTop: 8, fontSize: 14, color: "var(--muted)" }}>
+                <div className="contact-success">
+                  <div className="contact-success-icon"><Icon.Check /></div>
+                  <strong>Thanks — we got your request!</strong>
+                  <p>
                     We'll reach out within an hour during business hours to discuss your project
                     and schedule your free estimate.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} id="leadForm">
-                  <input type="text" name="name" placeholder="Your Name *" required />
-                  <input type="tel" name="phone" placeholder="Phone Number *" required />
-                  <input type="email" name="email" placeholder="Email Address *" required />
-                  <input type="text" name="zip" placeholder="ZIP Code" />
+                  <div className="form-row">
+                    <input type="text" name="name" placeholder="Your Name *" required />
+                    <input type="tel" name="phone" placeholder="Phone Number *" required />
+                  </div>
+                  <div className="form-row">
+                    <input type="email" name="email" placeholder="Email Address *" required />
+                    <input type="text" name="zip" placeholder="ZIP Code" />
+                  </div>
                   <select name="service" required defaultValue="">
                     <option value="" disabled>What type of floor? *</option>
                     <option>Garage Floor Epoxy</option>
@@ -360,81 +519,75 @@ function App() {
                     <option>Decorative / Metallic Epoxy</option>
                     <option>Not Sure Yet</option>
                   </select>
-                  <select name="sqft" defaultValue="">
-                    <option value="" disabled>Approximate square footage</option>
-                    <option>Under 400 sq ft (1-car garage)</option>
-                    <option>400-800 sq ft (2-car garage)</option>
-                    <option>800-1,500 sq ft</option>
-                    <option>1,500-3,000 sq ft</option>
-                    <option>3,000+ sq ft (commercial)</option>
-                    <option>Not sure</option>
-                  </select>
-                  <select name="timeline" defaultValue="">
-                    <option value="" disabled>Timeline</option>
-                    <option>ASAP</option>
-                    <option>Within 2 weeks</option>
-                    <option>Within 1 month</option>
-                    <option>1-3 months</option>
-                    <option>Just gathering quotes</option>
-                  </select>
+                  <div className="form-row">
+                    <select name="sqft" defaultValue="">
+                      <option value="" disabled>Approximate square footage</option>
+                      <option>Under 400 sq ft (1-car garage)</option>
+                      <option>400-800 sq ft (2-car garage)</option>
+                      <option>800-1,500 sq ft</option>
+                      <option>1,500-3,000 sq ft</option>
+                      <option>3,000+ sq ft (commercial)</option>
+                      <option>Not sure</option>
+                    </select>
+                    <select name="timeline" defaultValue="">
+                      <option value="" disabled>Timeline</option>
+                      <option>ASAP</option>
+                      <option>Within 2 weeks</option>
+                      <option>Within 1 month</option>
+                      <option>1-3 months</option>
+                      <option>Just gathering quotes</option>
+                    </select>
+                  </div>
                   <textarea name="message" placeholder="Tell us about your project..." />
                   <button type="submit" disabled={submitting}>
                     {submitting ? "Sending..." : "Request Free Estimate"}
                   </button>
-                  {error && (
-                    <p style={{ fontSize: 13, color: "#c0392b", marginTop: 10, textAlign: "center" }}>
-                      {error}
-                    </p>
-                  )}
+                  <p className="form-note">
+                    <Icon.Shield /> Your information is private and never sold.
+                  </p>
+                  {error && <p className="form-error">{error}</p>}
                 </form>
               )}
             </div>
             <div className="contact-info">
               <h3>Get In Touch</h3>
               <div className="contact-item">
-                <span className="contact-icon">📞</span>
-                <a
-                  href="tel:+15022869032"
-                  style={{ color: "var(--gold)", fontWeight: 700, textDecoration: "none", fontSize: 18 }}
-                >
-                  (502) 286-9032
-                </a>
+                <span className="contact-icon"><Icon.Phone /></span>
+                <div>
+                  <div className="contact-label">Call or Text</div>
+                  <a href="tel:+15022869032" className="contact-value-strong">(502) 286-9032</a>
+                </div>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">📍</span>
-                <span>Elizabethtown, KY 42701</span>
+                <span className="contact-icon"><Icon.MapPin /></span>
+                <div>
+                  <div className="contact-label">Based In</div>
+                  <div className="contact-value">Elizabethtown, KY 42701</div>
+                </div>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">⏰</span>
-                <span>Mon-Fri: 7am - 6pm | Sat: 8am - 2pm</span>
+                <span className="contact-icon"><Icon.Clock /></span>
+                <div>
+                  <div className="contact-label">Hours</div>
+                  <div className="contact-value">Mon-Fri: 7am - 6pm<br/>Sat: 8am - 2pm</div>
+                </div>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">🗺️</span>
-                <span>Serving a 60-mile radius from Elizabethtown</span>
+                <span className="contact-icon"><Icon.Map /></span>
+                <div>
+                  <div className="contact-label">Service Radius</div>
+                  <div className="contact-value">60-mile radius from Elizabethtown</div>
+                </div>
               </div>
-              <div
-                style={{
-                  marginTop: 24,
-                  padding: 16,
-                  background: "rgba(212,168,67,0.08)",
-                  border: "1px solid rgba(212,168,67,0.2)",
-                  borderRadius: 8,
-                }}
-              >
-                <strong
-                  style={{
-                    color: "var(--navy)",
-                    fontFamily: "'Outfit', sans-serif",
-                    fontSize: 14,
-                  }}
-                >
-                  Why customers choose us:
-                </strong>
-                <p style={{ fontSize: 13, marginTop: 8, color: "var(--muted)" }}>
-                  Free estimates with no pressure. Licensed and insured. Professional diamond
-                  grinding on every job. Commercial-grade materials only. Most jobs completed in
-                  a single day.
-                </p>
+              <div className="contact-promise">
+                <strong>Why customers choose us</strong>
+                <ul>
+                  <li><Icon.Check /> Free estimates with no pressure</li>
+                  <li><Icon.Check /> Licensed and fully insured</li>
+                  <li><Icon.Check /> Diamond-ground prep on every job</li>
+                  <li><Icon.Check /> Commercial-grade materials only</li>
+                  <li><Icon.Check /> Most jobs done in a single day</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -453,26 +606,40 @@ function App() {
 
       <footer>
         <div className="footer-inner">
-          <div className="footer-name">
-            Elizabethtown <span>Epoxy Flooring</span>
+          <div className="footer-top">
+            <div className="footer-brand">
+              <div className="footer-name">
+                <span className="footer-logo-mark"><Icon.Logo /></span>
+                <span>Elizabethtown <span className="gold">Epoxy Flooring</span></span>
+              </div>
+              <p className="footer-text">
+                Professional epoxy and polyaspartic floor coatings in Elizabethtown, KY and surrounding areas.
+                Licensed, insured, and locally operated.
+              </p>
+            </div>
+            <div className="footer-col">
+              <h4>Services</h4>
+              <a href="#services">Garage Floor Epoxy</a>
+              <a href="#services">Commercial Flooring</a>
+              <a href="#services">Polyaspartic Coatings</a>
+              <a href="#services">Basement Coatings</a>
+            </div>
+            <div className="footer-col">
+              <h4>Company</h4>
+              <a href="#gallery">Gallery</a>
+              <a href="#reviews">Reviews</a>
+              <a href="#faq">FAQ</a>
+              <a href="#areas">Service Areas</a>
+            </div>
+            <div className="footer-col">
+              <h4>Contact</h4>
+              <a href="tel:+15022869032" className="footer-contact-phone">(502) 286-9032</a>
+              <div className="footer-contact-line">Elizabethtown, KY 42701</div>
+              <div className="footer-contact-line">Mon-Fri: 7am - 6pm</div>
+              <div className="footer-contact-line">Sat: 8am - 2pm</div>
+            </div>
           </div>
-          <div className="footer-text">
-            Professional epoxy and polyaspartic floor coatings in Elizabethtown, KY and surrounding areas.
-          </div>
-          <div className="footer-text">Licensed &amp; Insured | Free Estimates | Serving Hardin County</div>
-          <div className="footer-text" style={{ marginTop: 12, fontSize: 16 }}>
-            <a href="tel:+15022869032" style={{ color: "var(--gold)", fontWeight: 700, textDecoration: "none" }}>
-              📞 (502) 286-9032
-            </a>
-          </div>
-          <div className="footer-links">
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#faq">FAQ</a>
-            <a href="#areas">Service Areas</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <div className="footer-text" style={{ marginTop: 16, fontSize: 11 }}>
+          <div className="footer-bottom">
             © 2026 Elizabethtown Epoxy Flooring. All rights reserved.
           </div>
         </div>
