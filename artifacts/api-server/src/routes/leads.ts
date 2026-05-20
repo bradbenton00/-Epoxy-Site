@@ -1,6 +1,7 @@
 // Sends customer estimate-request leads via Gmail integration (connector: google-mail)
 import { Router, type IRouter } from "express";
 import { ReplitConnectors } from "@replit/connectors-sdk";
+import { db, leadsTable } from "@workspace/db";
 
 const router: IRouter = Router();
 
@@ -111,6 +112,24 @@ router.post("/leads", async (req, res) => {
       req.log.error({ status: response.status, text }, "Gmail send failed");
       res.status(502).json({ ok: false, error: "Failed to send notification" });
       return;
+    }
+
+    try {
+      await db.insert(leadsTable).values({
+        name: fields.name,
+        phone: fields.phone,
+        email: fields.email,
+        zip: fields.zip ?? null,
+        service: fields.service ?? null,
+        sqft: fields.sqft ?? null,
+        timeline: fields.timeline ?? null,
+        message: fields.message ?? null,
+        sourcePage: req.get("referer") ?? null,
+        userAgent: req.get("user-agent") ?? null,
+        ipAddress: (req.ip ?? null) as string | null,
+      });
+    } catch (err) {
+      req.log.warn({ err }, "Lead DB insert failed");
     }
 
     const sheetWebhookUrl = process.env["LEADS_SHEET_WEBHOOK_URL"];

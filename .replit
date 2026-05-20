@@ -43,3 +43,4 @@ channel = "stable-25_05"
 
 [userenv.shared]
 LEADS_SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyHImoZi_x-FurbQ_T1IXE1Xk-9-zcJWgUL7Et9dAu9RuCUPPjok0_Us-E_fplLtr7o5w/exec"
+ADMIN_PASSWORD = "-SBpwTaSY5gPd5yn42yPsYVW"
