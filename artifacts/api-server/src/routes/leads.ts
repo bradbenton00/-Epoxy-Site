@@ -113,6 +113,34 @@ router.post("/leads", async (req, res) => {
       return;
     }
 
+    const webhookUrl = process.env["N8N_WEBHOOK_URL"];
+    if (webhookUrl) {
+      const payload = {
+        ...fields,
+        submittedAt: new Date().toISOString(),
+        source: "elizabethtownepoxyflooring.com",
+        userAgent: req.get("user-agent") ?? null,
+        referer: req.get("referer") ?? null,
+      };
+      void fetch(webhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+        .then(async (r) => {
+          if (!r.ok) {
+            const text = await r.text().catch(() => "");
+            req.log.warn(
+              { status: r.status, text },
+              "n8n webhook returned non-OK",
+            );
+          }
+        })
+        .catch((err: unknown) => {
+          req.log.warn({ err }, "n8n webhook forward failed");
+        });
+    }
+
     res.json({ ok: true });
   } catch (err) {
     req.log.error({ err }, "Lead submission error");
