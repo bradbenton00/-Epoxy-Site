@@ -113,6 +113,44 @@ router.post("/leads", async (req, res) => {
       return;
     }
 
+    const sheetId = process.env["LEADS_SHEET_ID"];
+    if (sheetId) {
+      const submittedAt = new Date().toISOString();
+      const row = [
+        submittedAt,
+        fields.name ?? "",
+        fields.phone ?? "",
+        fields.email ?? "",
+        fields.zip ?? "",
+        fields.service ?? "",
+        fields.sqft ?? "",
+        fields.timeline ?? "",
+        fields.message ?? "",
+        req.get("referer") ?? "",
+      ];
+      const range = encodeURIComponent("Sheet1!A:J");
+      const path = `/v4/spreadsheets/${encodeURIComponent(sheetId)}/values/${range}:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`;
+      void (async () => {
+        try {
+          const sheets = new ReplitConnectors();
+          const sheetRes = await sheets.proxy("google-sheet", path, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ values: [row] }),
+          });
+          if (!sheetRes.ok) {
+            const text = await sheetRes.text().catch(() => "");
+            req.log.warn(
+              { status: sheetRes.status, text },
+              "Google Sheets append failed",
+            );
+          }
+        } catch (err) {
+          req.log.warn({ err }, "Google Sheets append error");
+        }
+      })();
+    }
+
     const webhookUrl = process.env["N8N_WEBHOOK_URL"];
     if (webhookUrl) {
       const payload = {
