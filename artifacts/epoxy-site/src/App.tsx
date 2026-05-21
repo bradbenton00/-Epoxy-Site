@@ -85,13 +85,13 @@ function App() {
         <div className="hero-inner">
           <div className="hero-text">
             <div className="hero-badge">
-              <span className="hero-badge-dot" /> Serving Elizabethtown &amp; Hardin County
+              <span className="hero-badge-dot" /> Serving Louisville, Elizabethtown &amp; All of Central &amp; Western Kentucky
             </div>
             <h1>
-              Premium <span>Epoxy Floors</span> Built to Last in Central Kentucky
+              Kentucky's Premier <span>Epoxy Floor</span> Coating Specialists
             </h1>
             <p>
-              Garage, basement, and commercial floor coatings installed by local pros. Diamond-ground
+              Garage, basement, and commercial floor coatings installed by Kentucky-based pros. Diamond-ground
               prep, commercial-grade materials, and a 15+ year finish — backed by a written warranty.
             </p>
             <div className="hero-actions">
@@ -105,7 +105,7 @@ function App() {
               <div className="hero-stars">
                 {[0,1,2,3,4].map(i => <span key={i} className="hero-star"><Icon.Star /></span>)}
               </div>
-              <span className="hero-rating-text">5.0 · Trusted by Hardin County homeowners &amp; businesses</span>
+              <span className="hero-rating-text">5.0 · Trusted by Kentucky homeowners &amp; businesses</span>
             </div>
           </div>
           <div className="hero-visual">
@@ -128,7 +128,7 @@ function App() {
           <div className="trust-item"><span className="trust-icon"><Icon.Shield /></span> Licensed &amp; Insured</div>
           <div className="trust-item"><span className="trust-icon"><Icon.Check /></span> Free Estimates</div>
           <div className="trust-item"><span className="trust-icon"><Icon.Clock /></span> 15+ Year Durability</div>
-          <div className="trust-item"><span className="trust-icon"><Icon.MapPin /></span> Local Hardin County</div>
+          <div className="trust-item"><span className="trust-icon"><Icon.MapPin /></span> Kentucky Owned &amp; Operated</div>
         </div>
       </div>
 
@@ -140,15 +140,16 @@ function App() {
             </div>
             <div className="about-image-stat">
               <div className="about-stat-num">7+</div>
-              <div className="about-stat-label">Years coating floors<br/>across Hardin County</div>
+              <div className="about-stat-label">Years coating floors<br/>across Kentucky</div>
             </div>
           </div>
           <div className="about-text">
             <div className="section-label">About Us</div>
             <h2 className="section-title">Locally Owned. Built on Doing the Job Right.</h2>
             <p className="about-lead">
-              Elizabethtown Epoxy Flooring is a locally owned and operated floor coating company
-              serving homeowners and businesses throughout Hardin County and Central Kentucky.
+              Elizabethtown Epoxy Flooring is a Kentucky-owned and operated floor coating company
+              serving homeowners and businesses throughout Louisville, Elizabethtown, and all of
+              Central and Western Kentucky.
             </p>
             <p>
               We started this company because we kept seeing the same problem in garages all
@@ -181,8 +182,8 @@ function App() {
               <div className="about-value">
                 <div className="about-value-icon"><Icon.MapPin /></div>
                 <div>
-                  <strong>Local to Hardin County</strong>
-                  <span>Based in Elizabethtown, serving a 60-mile radius.</span>
+                  <strong>Statewide Kentucky Coverage</strong>
+                  <span>Based in Elizabethtown, serving Louisville and all of Central &amp; Western KY.</span>
                 </div>
               </div>
               <div className="about-value">
@@ -390,8 +391,8 @@ function App() {
                 a: "With a polyaspartic system, you can walk on the floor in about 4-6 hours and park vehicles within 24 hours. Standard epoxy takes 24 hours for foot traffic and 3-5 days before you should park heavy vehicles on it. We'll give you exact timing for your specific install.",
               },
               {
-                q: "Do you serve Radcliff, Vine Grove, Fort Knox, and the rest of Hardin County?",
-                a: "Yes. We service all of Hardin County including Elizabethtown, Radcliff, Vine Grove, Fort Knox, Cecilia, Sonora, and Rineyville, plus surrounding counties (Meade, LaRue, Bullitt, Nelson) — roughly a 60-mile radius from Elizabethtown. There's no extra travel charge inside Hardin County.",
+                q: "Do you serve Louisville, Hardin County, and the rest of Central & Western Kentucky?",
+                a: "Yes — and a lot more. We service Louisville and the entire Jefferson County metro, all of Hardin County (Elizabethtown, Radcliff, Vine Grove, Fort Knox, Cecilia, Sonora, Rineyville), Bullitt County (Shepherdsville, Mt Washington), Meade County (Brandenburg, Muldraugh), LaRue County (Hodgenville), Nelson County (Bardstown), and Grayson County (Leitchfield) — essentially all of Central and Western Kentucky. There's no extra trip charge anywhere in our service area.",
               },
               {
                 q: "Will epoxy stick to my old, stained, or cracked concrete?",
@@ -429,8 +430,8 @@ function App() {
       <section id="areas" className="areas-section">
         <div className="section-inner">
           <div className="section-label">Service Areas</div>
-          <div className="section-title">Proudly Serving Hardin County &amp; Beyond</div>
-          <div className="section-desc">We provide professional epoxy flooring services throughout Central Kentucky.</div>
+          <div className="section-title">Serving Louisville, Elizabethtown &amp; All of Central &amp; Western Kentucky</div>
+          <div className="section-desc">We provide professional epoxy flooring services across Kentucky — from the Louisville metro down through Hardin, LaRue, Nelson, Bullitt, Meade, and Grayson counties.</div>
           <div className="areas-list">
             <span className="area-tag"><Icon.MapPin />Elizabethtown</span>
             {cities.map((c) => (
@@ -439,9 +440,9 @@ function App() {
               </Link>
             ))}
             {[
-              "Shepherdsville","Lebanon Junction","Rineyville","Cecilia",
-              "Sonora","West Point","Brandenburg","Hardin County","Meade County",
-              "LaRue County","Bullitt County","Nelson County",
+              "Lebanon Junction","Rineyville","Cecilia","Sonora","West Point",
+              "Muldraugh","Hardin County","Jefferson County","Bullitt County",
+              "Meade County","LaRue County","Nelson County","Grayson County",
             ].map((a) => (
               <span className="area-tag" key={a}><Icon.MapPin />{a}</span>
             ))}
@@ -566,8 +567,8 @@ function App() {
               <div className="contact-item">
                 <span className="contact-icon"><Icon.Map /></span>
                 <div>
-                  <div className="contact-label">Service Radius</div>
-                  <div className="contact-value">60-mile radius from Elizabethtown</div>
+                  <div className="contact-label">Service Area</div>
+                  <div className="contact-value">Louisville, Elizabethtown &amp; all of Central &amp; Western Kentucky</div>
                 </div>
               </div>
               <div className="contact-promise">

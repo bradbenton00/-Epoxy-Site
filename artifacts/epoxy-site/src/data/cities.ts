@@ -160,6 +160,144 @@ export const cities: City[] = [
     ],
     heroImage: "/gallery/decorative-metallic.jpg",
   },
+  {
+    slug: "louisville",
+    name: "Louisville",
+    county: "Jefferson County",
+    state: "KY",
+    zip: "40202",
+    distanceFromEtown: "45 minutes north of Elizabethtown",
+    population: "about 625,000 residents in the metro",
+    intro:
+      "Louisville is one of our busiest service areas. From the suburbs of the East End to the historic homes in the Highlands and the booming new construction in the South End, we install premium epoxy and polyaspartic floor systems across Jefferson County every week. Same prep standards, same materials, same warranty — no travel surcharge for crossing the bridge.",
+    localFlavor:
+      "Louisville garages range from century-old detached structures in Old Louisville to brand-new four-car bays in Norton Commons. The older the concrete, the more critical the prep — we diamond-grind every floor, fix cracks and pitting properly, and use moisture-mitigating primers on slab-on-grade homes. We also handle a lot of commercial and warehouse work in the West End and along the I-264 corridor.",
+    popularJobs: [
+      "East End and Norton Commons garage epoxy",
+      "Highlands and Crescent Hill basement coatings",
+      "St. Matthews and Middletown decorative metallic floors",
+      "Commercial and warehouse floors throughout Jefferson County",
+    ],
+    neighborhoods: [
+      "East End / Norton Commons",
+      "St. Matthews",
+      "Highlands",
+      "Middletown",
+      "South End / Fairdale",
+      "Prospect",
+    ],
+    landmarks: ["Churchill Downs", "Louisville Slugger Field", "Cherokee Park", "Waterfront Park"],
+    heroImage: "/gallery/garage-metallic-blue.jpg",
+  },
+  {
+    slug: "shepherdsville",
+    name: "Shepherdsville",
+    county: "Bullitt County",
+    state: "KY",
+    zip: "40165",
+    distanceFromEtown: "30 minutes north of Elizabethtown",
+    population: "about 13,000 residents",
+    intro:
+      "Shepherdsville sits right on I-65 between Elizabethtown and Louisville — making it an easy and frequent stop for our crews. Bullitt County has seen a huge wave of new construction over the past decade, and we coat dozens of garages a year throughout the area, from Bernheim Forest backroads to subdivisions off Highway 44.",
+    localFlavor:
+      "Bullitt County homes tend to have newer, well-poured concrete that takes coatings beautifully. Many of our Shepherdsville customers go with full-flake garage systems in earth tones to match the surrounding country aesthetic, plus polyaspartic top coats for UV stability since a lot of these garages get direct afternoon sun.",
+    popularJobs: [
+      "New-construction garage epoxy off Highway 44 and Highway 480",
+      "Pole barn and workshop floor coatings",
+      "Patio and outdoor kitchen polyaspartic",
+      "Auto dealership and repair shop floors along I-65",
+    ],
+    neighborhoods: [
+      "Downtown Shepherdsville",
+      "Highway 44 corridor",
+      "Hebron Estates area",
+      "Mt. Washington Road",
+      "Cedar Grove",
+    ],
+    landmarks: ["Bernheim Arboretum & Research Forest", "Paroquet Springs Conference Centre", "Pioneer Village"],
+    heroImage: "/gallery/garage-flake-gray.jpg",
+  },
+  {
+    slug: "mt-washington",
+    name: "Mt Washington",
+    county: "Bullitt County",
+    state: "KY",
+    zip: "40047",
+    distanceFromEtown: "40 minutes north of Elizabethtown",
+    population: "about 17,000 residents",
+    intro:
+      "Mt Washington is one of the fastest-growing towns in Kentucky, and a lot of the new construction we see comes with three- and four-car garages that homeowners want done right from day one. We install premium epoxy and polyaspartic systems throughout Mt Washington, from older Bardstown Road properties to the newest subdivisions off Highway 44 and Highway 31E.",
+    localFlavor:
+      "Most Mt Washington garages we coat are 600-1,200 sq ft with smooth, recently-poured concrete — ideal canvas for high-gloss metallic or full-flake systems. We also see a lot of demand for finished basement and bonus-room floor coatings as families convert space for home offices, gyms, and rec rooms.",
+    popularJobs: [
+      "Three- and four-car garages in new subdivisions",
+      "Finished basement floor systems",
+      "Home gym and workout-room coatings",
+      "Pole barn and detached workshop floors",
+    ],
+    neighborhoods: [
+      "Highway 44 / Bardstown Road corridor",
+      "Highway 31E area",
+      "Stallings Cemetery Road area",
+      "Crystal Springs",
+    ],
+    landmarks: ["Mt Washington City Park", "Bullitt East High School", "Highway 44 commercial district"],
+    heroImage: "/gallery/garage-metallic-blue.jpg",
+  },
+  {
+    slug: "brandenburg",
+    name: "Brandenburg",
+    county: "Meade County",
+    state: "KY",
+    zip: "40108",
+    distanceFromEtown: "35 minutes northwest of Elizabethtown",
+    population: "about 2,800 residents",
+    intro:
+      "Brandenburg sits along the Ohio River in Meade County — beautiful setting, lots of rural property with substantial outbuildings, and a steady demand for tough, easy-to-clean shop and garage floors. We make the drive from Elizabethtown regularly for jobs throughout Meade County, no extra trip charge.",
+    localFlavor:
+      "Meade County jobs often involve larger square footage than typical suburban garages — pole barns, equipment sheds, farm shops, and detached workshops. A polyaspartic-topped epoxy system on these floors transforms them from dusty, hard-to-clean slabs into sealed, professional-grade workspaces. We've coated everything from a 400 sq ft home garage to a 4,500 sq ft farm equipment barn.",
+    popularJobs: [
+      "Pole barn and farm shop floor coatings",
+      "Garage epoxy in subdivisions off Highway 1638",
+      "Riverfront home basement floors",
+      "Commercial and municipal floors in downtown Brandenburg",
+    ],
+    neighborhoods: [
+      "Downtown Brandenburg",
+      "Highway 1638 corridor",
+      "Battletown area",
+      "Doe Valley",
+    ],
+    landmarks: ["Doe Valley Resort", "Otter Creek Outdoor Recreation Area", "Brandenburg riverfront"],
+    heroImage: "/gallery/garage-after-poly.jpg",
+  },
+  {
+    slug: "leitchfield",
+    name: "Leitchfield",
+    county: "Grayson County",
+    state: "KY",
+    zip: "42754",
+    distanceFromEtown: "35 minutes west of Elizabethtown",
+    population: "about 7,000 residents",
+    intro:
+      "Leitchfield is the county seat of Grayson County and a steady stop for our crews heading west out of Elizabethtown. From garage and basement floors in town to pole barns and shop floors on properties out near Rough River and Nolin Lake, we coat residential and commercial floors across Grayson County year-round.",
+    localFlavor:
+      "Lake-area properties around Leitchfield often have detached garages and workshops that take serious wear — boats, jet skis, ATVs, lawn equipment, fishing gear. A properly installed epoxy or polyaspartic floor handles all of it, seals out moisture, and cleans up with a hose. We also do a lot of metallic and decorative work for finished basements and lake-house entertainment spaces.",
+    popularJobs: [
+      "Lake-house garage and shop coatings",
+      "Pole barn and equipment shed floors",
+      "Finished basement entertainment spaces",
+      "Small business and restaurant floors downtown",
+    ],
+    neighborhoods: [
+      "Downtown Leitchfield",
+      "Highway 62 corridor",
+      "Rough River area",
+      "Nolin Lake area",
+    ],
+    landmarks: ["Rough River Dam State Resort Park", "Nolin Lake State Park", "Grayson County Courthouse"],
+    heroImage: "/gallery/basement-polyaspartic.jpg",
+  },
 ];
 
 export const cityBySlug = (slug: string) => cities.find((c) => c.slug === slug);
