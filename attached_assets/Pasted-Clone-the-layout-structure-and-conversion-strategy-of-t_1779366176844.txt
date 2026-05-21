@@ -1,0 +1,170 @@
+Clone the layout, structure, and conversion strategy of this website:
+[PASTE WEBSITE URL]
+
+But redesign and optimize it specifically for an epoxy flooring company focused on generating high-quality local leads.
+
+Business Type:
+Epoxy Flooring & Concrete Coatings
+
+Services Offered:
+- Garage epoxy floors
+- Metallic epoxy systems
+- Commercial epoxy flooring
+- Flake systems
+- Concrete sealing
+- Concrete polishing
+- Patio coatings
+- Industrial floor coatings
+
+Target Audience:
+- Homeowners
+- Garage enthusiasts
+- Commercial property owners
+- Auto shops
+- Warehouses
+- Small business owners
+
+Primary Goal:
+Generate booked estimates and phone calls from local customers looking for premium epoxy flooring installations.
+
+Brand Style:
+- Bold
+- High-end
+- Clean
+- Rugged but premium
+- Modern contractor aesthetic
+- Trustworthy and professional
+
+Design Direction:
+- Dark modern UI with strong contrast
+- Premium contractor branding
+- Smooth animations and transitions
+- Mobile-first responsive design
+- Large project imagery
+- Before/after sliders
+- Minimal clutter
+- Strong call-to-action buttons throughout
+
+Color Palette:
+- Black / charcoal
+- White typography
+- Accent colors:
+  - Electric blue
+  - Orange
+  - Metallic silver
+  - Safety yellow
+
+Hero Section:
+Create a powerful hero section with:
+- Large epoxy floor background image
+- Bold headline
+- Clear value proposition
+- Strong CTA button
+
+Example Headlines:
+- “Transform Your Garage Into a Showroom.”
+- “Premium Epoxy Floors Built to Last.”
+- “Durable Floors. Clean Finish. Professional Results.”
+
+CTA Buttons:
+- “Get Free Estimate”
+- “Call Now”
+- “See Our Work”
+
+Required Sections:
+
+1. Hero Section
+   - Headline
+   - CTA
+   - Trust badges
+   - Local service area mention
+
+2. Before & After Gallery
+   - Interactive sliders
+   - High-end project showcase
+
+3. Services Section
+   - Card layout with icons/images
+
+4. Why Choose Us
+   - Durability
+   - Chemical resistance
+   - Easy maintenance
+   - Lifetime value
+   - Veteran-owned or locally owned messaging if applicable
+
+5. Process Section
+   - Surface Prep
+   - Repair
+   - Coating
+   - Finish
+
+6. Testimonials
+   - Real homeowner style reviews
+   - Visual trust indicators
+
+7. Financing / Offer Section
+   - Limited-time offers
+   - Monthly payment options
+   - Free quote incentives
+
+8. FAQ Section
+   Questions like:
+   - How long does epoxy last?
+   - How long before I can drive on it?
+   - Does it peel?
+   - What colors are available?
+
+9. Lead Capture Section
+   Include:
+   - Name
+   - Phone
+   - Email
+   - Project type
+   - Service area
+
+10. Footer
+   - Service areas
+   - Social links
+   - Contact info
+   - Google review link
+
+Conversion Features:
+- Sticky mobile CTA
+- Click-to-call buttons
+- Exit intent popup
+- Instant quote form
+- Facebook Pixel ready
+- Google Ads landing-page optimized
+- SEO optimized for local search
+- Fast loading
+
+Copywriting Style:
+Write copy that feels:
+- Confident
+- Professional
+- Results-driven
+- Local
+- Straightforward
+
+Focus messaging on:
+- Durability
+- Appearance
+- Increased home value
+- Easy maintenance
+- Professional craftsmanship
+
+Avoid:
+- Generic contractor buzzwords
+- Overly technical language
+- Walls of text
+
+Extra Features:
+- Add animated statistics
+- Add coating system comparison chart
+- Add local project map
+- Add garage transformation visuals
+- Add subtle concrete/industrial texture backgrounds
+
+Final Goal:
+The site should feel like a premium epoxy flooring company that homeowners trust immediately and want to contact for a quote within the first 30 seconds.
