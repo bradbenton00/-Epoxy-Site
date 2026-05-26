@@ -50,7 +50,7 @@ function cityJsonLd(city: City) {
     "@id": `${SITE}/epoxy-flooring/${city.slug}#business`,
     name: `Elizabethtown Epoxy Flooring — ${city.name}, ${city.state}`,
     description: `Professional epoxy and polyaspartic floor coatings in ${city.name}, ${city.state}. Diamond-ground prep, commercial-grade materials, written warranty. Free estimates.`,
-    url: `${SITE}/epoxy-flooring/${city.slug}`,
+    url: `${SITE}/epoxy-flooring/${city.slug}/`,
     telephone: "+1-502-286-9032",
     image: `${SITE}/gallery/garage-flake-gray.jpg`,
     priceRange: "$$",
@@ -80,7 +80,7 @@ const routes: Route[] = [
     outDir: join(distDir, "epoxy-flooring", city.slug),
     title: `Epoxy Flooring ${city.name}, ${city.state} | Garage Floors & Coatings`,
     description: `Professional epoxy and polyaspartic floor coatings in ${city.name}, ${city.state}. Diamond-ground prep, commercial-grade materials, written warranty. Free estimates — call (502) 286-9032.`,
-    canonical: `${SITE}/epoxy-flooring/${city.slug}`,
+    canonical: `${SITE}/epoxy-flooring/${city.slug}/`,
     extraHead: cityJsonLd(city),
   })),
 ];
