@@ -1,4 +1,4 @@
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import { Route, Switch } from "wouter";
 import App from "./App";
 import CityPage from "./pages/CityPage";
@@ -28,4 +28,9 @@ function Root() {
   );
 }
 
-createRoot(document.getElementById("root")!).render(<Root />);
+const rootEl = document.getElementById("root")!;
+if (rootEl.hasChildNodes()) {
+  hydrateRoot(rootEl, <Root />);
+} else {
+  createRoot(rootEl).render(<Root />);
+}

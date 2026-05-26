@@ -1,0 +1,144 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "DM Sans",
+      "role": "body"
+    },
+    {
+      "family": "Outfit",
+      "role": "heading"
+    }
+  ],
+  "colors": {
+    "primary": "#192333",
+    "secondary": "#D4A843",
+    "accent": "#D4A843",
+    "background": "#FFFFFF",
+    "textPrimary": "#0F1A2B",
+    "link": "#0F1A2B"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "DM Sans",
+      "heading": "Outfit"
+    },
+    "fontStacks": {
+      "heading": [
+        "Outfit",
+        "sans-serif"
+      ],
+      "body": [
+        "DM Sans",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "DM Sans",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "52px",
+      "h2": "38px",
+      "body": "18px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "10px"
+  },
+  "components": {
+    "input": {
+      "background": "#FFFFFF",
+      "textColor": "#1F2D44",
+      "borderColor": "#E2DFD9",
+      "borderRadius": "8px",
+      "borderRadiusCorners": {
+        "topLeft": "8px",
+        "topRight": "8px",
+        "bottomRight": "8px",
+        "bottomLeft": "8px"
+      },
+      "shadow": "none"
+    },
+    "buttonPrimary": {
+      "background": "#D4A843",
+      "textColor": "#0F1A2B",
+      "borderRadius": "8px",
+      "borderRadiusCorners": {
+        "topLeft": "8px",
+        "topRight": "8px",
+        "bottomRight": "8px",
+        "bottomLeft": "8px"
+      },
+      "shadow": "rgba(212, 168, 67, 0.35) 0px 6px 20px 0px"
+    },
+    "buttonSecondary": {
+      "background": "#F1F1F2",
+      "textColor": "#0F1A2B",
+      "borderColor": "#CFD1D5",
+      "borderRadius": "8px",
+      "borderRadiusCorners": {
+        "topLeft": "8px",
+        "topRight": "8px",
+        "bottomRight": "8px",
+        "bottomLeft": "8px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "favicon": "https://elizabethtownepoxyflooring.com/favicon.svg",
+    "ogImage": "https://elizabethtownepoxyflooring.com/opengraph.jpg",
+    "logoHref": "File saved at: attached_assets/logoHref.html"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Selected #0 because it is visible, located in the header, and matches the favicon, indicating it represents the brand.",
+    "confidence": 0.9,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Get Your Free Estimate",
+      "reasoning": "Button #0 uses a vibrant brand color (#D4A843) and has action-oriented text 'Get Your Free Estimate', making it the primary CTA."
+    },
+    "secondary": {
+      "index": 3,
+      "text": "(502) 286-9032",
+      "reasoning": "Button #3 has a different background color (#F1F1F2) and serves as a contact option, making it a suitable secondary CTA."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "homeowners and businesses seeking flooring solutions"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 0,
+        "selectedLogoReasoning": "Selected #0 because it is visible, located in the header, and matches the favicon, indicating it represents the brand.",
+        "confidence": 0.9
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}
