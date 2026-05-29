@@ -35,6 +35,8 @@ type Route = {
 
 const SITE = "https://elizabethtownepoxyflooring.com";
 
+const STATIC_OVERRIDES = new Set(["radcliff"]);
+
 function escapeHtml(s: string) {
   return s
     .replace(/&/g, "&amp;")
@@ -75,7 +77,7 @@ const routes: Route[] = [
       "Kentucky's premier epoxy floor coating specialists. Garage, basement, and commercial epoxy and polyaspartic floors throughout Louisville, Elizabethtown, and all of Central & Western Kentucky. Free estimates — (502) 286-9032.",
     canonical: SITE,
   },
-  ...cities.map((city): Route => ({
+  ...cities.filter((city) => !STATIC_OVERRIDES.has(city.slug)).map((city): Route => ({
     path: `/epoxy-flooring/${city.slug}`,
     outDir: join(distDir, "epoxy-flooring", city.slug),
     title: `Epoxy Flooring ${city.name}, ${city.state} | Garage Floors & Coatings`,
