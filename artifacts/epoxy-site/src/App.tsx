@@ -89,7 +89,7 @@ function App() {
               <span className="hero-badge-dot" /> Serving Louisville, Elizabethtown &amp; All of Central &amp; Western Kentucky
             </div>
             <h1>
-              Kentucky's Premier <span>Epoxy Floor</span> Coating Specialists
+              <span>Epoxy Flooring</span> in Elizabethtown, KY — Garage, Basement &amp; Commercial
             </h1>
             <p>
               Garage, basement, and commercial floor coatings installed by Kentucky-based pros. Diamond-ground

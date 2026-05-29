@@ -72,9 +72,9 @@ const routes: Route[] = [
   {
     path: "/",
     outDir: distDir,
-    title: "Kentucky Epoxy Flooring | Louisville, Elizabethtown & Central KY Floor Coatings",
+    title: "Epoxy Flooring Elizabethtown KY | Garage, Basement & Commercial",
     description:
-      "Kentucky's premier epoxy floor coating specialists. Garage, basement, and commercial epoxy and polyaspartic floors throughout Louisville, Elizabethtown, and all of Central & Western Kentucky. Free estimates — (502) 286-9032.",
+      "Epoxy garage floors, basement coatings & commercial systems in Elizabethtown, KY. Diamond-ground prep, 15+ year warranty. Free estimate — (502) 286-9032.",
     canonical: SITE,
   },
   ...cities.filter((city) => !STATIC_OVERRIDES.has(city.slug)).map((city): Route => ({
