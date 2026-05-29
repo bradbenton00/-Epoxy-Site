@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epoxy Flooring Shepherdsville KY | Garage &amp; Commercial Floor Coatings</title>
+<meta name="description" content="Professional epoxy garage floors, basement coatings &amp; commercial systems in Shepherdsville, KY. Diamond-ground prep, 15+ year written warranty. Free estimate — (502) 286-9032.">
+<link rel="canonical" href="https://elizabethtownepoxyflooring.com/epoxy-flooring/shepherdsville">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.placename" content="Shepherdsville">
+<meta name="geo.region" content="US-KY">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Epoxy Flooring Shepherdsville KY | Garage &amp; Commercial Floor Coatings">
+<meta property="og:description" content="Professional epoxy garage floors, basement coatings &amp; commercial systems in Shepherdsville, KY. Diamond-ground prep, 15+ year written warranty. Free estimate — (502) 286-9032.">
+<meta property="og:url" content="https://elizabethtownepoxyflooring.com/epoxy-flooring/shepherdsville">
+<meta property="og:image" content="https://elizabethtownepoxyflooring.com/opengraph.jpg">
+<meta property="og:site_name" content="Elizabethtown Epoxy Flooring">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Epoxy Flooring Shepherdsville KY | Garage &amp; Commercial Floor Coatings">
+<meta name="twitter:description" content="Professional epoxy garage floors, basement coatings &amp; commercial systems in Shepherdsville, KY. Diamond-ground prep, 15+ year written warranty. Free estimate — (502) 286-9032.">
+<meta name="twitter:image" content="https://elizabethtownepoxyflooring.com/opengraph.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://elizabethtownepoxyflooring.com/#business",
+  "name": "Elizabethtown Epoxy Flooring",
+  "url": "https://elizabethtownepoxyflooring.com",
+  "telephone": "+15022869032",
+  "priceRange": "$$",
+  "description": "Professional epoxy and polyaspartic floor coatings serving Shepherdsville, Bullitt County, KY. Diamond-ground prep, commercial-grade materials, 15+ year written warranty.",
+  "image": "https://elizabethtownepoxyflooring.com/opengraph.jpg",
+  "logo": "https://elizabethtownepoxyflooring.com/opengraph.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Elizabethtown",
+    "addressRegion": "KY",
+    "postalCode": "42701",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Shepherdsville"
+    },
+    {
+      "@type": "County",
+      "name": "Bullitt County"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "14:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "3",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://elizabethtownepoxyflooring.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Service Areas",
+      "item": "https://elizabethtownepoxyflooring.com/#areas"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Epoxy Flooring Shepherdsville KY",
+      "item": "https://elizabethtownepoxyflooring.com/epoxy-flooring/shepherdsville"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does epoxy flooring cost in Shepherdsville, KY?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a typical 2-car garage in the Shepherdsville area (400-500 sq ft), professional epoxy flooring runs roughly $4-$8 per square foot installed, or about $1,800-$3,500 total depending on the system and the condition of your concrete. We provide free written quotes with no pressure and no deposit required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve Shepherdsville and Bullitt County?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shepherdsville is fully within our service area, and we serve all of Bullitt County with no extra trip charge. Most residential jobs in the area are completed in a single day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does epoxy flooring last in Kentucky's climate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With proper diamond-ground prep and commercial-grade materials, epoxy and polyaspartic systems last 15-20+ years in Kentucky conditions. We work year-round and use cold-weather formulations for winter installs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long until I can park on my new garage floor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With a polyaspartic system you can walk on the floor in 4-6 hours and park vehicles within 24 hours. Standard epoxy needs 24 hours for foot traffic and 3-5 days before parking heavy vehicles."
+      }
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --navy:#0f1b2d; --steel:#1c3050; --lime:#c8f000; --lime-dim:#9bc400;
+    --ink:#0a0f17; --paper:#f7f8fa; --mute:#5a6b80; --line:#e3e8ef; --white:#fff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Arial Black','Helvetica Neue',sans-serif;letter-spacing:-.02em;line-height:1.08}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+  .btn{display:inline-block;font-weight:800;padding:15px 26px;border-radius:8px;font-size:15px;transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-lime{background:var(--lime);color:var(--ink);box-shadow:0 8px 24px rgba(200,240,0,.35)}
+  .btn-ghost{border:2px solid rgba(255,255,255,.35);color:#fff}
+  .btn-dark{background:var(--navy);color:#fff}
+
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(15,27,45,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{color:#fff;font-weight:900;font-size:18px;letter-spacing:-.02em}
+  .brand span{color:var(--lime)}
+  .nav-cta{display:flex;gap:12px;align-items:center}
+  .nav-phone{color:var(--lime);font-weight:800;font-size:15px}
+  @media(max-width:640px){.nav-phone{display:none}}
+
+  /* HERO */
+  .hero{position:relative;background:
+      radial-gradient(1200px 500px at 80% -10%, rgba(200,240,0,.10), transparent 60%),
+      linear-gradient(160deg,var(--navy),var(--steel));
+      color:#fff;padding:74px 0 64px;overflow:hidden}
+  .hero:before{content:"";position:absolute;inset:0;
+      background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+      background-size:46px 46px;mask:radial-gradient(700px 400px at 70% 0%,#000,transparent)}
+  .hero .wrap{position:relative}
+  .eyebrow{display:inline-block;background:rgba(200,240,0,.14);color:var(--lime);border:1px solid rgba(200,240,0,.3);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:7px 13px;border-radius:99px;margin-bottom:18px}
+  .hero h1{font-size:clamp(34px,6vw,58px);max-width:14ch;margin-bottom:18px}
+  .hero h1 em{color:var(--lime);font-style:normal}
+  .hero p.lead{font-size:18px;max-width:54ch;color:#cfd8e6;margin-bottom:28px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;font-size:13px;color:#aebbcd;font-weight:700}
+  .trust b{color:var(--lime)}
+
+  section{padding:62px 0}
+  .kicker{color:var(--lime-dim);font-weight:900;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+  h2.title{font-size:clamp(26px,4vw,38px);max-width:20ch;margin-bottom:16px;color:var(--navy)}
+  .lede{color:var(--mute);max-width:62ch;font-size:17px}
+
+  .intro p{margin-bottom:16px;font-size:17px;max-width:68ch}
+  .badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:30px}
+  .badge{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--lime);border-radius:10px;padding:18px}
+  .badge b{display:block;color:var(--navy);margin-bottom:3px}
+  .badge span{color:var(--mute);font-size:14px}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .18s,box-shadow .18s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,27,45,.10)}
+  .card h3{color:var(--navy);font-size:19px;margin-bottom:9px}
+  .card p{color:var(--mute);font-size:15px}
+  .card .tick{width:34px;height:34px;border-radius:8px;background:var(--navy);color:var(--lime);display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:14px}
+
+  .dark{background:linear-gradient(160deg,var(--navy),var(--steel));color:#fff}
+  .dark h2.title,.dark .kicker{color:#fff}
+  .dark .kicker{color:var(--lime)}
+  .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:30px}
+  .why .item{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px}
+  .why .big{font-size:30px;font-weight:900;color:var(--lime);font-family:'Arial Black',sans-serif}
+  .why h3{font-size:16px;margin:8px 0 6px}
+  .why p{color:#bccadb;font-size:14px}
+
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+  .step{position:relative;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px 22px}
+  .step .num{font-family:'Arial Black',sans-serif;font-size:40px;color:var(--lime);line-height:1}
+  .step h3{color:var(--navy);margin:8px 0 6px;font-size:17px}
+  .step p{color:var(--mute);font-size:14px}
+
+  .faq details{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:4px 18px;margin-bottom:12px}
+  .faq summary{font-weight:800;color:var(--navy);cursor:pointer;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:after{content:"+";color:var(--lime-dim);font-size:24px;font-weight:900}
+  .faq details[open] summary:after{content:"–"}
+  .faq details p{color:var(--mute);padding:0 0 16px;font-size:15px}
+
+  .cta-band{background:var(--lime);color:var(--ink);border-radius:18px;padding:46px;text-align:center;margin:0 auto}
+  .cta-band h2{font-size:clamp(24px,4vw,34px);margin-bottom:10px;color:var(--ink)}
+  .cta-band p{margin-bottom:22px;font-weight:600}
+
+  .nearby{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+  .nearby a{background:var(--white);border:1px solid var(--line);border-radius:99px;padding:9px 16px;font-weight:700;font-size:14px;color:var(--navy);transition:.15s}
+  .nearby a:hover{border-color:var(--lime-dim);color:var(--lime-dim)}
+
+  footer{background:var(--ink);color:#9fb0c4;padding:40px 0;font-size:14px}
+  footer a{color:#cfd8e6} footer a:hover{color:var(--lime)}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr;gap:30px;margin-bottom:24px}
+  @media(max-width:640px){.foot-grid{grid-template-columns:1fr}}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:18px;color:#6f8197}
+
+  /* sticky mobile call bar */
+  .mobile-bar{display:none}
+  @media(max-width:640px){
+    .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--navy);border-top:1px solid rgba(255,255,255,.1)}
+    .mobile-bar a{flex:1;text-align:center;padding:15px;font-weight:800;color:#fff}
+    .mobile-bar a.lime{background:var(--lime);color:var(--ink)}
+    body{padding-bottom:54px}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/">Elizabethtown <span>Epoxy</span></a>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+15022869032">(502) 286-9032</a>
+      <a class="btn btn-lime" href="#contact">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Serving Shepherdsville &amp; Bullitt County, Kentucky</span>
+    <h1>Epoxy Flooring in <em>Shepherdsville, KY</em></h1>
+    <p class="lead">Garage floors, basement coatings, and commercial systems installed by Kentucky-based pros. Diamond-ground prep, commercial-grade materials, and a 15+ year finish — backed by a written warranty.</p>
+    <div class="hero-cta">
+      <a class="btn btn-lime" href="#contact">Get Your Free Estimate</a>
+      <a class="btn btn-ghost" href="tel:+15022869032">(502) 286-9032</a>
+    </div>
+    <div class="trust">
+      <span><b>5.0</b> ★ Local reviews</span>
+      <span><b>15+</b> Year durability</span>
+      <span><b>1-Day</b> Most installs</span>
+      <span><b>Licensed</b> &amp; insured</span>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <p class="kicker">Local Epoxy Contractor</p>
+    <h2 class="title">Epoxy Flooring Contractor Serving Shepherdsville, Bullitt County</h2>
+    <div style="margin-top:18px">
+      <p>We serve homeowners and businesses throughout Shepherdsville, about 35 miles north of Elizabethtown. Shepherdsville is the seat of Bullitt County, sitting right on the I-65 corridor between Elizabethtown and Louisville. It's one of Kentucky's fastest-growing communities, with plenty of new construction and established homes ready for a floor upgrade.</p>
+      <p>Whether it's a 2-car garage on the I-65 corridor, a finished basement, or a commercial facility in Bullitt County, we bring the same prep process, the same commercial-grade materials, and the same written warranty to every job — no shortcuts, no excuses.</p>
+      <p>Most Shepherdsville garage floors are completed in a single day. We'll schedule a free on-site visit, measure your space, walk through color and finish options, and email you a transparent written quote within 24 hours.</p>
+    </div>
+    <div class="badges">
+      <div class="badge"><b>Licensed &amp; Insured</b><span>Fully covered for residential and commercial work.</span></div>
+      <div class="badge"><b>Diamond-Ground Prep</b><span>Every job, every time — the reason our floors last.</span></div>
+      <div class="badge"><b>Written Warranty</b><span>Backed in writing, not just a handshake.</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <p class="kicker">Our Services</p>
+    <h2 class="title">Floor Coating Services in Shepherdsville, KY</h2>
+    <p class="lede">From residential garages to commercial warehouses, we deliver high-performance coatings that look great and hold up for years.</p>
+    <div class="cards" style="margin-top:30px">
+      <div class="card"><div class="tick">G</div><h3>Garage Floor Epoxy</h3><p>The most popular upgrade for Shepherdsville homeowners. Flake, metallic, and solid systems that resist hot tires, chemicals, and daily wear for 15+ years.</p></div>
+      <div class="card"><div class="tick">P</div><h3>Polyaspartic Coating</h3><p>Walk on it in 4-6 hours, park in 24. UV-stable and chemical resistant — perfect for Shepherdsville businesses that can't afford downtime.</p></div>
+      <div class="card"><div class="tick">B</div><h3>Basement Floor Coating</h3><p>Seal out moisture and turn your basement into clean, usable space. Ideal for finished basements, home gyms, and workshops in Bullitt County.</p></div>
+      <div class="card"><div class="tick">C</div><h3>Commercial Epoxy</h3><p>Heavy-duty floor systems for warehouses, showrooms, auto shops, and retail spaces in Shepherdsville and the surrounding Bullitt County area.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <p class="kicker">How It Works</p>
+    <h2 class="title">From Bare Concrete to Beautiful in 4 Steps</h2>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Free Consultation</h3><p>We visit your Shepherdsville property, assess the floor, discuss colors, and give a free written estimate.</p></div>
+      <div class="step"><div class="num">02</div><h3>Surface Prep</h3><p>We diamond grind or shot blast the concrete for maximum coating adhesion. No shortcuts.</p></div>
+      <div class="step"><div class="num">03</div><h3>Coating Application</h3><p>Base coat, flake or metallic broadcast, and a durable clear topcoat in your chosen system.</p></div>
+      <div class="step"><div class="num">04</div><h3>Walk-On Ready</h3><p>Most residential floors are ready for foot traffic within 24 hours of completion.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Why Choose Us</p>
+    <h2 class="title">Why Shepherdsville Homeowners &amp; Businesses Choose Us</h2>
+    <div class="why">
+      <div class="item"><div class="big">100%</div><h3>Surface Preparation</h3><p>We diamond grind every floor before coating. Proper prep is why our floors last 15+ years.</p></div>
+      <div class="item"><div class="big">1-Day</div><h3>Quick Turnaround</h3><p>Most residential floors are done in a single day. Polyaspartic is walk-on ready in hours.</p></div>
+      <div class="item"><div class="big">15+</div><h3>Years Durability</h3><p>Commercial-grade systems built for vehicles, chemicals, and heavy traffic.</p></div>
+      <div class="item"><div class="big">Free</div><h3>On-Site Estimates</h3><p>We come to you in Shepherdsville, measure, and quote — no pressure, no obligation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" style="background:var(--white);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <p class="kicker">Common Questions</p>
+    <h2 class="title">Epoxy Flooring FAQs — Shepherdsville, KY</h2>
+    <div style="margin-top:24px">
+      <details open><summary>How much does epoxy flooring cost in Shepherdsville, KY?</summary><p>For a typical 2-car garage in the Shepherdsville area (400-500 sq ft), professional epoxy flooring runs roughly $4-$8 per square foot installed, or about $1,800-$3,500 total depending on the system and the condition of your concrete. We provide free written quotes — no pressure, no deposit required.</p></details>
+      <details><summary>Do you serve Shepherdsville and Bullitt County?</summary><p>Yes. Shepherdsville is fully within our service area, and we serve all of Bullitt County with no extra trip charge. Most residential jobs in the area are completed in a single day.</p></details>
+      <details><summary>How long does epoxy flooring last in Kentucky's climate?</summary><p>With proper diamond-ground prep and commercial-grade materials, epoxy and polyaspartic systems last 15-20+ years in Kentucky conditions. We work year-round and use cold-weather formulations for winter installs.</p></details>
+      <details><summary>How long until I can park on my new garage floor?</summary><p>With a polyaspartic system you can walk on the floor in 4-6 hours and park vehicles within 24 hours. Standard epoxy needs 24 hours for foot traffic and 3-5 days before parking heavy vehicles.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Service Area</p>
+    <h2 class="title">Serving Shepherdsville and All of Bullitt County</h2>
+    <p class="lede">Based in Elizabethtown, we serve all of Bullitt County with no trip charges anywhere in our service area, plus neighboring counties across Central and Western Kentucky.</p>
+    <div class="nearby">
+        <a href="/epoxy-flooring/mt-washington">Epoxy Flooring Mt Washington</a>
+        <a href="/epoxy-flooring/louisville">Epoxy Flooring Louisville</a>
+        <a href="/epoxy-flooring/elizabethtown">Epoxy Flooring Elizabethtown</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Ready for a New Floor in Shepherdsville?</h2>
+      <p>Get a free, no-obligation estimate for your epoxy flooring project today.</p>
+      <a class="btn btn-dark" href="tel:+15022869032">Call (502) 286-9032</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="dark">
+  <div class="wrap">
+    <p class="kicker">Contact Us</p>
+    <h2 class="title">Get a Free Estimate in Shepherdsville</h2>
+    <p style="color:#bccadb;max-width:56ch;margin-bottom:24px">Call or text (502) 286-9032 — we usually respond within an hour during business hours. We'll schedule a free on-site visit, measure your space, and email you a written quote.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a class="btn btn-lime" href="tel:+15022869032">Call or Text (502) 286-9032</a>
+      <a class="btn btn-ghost" href="mailto:hello@elizabethtownepoxyflooring.com">Email Us</a>
+    </div>
+    <p style="margin-top:26px;color:#8ea0b6;font-size:14px">Hours: Mon-Fri 7am-6pm &nbsp;·&nbsp; Sat 8am-2pm &nbsp;·&nbsp; Based in Elizabethtown, KY 42701</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="font-size:18px;margin-bottom:10px">Elizabethtown <span style="color:var(--lime)">Epoxy</span></div>
+        <p>Professional epoxy and polyaspartic floor coatings serving Shepherdsville, Bullitt County, and all of Central &amp; Western Kentucky. Licensed, insured, and locally operated.</p>
+      </div>
+      <div>
+        <strong style="color:#fff;display:block;margin-bottom:8px">Contact</strong>
+        <a href="tel:+15022869032">(502) 286-9032</a><br>
+        Elizabethtown, KY 42701<br>
+        Mon-Fri: 7am-6pm<br>Sat: 8am-2pm
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Elizabethtown Epoxy Flooring. All rights reserved. &nbsp;·&nbsp; Serving Shepherdsville, KY</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+15022869032">Call Now</a>
+  <a class="lime" href="#contact">Free Estimate</a>
+</div>
+
+</body>
+</html>
