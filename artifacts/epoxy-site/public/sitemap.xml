@@ -1,88 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://elizabethtownepoxyflooring.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://elizabethtownepoxyflooring.com/gallery/garage-flake-gray.jpg</image:loc>
-      <image:title>Gray Flake Garage Floor Epoxy Elizabethtown KY</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://elizabethtownepoxyflooring.com/gallery/garage-metallic-blue.jpg</image:loc>
-      <image:title>Metallic Blue Epoxy Garage Floor</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://elizabethtownepoxyflooring.com/gallery/basement-polyaspartic.jpg</image:loc>
-      <image:title>Polyaspartic Basement Floor Coating</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://elizabethtownepoxyflooring.com/gallery/garage-after-poly.jpg</image:loc>
-      <image:title>Polyaspartic Garage Floor Finish Hardin County</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://elizabethtownepoxyflooring.com/gallery/commercial-showroom.jpg</image:loc>
-      <image:title>Commercial Epoxy Floor Coating Kentucky</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://elizabethtownepoxyflooring.com/gallery/decorative-metallic.jpg</image:loc>
-      <image:title>Decorative Metallic Epoxy Flooring</image:title>
-    </image:image>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/elizabethtown/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/elizabethtown</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/radcliff/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/radcliff</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/vine-grove/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/vine-grove</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/fort-knox/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/fort-knox</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/hodgenville/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/hodgenville</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/bardstown/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/bardstown</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/louisville/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/louisville</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/shepherdsville/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/shepherdsville</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/mt-washington/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/mt-washington</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/brandenburg/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/brandenburg</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/leitchfield/</loc>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring/leitchfield</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
