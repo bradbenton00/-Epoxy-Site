@@ -35,7 +35,7 @@ type Route = {
 
 const SITE = "https://elizabethtownepoxyflooring.com";
 
-const STATIC_OVERRIDES = new Set(["radcliff", "shepherdsville", "louisville", "vine-grove", "fort-knox", "hodgenville", "bardstown"]);
+const STATIC_OVERRIDES = new Set(["radcliff", "shepherdsville", "louisville", "vine-grove", "fort-knox", "hodgenville", "bardstown", "mt-washington"]);
 
 function escapeHtml(s: string) {
   return s
