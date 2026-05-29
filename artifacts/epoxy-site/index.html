@@ -33,18 +33,15 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+      "@type": "LocalBusiness",
       "@id": "https://elizabethtownepoxyflooring.com/#business",
       "name": "Elizabethtown Epoxy Flooring",
-      "alternateName": "Elizabethtown Epoxy & Floor Coatings",
-      "description": "Kentucky's premier epoxy floor coating specialists. Garage floor epoxy, basement floor coatings, commercial epoxy, polyaspartic, and decorative metallic finishes throughout Louisville, Elizabethtown, and all of Central and Western Kentucky.",
       "url": "https://elizabethtownepoxyflooring.com",
-      "telephone": "+1-502-286-9032",
-      "image": "https://elizabethtownepoxyflooring.com/gallery/garage-flake-gray.jpg",
-      "logo": "https://elizabethtownepoxyflooring.com/favicon.svg",
+      "telephone": "+15022869032",
       "priceRange": "$$",
-      "paymentAccepted": ["Cash", "Check", "Credit Card"],
-      "currenciesAccepted": "USD",
+      "description": "Kentucky-owned epoxy and polyaspartic floor coating company serving Elizabethtown, Louisville, and all of Central & Western Kentucky. Diamond-ground prep, commercial-grade materials, 15+ year finish backed by a written warranty.",
+      "image": "https://elizabethtownepoxyflooring.com/opengraph.jpg",
+      "logo": "https://elizabethtownepoxyflooring.com/opengraph.jpg",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Elizabethtown",
@@ -52,67 +49,30 @@
         "postalCode": "42701",
         "addressCountry": "US"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 37.6939,
-        "longitude": -85.8594
-      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 37.69, "longitude": -85.89 },
       "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "07:00",
-          "closes": "18:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "08:00",
-          "closes": "14:00"
-        }
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
       ],
       "areaServed": [
-        { "@type": "City", "name": "Louisville", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Elizabethtown", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Radcliff", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Vine Grove", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Fort Knox", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Hodgenville", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Bardstown", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Shepherdsville", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Mt Washington", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Brandenburg", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "City", "name": "Leitchfield", "address": { "@type": "PostalAddress", "addressRegion": "KY" } },
-        { "@type": "AdministrativeArea", "name": "Jefferson County, KY" },
-        { "@type": "AdministrativeArea", "name": "Hardin County, KY" },
-        { "@type": "AdministrativeArea", "name": "Bullitt County, KY" },
-        { "@type": "AdministrativeArea", "name": "Meade County, KY" },
-        { "@type": "AdministrativeArea", "name": "LaRue County, KY" },
-        { "@type": "AdministrativeArea", "name": "Nelson County, KY" },
-        { "@type": "AdministrativeArea", "name": "Grayson County, KY" },
-        { "@type": "State", "name": "Kentucky" }
+        { "@type": "City", "name": "Elizabethtown" },
+        { "@type": "City", "name": "Radcliff" },
+        { "@type": "City", "name": "Vine Grove" },
+        { "@type": "City", "name": "Louisville" },
+        { "@type": "City", "name": "Shepherdsville" },
+        { "@type": "City", "name": "Hodgenville" },
+        { "@type": "City", "name": "Bardstown" },
+        { "@type": "City", "name": "Brandenburg" },
+        { "@type": "City", "name": "Leitchfield" },
+        { "@type": "County", "name": "Hardin County" },
+        { "@type": "County", "name": "Jefferson County" },
+        { "@type": "County", "name": "Bullitt County" },
+        { "@type": "County", "name": "Meade County" },
+        { "@type": "County", "name": "LaRue County" },
+        { "@type": "County", "name": "Nelson County" },
+        { "@type": "County", "name": "Grayson County" }
       ],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 37.6939,
-          "longitude": -85.8594
-        },
-        "geoRadius": "160000"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Epoxy Flooring Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garage Floor Epoxy Coating" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Polyaspartic Floor Coating" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Basement Floor Epoxy" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Epoxy Flooring" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industrial Epoxy Floor System" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Decorative Metallic Epoxy" } }
-        ]
-      }
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5", "worstRating": "1" }
     }
     </script>
     <script type="application/ld+json">
@@ -120,26 +80,16 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How much does epoxy flooring cost in Elizabethtown, KY?",
-          "acceptedAnswer": { "@type": "Answer", "text": "For a typical 2-car garage in the Elizabethtown area (about 400-500 sq ft), professional epoxy flooring runs roughly $4-$8 per square foot installed, or about $1,800-$3,500 total. Pricing depends on the system you choose, the condition of your concrete, decorative options, and prep work needed." } },
-        { "@type": "Question", "name": "How long does epoxy flooring last?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A properly installed professional-grade epoxy or polyaspartic system lasts 15-20+ years in a residential garage with normal use. Commercial-grade systems hold up under heavy traffic and chemicals. The key is proper surface preparation — diamond grinding the concrete first, never just acid etching." } },
-        { "@type": "Question", "name": "Epoxy vs. polyaspartic — which is better for my garage?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Both are excellent. Epoxy is the most cost-effective option and offers the widest range of decorative looks. Polyaspartic cures faster (same-day return to use), is more UV stable, and has slightly better flexibility. For most Elizabethtown homeowners we recommend a hybrid system — epoxy base coat with a polyaspartic top coat." } },
-        { "@type": "Question", "name": "How long until I can park on my new garage floor?",
-          "acceptedAnswer": { "@type": "Answer", "text": "With a polyaspartic system, you can walk on the floor in about 4-6 hours and park vehicles within 24 hours. Standard epoxy takes 24 hours for foot traffic and 3-5 days before parking heavy vehicles." } },
-        { "@type": "Question", "name": "Do you serve Louisville, Hardin County, and the rest of Central & Western Kentucky?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We service Louisville and the entire Jefferson County metro, all of Hardin County (Elizabethtown, Radcliff, Vine Grove, Fort Knox, Cecilia, Sonora, Rineyville), Bullitt County (Shepherdsville, Mt Washington), Meade County (Brandenburg, Muldraugh), LaRue County (Hodgenville), Nelson County (Bardstown), and Grayson County (Leitchfield) — essentially all of Central and Western Kentucky. No extra trip charge anywhere in our service area." } },
-        { "@type": "Question", "name": "Will epoxy stick to my old, stained, or cracked concrete?",
-          "acceptedAnswer": { "@type": "Answer", "text": "In most cases yes. We diamond grind the surface to remove old sealers, oil stains, and weak top layers, then patch any cracks or pitting with structural concrete repair compound before coating." } },
-        { "@type": "Question", "name": "Is epoxy flooring slippery when wet?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Standard epoxy can be slick when wet, but we add an aluminum oxide or silica anti-slip additive to the topcoat at no extra charge for traction similar to a textured concrete pool deck." } },
-        { "@type": "Question", "name": "Can you apply epoxy in cold weather?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes — we work year-round in Kentucky. Modern polyaspartic and low-temperature epoxy formulations cure properly down to about 35°F. For unheated garages in winter we use temporary heaters." } },
-        { "@type": "Question", "name": "Do you offer a warranty on your epoxy floors?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. All residential installations come with a written warranty covering adhesion failure, peeling, and bubbling. Commercial systems include extended warranty options." } },
-        { "@type": "Question", "name": "How do I get a free estimate?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Call (502) 286-9032 or fill out the form on our website. We respond within an hour during business hours, schedule a free on-site visit, and email a written quote. No deposit, no pressure." } }
+        { "@type": "Question", "name": "How much does epoxy flooring cost in Elizabethtown, KY?", "acceptedAnswer": { "@type": "Answer", "text": "For a typical 2-car garage in the Elizabethtown area (about 400-500 sq ft), professional epoxy flooring runs roughly $4-$8 per square foot installed, or about $1,800-$3,500 total. Pricing depends on the system you choose, the condition of your concrete, and decorative options. We provide free, transparent quotes with no pressure." } },
+        { "@type": "Question", "name": "How long does epoxy flooring last?", "acceptedAnswer": { "@type": "Answer", "text": "A properly installed professional-grade epoxy or polyaspartic system lasts 15-20+ years in a residential garage with normal use. The key is proper surface preparation — diamond grinding the concrete first. That's why we never skip prep on any job." } },
+        { "@type": "Question", "name": "Epoxy vs. polyaspartic — which is better for my garage?", "acceptedAnswer": { "@type": "Answer", "text": "Both are excellent. Epoxy is the most cost-effective and offers the widest range of decorative looks. Polyaspartic cures faster, is more UV stable, and has better flexibility. For most homeowners we recommend a hybrid system — epoxy base coat with a polyaspartic top coat — for the best of both." } },
+        { "@type": "Question", "name": "How long until I can park on my new garage floor?", "acceptedAnswer": { "@type": "Answer", "text": "With a polyaspartic system, you can walk on the floor in about 4-6 hours and park vehicles within 24 hours. Standard epoxy takes 24 hours for foot traffic and 3-5 days before you should park heavy vehicles on it." } },
+        { "@type": "Question", "name": "Do you serve Louisville, Hardin County, and Central & Western Kentucky?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We service Louisville and the entire Jefferson County metro, all of Hardin County (Elizabethtown, Radcliff, Vine Grove, Fort Knox), Bullitt County (Shepherdsville, Mt Washington), Meade County (Brandenburg), LaRue County (Hodgenville), Nelson County (Bardstown), and Grayson County (Leitchfield). No extra trip charge anywhere in our service area." } },
+        { "@type": "Question", "name": "Will epoxy stick to my old, stained, or cracked concrete?", "acceptedAnswer": { "@type": "Answer", "text": "In most cases yes. We diamond grind the surface to remove old sealers, oil stains, and weak top layers, then patch any cracks or pitting before coating. Floors that look beyond saving usually clean up beautifully. We'll inspect your floor during the free estimate." } },
+        { "@type": "Question", "name": "Is epoxy flooring slippery when wet?", "acceptedAnswer": { "@type": "Answer", "text": "Standard epoxy can be slick when wet, but we add an anti-slip additive to the topcoat at no extra charge. The result is traction similar to a textured concrete pool deck — safe when wet while still easy to clean." } },
+        { "@type": "Question", "name": "Can you apply epoxy in cold weather?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — we work year-round in Kentucky. Modern polyaspartic and low-temperature epoxy formulations cure properly down to about 35°F. For unheated garages in winter we use temporary heaters to maintain working temperature." } },
+        { "@type": "Question", "name": "Do you offer a warranty on your epoxy floors?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All residential installations come with a written warranty covering adhesion failure, peeling, and bubbling. Commercial systems include extended warranty options. We'll go over the specifics during your free estimate." } },
+        { "@type": "Question", "name": "How do I get a free estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Call or text (502) 286-9032, or fill out the form on our website. We'll respond within an hour during business hours, schedule a free on-site visit, measure your space, discuss options, and email you a written quote. No deposit, no pressure." } }
       ]
     }
     </script>
