@@ -1,0 +1,222 @@
+<!-- ============================================================
+     EPOXY FLOORING — FREE ESTIMATE FORM
+     Drop-in form for elizabethtownepoxyflooring.com (Replit)
+
+     SETUP (2 steps):
+     1. Go to formspree.io → create a free form → copy your
+        form ID (looks like: xyzabcde)
+     2. Replace YOUR_FORM_ID below with that ID.
+     That's it. Submissions land in your email instantly.
+     ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Estimate — Elizabethtown Epoxy Flooring</title>
+<style>
+  :root{
+    --navy:#0e1c2e;
+    --navy-2:#14283f;
+    --steel-blue:#3d6da3;
+    --metallic:#4f9cd4;
+    --cream:#f4f1ea;
+    --line:#26405c;
+    --muted:#8da4bd;
+    --ok:#3fbf6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--navy);
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    color:var(--cream);
+    display:flex;align-items:center;justify-content:center;
+    min-height:100vh;padding:24px;
+  }
+  .card{
+    width:100%;max-width:520px;
+    background:linear-gradient(170deg,var(--navy-2),var(--navy));
+    border:1px solid var(--line);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 30px 70px rgba(0,0,0,.5);
+  }
+  .head{
+    padding:30px 30px 22px;
+    border-bottom:1px solid var(--line);
+    position:relative;
+  }
+  .head::after{
+    content:"";position:absolute;left:0;bottom:-1px;height:2px;width:90px;
+    background:linear-gradient(90deg,var(--metallic),transparent);
+  }
+  .eyebrow{
+    font-size:11px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--metallic);margin-bottom:10px;
+  }
+  .head h1{
+    font-family:Georgia,serif;font-weight:400;font-size:26px;
+    line-height:1.2;letter-spacing:-.3px;
+  }
+  .head p{color:var(--muted);font-size:14px;margin-top:8px;line-height:1.5;}
+  form{padding:26px 30px 30px;}
+  .row{display:flex;gap:14px;}
+  .row .field{flex:1;}
+  .field{margin-bottom:16px;}
+  label{display:block;font-size:12px;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
+  input,select,textarea{
+    width:100%;padding:13px 14px;
+    background:var(--navy);
+    border:1px solid var(--line);
+    border-radius:9px;
+    color:var(--cream);font-size:15px;font-family:inherit;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  input:focus,select:focus,textarea:focus{
+    outline:none;border-color:var(--metallic);
+    box-shadow:0 0 0 3px rgba(79,156,212,.15);
+  }
+  select{appearance:none;cursor:pointer;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%238da4bd' d='M6 8 0 0h12z'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 14px center;}
+  textarea{resize:vertical;min-height:80px;}
+  button{
+    width:100%;margin-top:8px;padding:15px;
+    background:var(--metallic);color:var(--navy);
+    border:none;border-radius:9px;
+    font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+    cursor:pointer;transition:background .2s,transform .1s;
+  }
+  button:hover{background:#62add f;}
+  button:hover{background:#65b1e2;}
+  button:active{transform:translateY(1px);}
+  .privacy{text-align:center;color:var(--muted);font-size:12px;margin-top:14px;}
+  .phone{
+    display:block;text-align:center;margin-top:18px;
+    color:var(--cream);font-size:15px;text-decoration:none;
+  }
+  .phone b{color:var(--metallic);}
+  .success{
+    display:none;padding:40px 30px;text-align:center;
+  }
+  .success.show{display:block;}
+  .success .check{
+    width:54px;height:54px;border-radius:50%;
+    background:rgba(63,191,106,.12);border:1px solid var(--ok);
+    color:var(--ok);font-size:26px;line-height:54px;margin:0 auto 18px;
+  }
+  .success h2{font-family:Georgia,serif;font-weight:400;font-size:24px;margin-bottom:10px;}
+  .success p{color:var(--muted);font-size:14px;line-height:1.6;}
+  @media(max-width:440px){.row{flex-direction:column;gap:0;}}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="head">
+      <div class="eyebrow">Free · No Obligation</div>
+      <h1>Get Your Free Epoxy Estimate</h1>
+      <p>Fill this out and we'll get back to you within an hour during business hours. No deposit, no pressure.</p>
+    </div>
+
+    <!-- Replace YOUR_FORM_ID with your Formspree ID -->
+    <form id="estimateForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="row">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(502) 555-0123">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@email.com">
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="floor">Floor Type</label>
+          <select id="floor" name="floor_type" required>
+            <option value="">Select…</option>
+            <option>Garage Floor Epoxy</option>
+            <option>Commercial Epoxy</option>
+            <option>Polyaspartic Coating</option>
+            <option>Basement Coating</option>
+            <option>Industrial Floor System</option>
+            <option>Decorative / Metallic</option>
+            <option>Not Sure Yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="size">Square Footage</label>
+          <select id="size" name="square_footage" required>
+            <option value="">Select…</option>
+            <option>Under 400 sq ft (1-car)</option>
+            <option>400-800 sq ft (2-car)</option>
+            <option>800-1,500 sq ft</option>
+            <option>1,500-3,000 sq ft</option>
+            <option>3,000+ sq ft (commercial)</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required placeholder="Elizabethtown, Radcliff, Louisville…">
+      </div>
+
+      <div class="field">
+        <label for="message">Anything else? (optional)</label>
+        <textarea id="message" name="message" placeholder="Tell us about your project, timeline, condition of the floor…"></textarea>
+      </div>
+
+      <!-- routing + anti-spam -->
+      <input type="hidden" name="_subject" value="New Epoxy Estimate Request">
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit">Request Free Estimate</button>
+      <p class="privacy">Your information is private and never sold.</p>
+      <a class="phone" href="tel:+15022869032">Prefer to call? <b>(502) 286-9032</b></a>
+    </form>
+
+    <div class="success" id="successMsg">
+      <div class="check">✓</div>
+      <h2>Request Received</h2>
+      <p>Thanks! We'll reach out within an hour during business hours to schedule your free on-site estimate.</p>
+    </div>
+  </div>
+
+<script>
+  const form = document.getElementById('estimateForm');
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const btn = form.querySelector('button');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    try{
+      const res = await fetch(form.action, {
+        method:'POST',
+        body:new FormData(form),
+        headers:{'Accept':'application/json'}
+      });
+      if(res.ok){
+        form.style.display='none';
+        document.getElementById('successMsg').classList.add('show');
+      }else{
+        btn.textContent='Try Again';
+        btn.disabled=false;
+        alert('Something went wrong. Please call (502) 286-9032.');
+      }
+    }catch(err){
+      btn.textContent='Try Again';
+      btn.disabled=false;
+      alert('Network error. Please call (502) 286-9032.');
+    }
+  });
+</script>
+</body>
+</html>
