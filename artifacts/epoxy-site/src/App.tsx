@@ -31,7 +31,7 @@ function App() {
       setSubmitted(true);
     } catch {
       setError(
-        "Something went wrong sending your request. Please try again or call us at (502) 286-9032.",
+        "Something went wrong sending your request. Please try again or call us at (502) 747-1716.",
       );
     } finally {
       setSubmitting(false);
@@ -55,7 +55,7 @@ function App() {
             <a href="#compare">Compare</a>
             <a href="#reviews">Reviews</a>
             <a href="#faq">FAQ</a>
-            <a href="tel:+15022869032" className="nav-phone">(502) 286-9032</a>
+            <a href="tel:+15027471716" className="nav-phone">(502) 747-1716</a>
             <a href="#contact" className="nav-cta">Free Estimate</a>
           </div>
           <button
@@ -77,7 +77,7 @@ function App() {
           <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
           <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
           <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
-          <a href="tel:+15022869032" onClick={() => setMenuOpen(false)}>Call (502) 286-9032</a>
+          <a href="tel:+15027471716" onClick={() => setMenuOpen(false)}>Call (502) 747-1716</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Free Estimate</a>
         </div>
       </nav>
@@ -97,9 +97,9 @@ function App() {
             </p>
             <div className="hero-actions">
               <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
-              <a href="tel:+15022869032" className="hero-cta-phone">
+              <a href="tel:+15027471716" className="hero-cta-phone">
                 <span className="hero-cta-phone-icon"><Icon.Phone /></span>
-                (502) 286-9032
+                (502) 747-1716
               </a>
             </div>
             <div className="hero-rating">
@@ -448,7 +448,7 @@ function App() {
               },
               {
                 q: "How do I get a free estimate?",
-                a: "Easiest options: call (502) 286-9032 or fill out the form below. We'll usually respond within an hour during business hours, schedule a free on-site visit, measure your space, discuss color and finish options, and email you a written quote. No deposit, no pressure.",
+                a: "Easiest options: call (502) 747-1716 or fill out the form below. We'll usually respond within an hour during business hours, schedule a free on-site visit, measure your space, discuss color and finish options, and email you a written quote. No deposit, no pressure.",
               },
             ].map((item) => (
               <details className="faq-item" key={item.q}>
@@ -502,9 +502,9 @@ function App() {
         <p>Get a free, no-obligation estimate for your epoxy flooring project today.</p>
         <div className="cta-actions">
           <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
-          <a href="tel:+15022869032" className="hero-cta-phone">
+          <a href="tel:+15027471716" className="hero-cta-phone">
             <span className="hero-cta-phone-icon"><Icon.Phone /></span>
-            (502) 286-9032
+            (502) 747-1716
           </a>
         </div>
       </section>
@@ -583,7 +583,7 @@ function App() {
                 <span className="contact-icon"><Icon.Phone /></span>
                 <div>
                   <div className="contact-label">Call or Text</div>
-                  <a href="tel:+15022869032" className="contact-value-strong">(502) 286-9032</a>
+                  <a href="tel:+15027471716" className="contact-value-strong">(502) 747-1716</a>
                 </div>
               </div>
               <div className="contact-item">
@@ -667,7 +667,7 @@ function App() {
             </div>
             <div className="footer-col">
               <h4>Contact</h4>
-              <a href="tel:+15022869032" className="footer-contact-phone">(502) 286-9032</a>
+              <a href="tel:+15027471716" className="footer-contact-phone">(502) 747-1716</a>
               <div className="footer-contact-line">Elizabethtown, KY 42701</div>
               <div className="footer-contact-line">Mon-Fri: 7am - 6pm</div>
               <div className="footer-contact-line">Sat: 8am - 2pm</div>
@@ -680,9 +680,9 @@ function App() {
       </footer>
 
       <div className="sticky-cta" role="region" aria-label="Quick contact">
-        <a href="tel:+15022869032" className="sticky-cta-btn sticky-cta-call">
+        <a href="tel:+15027471716" className="sticky-cta-btn sticky-cta-call">
           <Icon.Phone />
-          <span>Call (502) 286-9032</span>
+          <span>Call (502) 747-1716</span>
         </a>
         <a href="#contact" className="sticky-cta-btn sticky-cta-quote">
           <span>Free Estimate</span>

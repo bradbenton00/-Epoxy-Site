@@ -11,8 +11,8 @@ type Step =
   | "done"
   | "error";
 
-const PHONE_DISPLAY = "(502) 286-9032";
-const PHONE_TEL = "5022869032";
+const PHONE_DISPLAY = "(502) 747-1716";
+const PHONE_TEL = "5027471716";
 
 const QUICK_REPLIES: { label: string; reply: string }[] = [
   {

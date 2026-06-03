@@ -15,7 +15,7 @@ export default function CityPage() {
   useEffect(() => {
     if (!city) return;
     const title = `Epoxy Flooring ${city.name}, ${city.state} | Garage Floors & Coatings`;
-    const desc = `Professional epoxy and polyaspartic floor coatings in ${city.name}, ${city.state}. Diamond-ground prep, commercial-grade materials, written warranty. Free estimates — call (502) 286-9032.`;
+    const desc = `Professional epoxy and polyaspartic floor coatings in ${city.name}, ${city.state}. Diamond-ground prep, commercial-grade materials, written warranty. Free estimates — call (502) 747-1716.`;
     document.title = title;
     setMeta("description", desc);
     setMeta("og:title", title, true);
@@ -57,7 +57,7 @@ export default function CityPage() {
       setSubmitted(true);
     } catch {
       setError(
-        "Something went wrong sending your request. Please try again or call us at (502) 286-9032.",
+        "Something went wrong sending your request. Please try again or call us at (502) 747-1716.",
       );
     } finally {
       setSubmitting(false);
@@ -80,7 +80,7 @@ export default function CityPage() {
             <Link href="/#gallery">Gallery</Link>
             <Link href="/#reviews">Reviews</Link>
             <Link href="/#faq">FAQ</Link>
-            <a href="tel:+15022869032" className="nav-phone">(502) 286-9032</a>
+            <a href="tel:+15027471716" className="nav-phone">(502) 747-1716</a>
             <a href="#contact" className="nav-cta">Free Estimate</a>
           </div>
           <button
@@ -100,7 +100,7 @@ export default function CityPage() {
           <Link href="/#services" onClick={() => setMenuOpen(false)}>Services</Link>
           <Link href="/#gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>
           <Link href="/#faq" onClick={() => setMenuOpen(false)}>FAQ</Link>
-          <a href="tel:+15022869032" onClick={() => setMenuOpen(false)}>Call (502) 286-9032</a>
+          <a href="tel:+15027471716" onClick={() => setMenuOpen(false)}>Call (502) 747-1716</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Free Estimate</a>
         </div>
       </nav>
@@ -122,9 +122,9 @@ export default function CityPage() {
             </p>
             <div className="hero-actions">
               <a href="#contact" className="hero-cta">Get Your Free {city.name} Estimate</a>
-              <a href="tel:+15022869032" className="hero-cta-phone">
+              <a href="tel:+15027471716" className="hero-cta-phone">
                 <span className="hero-cta-phone-icon"><Icon.Phone /></span>
-                (502) 286-9032
+                (502) 747-1716
               </a>
             </div>
             <div className="hero-rating">
@@ -323,7 +323,7 @@ export default function CityPage() {
                 ))}
               </ul>
               <p style={{ marginTop: 18, fontSize: 14, color: "var(--muted)" }}>
-                Don't see your area? We cover all of {city.county} — call us at (502) 286-9032
+                Don't see your area? We cover all of {city.county} — call us at (502) 747-1716
                 to confirm.
               </p>
             </div>
@@ -336,9 +336,9 @@ export default function CityPage() {
         <p>Free, no-pressure estimate. Most {city.name} garages installed in a single day.</p>
         <div className="cta-actions">
           <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
-          <a href="tel:+15022869032" className="hero-cta-phone">
+          <a href="tel:+15027471716" className="hero-cta-phone">
             <span className="hero-cta-phone-icon"><Icon.Phone /></span>
-            (502) 286-9032
+            (502) 747-1716
           </a>
         </div>
       </section>
@@ -418,7 +418,7 @@ export default function CityPage() {
                 <span className="contact-icon"><Icon.Phone /></span>
                 <div>
                   <div className="contact-label">Call or Text</div>
-                  <a href="tel:+15022869032" className="contact-value-strong">(502) 286-9032</a>
+                  <a href="tel:+15027471716" className="contact-value-strong">(502) 747-1716</a>
                 </div>
               </div>
               <div className="contact-item">
@@ -518,7 +518,7 @@ export default function CityPage() {
             </div>
             <div className="footer-col">
               <h4>Contact</h4>
-              <a href="tel:+15022869032" className="footer-contact-phone">(502) 286-9032</a>
+              <a href="tel:+15027471716" className="footer-contact-phone">(502) 747-1716</a>
               <div className="footer-contact-line">{city.name}, KY {city.zip}</div>
               <div className="footer-contact-line">Mon-Fri 7am-6pm</div>
             </div>
@@ -567,7 +567,7 @@ function setLocalBusinessSchema(city: { name: string; slug: string; county: stri
     name: `Elizabethtown Epoxy Flooring — ${city.name}`,
     image: "https://elizabethtownepoxyflooring.com/opengraph.jpg",
     url: `https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}`,
-    telephone: "+1-502-286-9032",
+    telephone: "+1-502-747-1716",
     priceRange: "$$",
     areaServed: {
       "@type": "City",
