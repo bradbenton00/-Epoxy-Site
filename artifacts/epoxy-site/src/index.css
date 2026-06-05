@@ -1010,6 +1010,61 @@ footer {
   font-weight: 600;
 }
 
+/* ---------- COUNTERTOPS BEFORE/AFTER ---------- */
+.countertops-section { background: var(--light); }
+.ba-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+.ba-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(15,26,43,0.08);
+}
+.ba-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.ba-photo {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--light-2);
+}
+.ba-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ba-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 4px;
+}
+.ba-badge-before { background: rgba(15,26,43,0.85); color: var(--white); }
+.ba-badge-after { background: var(--gold); color: var(--navy); }
+.ba-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: 14px;
+  text-align: center;
+}
+
 /* ---------- FAQ ---------- */
 .faq-section { background: var(--light); }
 .faq-list {

@@ -52,6 +52,7 @@ function App() {
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
+            <a href="#countertops">Countertops</a>
             <a href="#compare">Compare</a>
             <a href="#reviews">Reviews</a>
             <a href="#faq">FAQ</a>
@@ -74,6 +75,7 @@ function App() {
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
           <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
+          <a href="#countertops" onClick={() => setMenuOpen(false)}>Countertops</a>
           <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
           <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
           <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
@@ -347,6 +349,53 @@ function App() {
                   <span className="gallery-tag">{g.tag}</span>
                   <span className="gallery-label">{g.label}</span>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="countertops" className="countertops-section">
+        <div className="section-inner">
+          <div className="section-label">Countertops</div>
+          <div className="section-title">Countertop Transformations — Before &amp; After</div>
+          <div className="section-desc">
+            Custom-poured countertops applied right over your existing surface — no demolition, no full
+            replacement. Real kitchens we resurfaced across Elizabethtown and Central Kentucky.
+          </div>
+          <div className="ba-grid">
+            {[
+              {
+                before: "/gallery/countertops-white-before.jpg",
+                after: "/gallery/countertops-white-after.jpg",
+                beforeAlt:
+                  "Kitchen countertop before resurfacing — plain gray base coat with white cabinets in an Elizabethtown, KY kitchen",
+                afterAlt:
+                  "Kitchen countertop after resurfacing — glossy white marble-look poured countertop finish in Elizabethtown, KY",
+                label: "White Marble Finish",
+              },
+              {
+                before: "/gallery/countertops-oak-before.jpg",
+                after: "/gallery/countertops-oak-after.jpg",
+                beforeAlt:
+                  "Kitchen countertop before resurfacing — dated wood-laminate countertop with oak cabinets",
+                afterAlt:
+                  "Kitchen countertop after resurfacing — high-gloss black and copper marble-look poured finish",
+                label: "Black & Copper Finish",
+              },
+            ].map((b) => (
+              <div className="ba-card" key={b.label}>
+                <div className="ba-pair">
+                  <figure className="ba-photo">
+                    <img src={b.before} alt={b.beforeAlt} loading="lazy" width="1024" height="768" />
+                    <figcaption className="ba-badge ba-badge-before">Before</figcaption>
+                  </figure>
+                  <figure className="ba-photo">
+                    <img src={b.after} alt={b.afterAlt} loading="lazy" width="1024" height="768" />
+                    <figcaption className="ba-badge ba-badge-after">After</figcaption>
+                  </figure>
+                </div>
+                <div className="ba-label">{b.label}</div>
               </div>
             ))}
           </div>
