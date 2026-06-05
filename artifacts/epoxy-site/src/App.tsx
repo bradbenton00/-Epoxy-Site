@@ -215,6 +215,7 @@ function App() {
               { icon: <Icon.Droplet />, title: "Basement Floor Coating", desc: "Seal out moisture and transform your basement into a clean, usable space. Perfect for finished basements, workshops, and home gyms." },
               { icon: <Icon.Factory />, title: "Industrial Floor Systems", desc: "High-build epoxy systems for manufacturing, auto shops, and industrial facilities. Chemical resistant, slip resistant, and built to take a beating." },
               { icon: <Icon.Sparkle />, title: "Decorative Flake & Metallic", desc: "Make a statement with decorative flake patterns or stunning metallic epoxy finishes. Perfect for showrooms, man caves, and anywhere you want a high-end look." },
+              { icon: <Icon.Sparkle />, title: "Epoxy Countertops", desc: "Seamless, heat- and scratch-resistant epoxy countertops with a glossy, custom-poured finish. A durable, one-of-a-kind look for kitchens, bars, bathrooms, and workspaces." },
             ].map((s) => (
               <div className="service-card" key={s.title}>
                 <div className="service-icon">{s.icon}</div>
