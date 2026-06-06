@@ -166,6 +166,41 @@ router.post("/leads", async (req, res) => {
         });
     }
 
+    const ghlWebhookUrl = process.env["GHL_WEBHOOK_URL"];
+    if (ghlWebhookUrl) {
+      const ghlPayload = {
+        submittedAt: new Date().toISOString(),
+        name: fields.name ?? "",
+        phone: fields.phone ?? "",
+        email: fields.email ?? "",
+        zip: fields.zip ?? "",
+        service: fields.service ?? "",
+        sqft: fields.sqft ?? "",
+        timeline: fields.timeline ?? "",
+        message: fields.message ?? "",
+        source: "elizabethtownepoxyflooring.com",
+        sourcePage: req.get("referer") ?? "",
+      };
+      void fetch(ghlWebhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(ghlPayload),
+        redirect: "follow",
+      })
+        .then(async (r) => {
+          if (!r.ok) {
+            const text = await r.text().catch(() => "");
+            req.log.warn(
+              { status: r.status, text },
+              "GoHighLevel webhook returned non-OK",
+            );
+          }
+        })
+        .catch((err: unknown) => {
+          req.log.warn({ err }, "GoHighLevel webhook failed");
+        });
+    }
+
     const webhookUrl = process.env["N8N_WEBHOOK_URL"];
     if (webhookUrl) {
       const payload = {
