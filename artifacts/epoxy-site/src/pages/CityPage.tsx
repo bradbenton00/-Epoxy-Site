@@ -21,6 +21,8 @@ export default function CityPage() {
     setMeta("og:title", title, true);
     setMeta("og:description", desc, true);
     setMeta("og:url", `https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}`, true);
+    setMeta("twitter:title", title);
+    setMeta("twitter:description", desc);
     setCanonical(`https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}`);
     setLocalBusinessSchema(city);
     window.scrollTo(0, 0);

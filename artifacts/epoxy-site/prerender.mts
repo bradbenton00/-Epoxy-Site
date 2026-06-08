@@ -31,6 +31,7 @@ type Route = {
   canonical: string;
   ogImage?: string;
   extraHead?: string;
+  stripHomepageJsonLd?: boolean;
 };
 
 const SITE = "https://elizabethtownepoxyflooring.com";
@@ -84,6 +85,7 @@ const routes: Route[] = [
     description: `Professional epoxy and polyaspartic floor coatings in ${city.name}, ${city.state}. Diamond-ground prep, commercial-grade materials, written warranty. Free estimates — call (502) 747-1716.`,
     canonical: `${SITE}/epoxy-flooring/${city.slug}/`,
     extraHead: cityJsonLd(city),
+    stripHomepageJsonLd: true,
   })),
 ];
 
@@ -105,6 +107,9 @@ function renderRoute(path: string): string {
 
 function injectMeta(html: string, route: Route): string {
   let out = html;
+  if (route.stripHomepageJsonLd) {
+    out = out.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, "");
+  }
   out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(route.title)}</title>`);
   out = out.replace(
     /<meta name="description" content="[^"]*"\s*\/?>/,
@@ -125,6 +130,14 @@ function injectMeta(html: string, route: Route): string {
   out = out.replace(
     /<meta property="og:url" content="[^"]*"\s*\/?>/,
     `<meta property="og:url" content="${route.canonical}" />`,
+  );
+  out = out.replace(
+    /<meta name="twitter:title" content="[^"]*"\s*\/?>/,
+    `<meta name="twitter:title" content="${escapeHtml(route.title)}" />`,
+  );
+  out = out.replace(
+    /<meta name="twitter:description" content="[^"]*"\s*\/?>/,
+    `<meta name="twitter:description" content="${escapeHtml(route.description)}" />`,
   );
   if (route.extraHead) {
     out = out.replace(/<\/head>/, `${route.extraHead}\n  </head>`);
