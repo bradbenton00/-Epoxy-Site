@@ -57,6 +57,7 @@ function cityJsonLd(city: City) {
     telephone: "+1-502-286-9032",
     image: `${SITE}/gallery/garage-flake-gray.jpg`,
     priceRange: "$$",
+    sameAs: ["https://share.google/M6LRFCgRUEQNrMJ5t", "https://www.facebook.com/people/Elizabethtown-Epoxy-Flooring/61590315914006"],
     address: {
       "@type": "PostalAddress",
       addressLocality: city.name,

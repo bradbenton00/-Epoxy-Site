@@ -708,6 +708,7 @@ function App() {
               <a href="#gallery">Gallery</a>
               <a href="#reviews">Reviews</a>
               <a href="#faq">FAQ</a>
+              <a href="https://www.facebook.com/people/Elizabethtown-Epoxy-Flooring/61590315914006" target="_blank" rel="noopener">Facebook</a>
             </div>
             <div className="footer-col">
               <h4>Service Areas</h4>
