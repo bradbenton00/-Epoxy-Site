@@ -20,10 +20,10 @@ export default function CityPage() {
     setMeta("description", desc);
     setMeta("og:title", title, true);
     setMeta("og:description", desc, true);
-    setMeta("og:url", `https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}`, true);
+    setMeta("og:url", `https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}/`, true);
     setMeta("twitter:title", title);
     setMeta("twitter:description", desc);
-    setCanonical(`https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}`);
+    setCanonical(`https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}/`);
     setLocalBusinessSchema(city);
     window.scrollTo(0, 0);
   }, [city]);
@@ -469,7 +469,7 @@ export default function CityPage() {
               .map((c) => (
                 <Link
                   key={c.slug}
-                  href={`/epoxy-flooring/${c.slug}`}
+                  href={`/epoxy-flooring/${c.slug}/`}
                   className="service-card"
                   style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
                 >
