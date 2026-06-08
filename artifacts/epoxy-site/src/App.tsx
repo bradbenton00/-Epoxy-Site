@@ -447,6 +447,7 @@ function App() {
               {[0,1,2,3,4].map(i => <span key={i}><Icon.Star /></span>)}
             </span>
             <span className="reviews-cta-text"><strong>5.0 average</strong> · Based on customer feedback</span>
+            <a href="https://g.page/r/CWhLb1jIlCywEAE/review" target="_blank" rel="noopener" className="reviews-cta-btn">Leave us a Google review</a>
           </div>
         </div>
       </section>
