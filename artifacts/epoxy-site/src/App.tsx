@@ -95,8 +95,9 @@ function App() {
               <span>Epoxy Flooring</span> in Elizabethtown, KY — Garage, Basement &amp; Commercial
             </h1>
             <p>
-              Garage, basement, and commercial floor coatings installed by Kentucky-based pros. Diamond-ground
-              prep, commercial-grade materials, and a 15+ year finish — backed by a written warranty.
+              Simple, affordable floor coatings done right by Kentucky-based pros. We make it easy —
+              one free visit, one upfront price, most jobs finished in a single day. Garage, basement,
+              and commercial floors built to last 15+ years, backed by a written warranty.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
@@ -207,8 +208,8 @@ function App() {
           <div className="section-label">Our Services</div>
           <div className="section-title">Epoxy &amp; Floor Coating Solutions</div>
           <div className="section-desc">
-            From residential garages to commercial warehouses, we deliver high-performance floor
-            coatings that look great and hold up for years.
+            From a simple one-color garage floor to a full commercial warehouse, we keep it easy and
+            affordable — high-performance coatings that look great and hold up for years.
           </div>
           <div className="services-grid">
             {[
@@ -551,7 +552,7 @@ function App() {
 
       <section className="cta-section">
         <h2>Ready to Transform Your Floors?</h2>
-        <p>Get a free, no-obligation estimate for your epoxy flooring project today.</p>
+        <p>Getting started is simple — book a free, no-obligation quote today and we'll handle the rest.</p>
         <div className="cta-actions">
           <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
           <a href="tel:+15027471716" className="hero-cta-phone">
