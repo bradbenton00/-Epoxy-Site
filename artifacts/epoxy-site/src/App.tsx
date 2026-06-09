@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { cities } from "./data/cities";
 import { Icon } from "./components/Icon";
+import LeadPopup from "./components/LeadPopup";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -740,6 +741,8 @@ function App() {
           <span>Free Estimate</span>
         </a>
       </div>
+
+      <LeadPopup />
     </>
   );
 }

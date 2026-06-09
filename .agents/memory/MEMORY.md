@@ -1,0 +1,1 @@
+- [epoxy-site phone & leads](epoxy-site-phone-and-leads.md) — phone number spans ~14 files in 4 formats (edit all + rebuild + verify dist); all forms POST to /api/leads which fans out to email/DB/Sheets/GHL.
