@@ -1959,3 +1959,23 @@ nav.nav, .nav, header nav {
 .nav-links { gap: 18px; }
 .nav-links a { font-size: 14px; }
 .nav-logo { margin-right: 24px; }
+
+/* LIGHT HERO — undeniably different from dark-navy original */
+.hero { background: #f0f2f5 !important; padding: 48px 24px 56px !important; }
+.hero h1 { color: var(--charcoal) !important; }
+.hero h1 span { color: var(--gold-dark) !important; }
+.hero p { color: var(--body) !important; }
+.hero-badge {
+  background: rgba(212,168,67,0.12) !important;
+  border-color: var(--gold) !important;
+  color: var(--charcoal) !important;
+}
+.hero-badge-dot { background: var(--gold-dark) !important; }
+.hero-rating-text { color: var(--body) !important; }
+.hero-cta-phone {
+  background: white !important;
+  color: var(--charcoal) !important;
+  border: 1px solid var(--border) !important;
+}
+.hero-cta-phone-icon { color: var(--gold-dark) !important; }
+.hero-stars { color: var(--gold-dark) !important; }
