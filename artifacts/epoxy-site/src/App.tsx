@@ -292,7 +292,7 @@ function App() {
                 <tr><td>UV stable (no yellowing)</td><td>No</td><td>Yes</td><td>Yes</td></tr>
                 <tr><td>Chemical resistance</td><td>Good</td><td>Excellent</td><td>Excellent</td></tr>
                 <tr><td>Decorative options</td><td>Wide</td><td>Widest</td><td>Limited</td></tr>
-                <tr><td>Typical cost (2-car)</td><td>$1,800-$2,800</td><td>$2,800-$4,200</td><td>$3,800-$5,500</td></tr>
+                <tr><td>Typical cost (2-car)</td><td>$4,500-$5,400</td><td>$5,400-$6,300</td><td>$5,800-$6,800</td></tr>
                 <tr><td>Best for</td><td>Budget-conscious garages</td><td>Most homeowners</td><td>Shops needing fast turnaround</td></tr>
               </tbody>
             </table>
@@ -470,7 +470,7 @@ function App() {
             {[
               {
                 q: "How much does epoxy flooring cost in Elizabethtown, KY?",
-                a: "For a typical 2-car garage in the Elizabethtown area (about 400-500 sq ft), professional epoxy flooring runs roughly $4-$8 per square foot installed, or about $1,800-$3,500 total. Pricing depends on the system you choose (standard epoxy vs. polyaspartic), the condition of your concrete, decorative options like flake or metallic, and prep work needed. We give free, transparent quotes — no high-pressure sales.",
+                a: "For a typical 2-car garage in the Elizabethtown area (about 400-500 sq ft), professional epoxy flooring runs roughly $10-$14 per square foot installed, or about $4,500-$6,500 total. Pricing depends on the system you choose (standard epoxy vs. polyaspartic), the condition of your concrete, decorative options like flake or metallic, and prep work needed. We give free, transparent quotes — no high-pressure sales.",
               },
               {
                 q: "How long does epoxy flooring last?",

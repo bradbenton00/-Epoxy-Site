@@ -11,10 +11,10 @@ const SIZES: (Opt & { sqft: number; hint: string })[] = [
 ];
 
 const COATINGS: (Opt & { low: number; high: number; desc: string })[] = [
-  { key: "solid", label: "Solid Color Epoxy", low: 4, high: 6, desc: "Clean, one-color finish" },
-  { key: "flake", label: "Decorative Flake", low: 5, high: 7, desc: "Most popular — speckled look" },
-  { key: "metallic", label: "Metallic Epoxy", low: 7, high: 10, desc: "High-end, marbled finish" },
-  { key: "poly", label: "Polyaspartic (1-Day)", low: 6, high: 9, desc: "Fastest — walk on next day" },
+  { key: "solid", label: "Solid Color Epoxy", low: 10, high: 12, desc: "Clean, one-color finish" },
+  { key: "flake", label: "Decorative Flake", low: 11, high: 13, desc: "Most popular — speckled look" },
+  { key: "metallic", label: "Metallic Epoxy", low: 14, high: 17, desc: "High-end, marbled finish" },
+  { key: "poly", label: "Polyaspartic (1-Day)", low: 12, high: 15, desc: "Fastest — walk on next day" },
 ];
 
 const CONDITIONS: (Opt & { low: number; high: number })[] = [
