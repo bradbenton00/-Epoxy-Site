@@ -1874,3 +1874,88 @@ a.area-tag-link:hover {
   .calc-result { padding: 32px 24px; }
   .calc-result-range { font-size: 34px; }
 }
+
+/* ============================================================
+   BASIC LOCAL LOOK — flatten the premium/agency styling
+   ============================================================ */
+
+/* 1. Plain, everyday system fonts (no display typeface) */
+body,
+.about-stat-label, .about-stat-num, .about-value strong, .area-tag,
+.ba-badge, .ba-label, .chat-avatar, .chat-header-title,
+.compare-table tbody td:first-child, .compare-table thead th,
+.contact-form button, .contact-info h3, .contact-label,
+.contact-promise strong, .contact-success strong, .contact-value-strong,
+.cta-section h2, .faq-q, .faq-toggle, .footer-col h4, .footer-contact-phone,
+.footer-name, .gallery-label, .gallery-tag, .hero-badge, .hero-cta,
+.hero-cta-phone, .hero h1, .hero-image-badge-label, .hero-image-badge-num,
+.nav-logo-text, .process-step h3, .review-author, .section-label,
+.section-title, .service-card h3, .step-number, .sticky-cta-btn,
+.trust-item, .why-item h3, .why-number, .calc-label, .calc-result-range,
+h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* 2. Calmer headings — drop the tight tracking and heaviest weights */
+.hero h1 { font-size: 38px; font-weight: 700; letter-spacing: normal; }
+.section-title { letter-spacing: normal; font-weight: 700; }
+.cta-section h2 { letter-spacing: normal; font-weight: 700; }
+
+/* 3. Flat, plain hero (no dark gradient, glow, or grid pattern) */
+.hero {
+  background: var(--navy);
+  padding: 56px 24px 64px;
+}
+.hero::before, .hero::after { display: none !important; }
+.hero-badge-dot { animation: none; box-shadow: none; }
+.hero-image-card,
+.hero-image-card-sm { transform: none; border-radius: 4px; box-shadow: 0 1px 5px rgba(0,0,0,0.3); }
+
+/* 4. Square, flat corners everywhere */
+.nav-cta, .nav-phone, .hero-cta, .hero-cta-phone, .hero-badge,
+.service-card, .why-item, .compare-section table, .compare-wrap,
+.faq-item, .review-card, .gallery-item, .countertop-card,
+.contact-form, .contact-form input, .contact-form select,
+.contact-form textarea, .contact-form button, .area-tag,
+.trust-bar, .calc-card, .calc-opt, .calc-input, .calc-cta,
+.sticky-cta-btn, .reviews-cta-btn, .lead-popup, .lead-popup input,
+.lead-popup-btn, .map-section, .about-image, .process-step,
+.hero-image-badge {
+  border-radius: 4px;
+}
+
+/* 5. Simple 1px borders instead of big soft shadows */
+.service-card, .why-item, .review-card, .gallery-item, .countertop-card,
+.calc-card, .contact-form, .about-image, .map-section {
+  box-shadow: none;
+  border: 1px solid var(--border);
+}
+
+/* 6. No hover lifts or glows — static, basic interactions */
+.hero-cta, .hero-cta:hover,
+.hero-cta-phone, .hero-cta-phone:hover,
+.service-card:hover, .why-item:hover, .countertop-card:hover,
+.gallery-item:hover, .review-card:hover, .nav-cta:hover,
+.sticky-cta-btn:hover, .reviews-cta-btn:hover, .lead-popup-btn:hover,
+.calc-cta:hover, .contact-form button:hover {
+  transform: none;
+}
+.hero-cta { box-shadow: none; }
+.hero-cta:hover { box-shadow: none; }
+
+/* 7. Solid colors instead of gold gradients */
+.contact-form button, .sticky-cta-btn, .reviews-cta-btn,
+.lead-popup-btn, .hero-image-badge {
+  background: var(--gold);
+}
+
+/* 8. Plain header (no glassy blur) */
+nav.nav, .nav, header nav {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* 9. Keep the nav from overcrowding with the plainer (wider) font */
+.nav-links { gap: 18px; }
+.nav-links a { font-size: 14px; }
+.nav-logo { margin-right: 24px; }

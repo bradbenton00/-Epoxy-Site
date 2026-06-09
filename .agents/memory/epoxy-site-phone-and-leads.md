@@ -25,3 +25,7 @@ All site forms POST to `/api/leads` (api-server `src/routes/leads.ts`). One subm
 - Homepage has an interactive upfront cost calculator: `src/components/CostCalculator.tsx`, rendered between why-section and compare-section, nav anchor `#calculator` (labeled "Pricing"). Styles `.calc-*` in index.css.
 - Outputs a ballpark $ range (size × coating rate + concrete-condition modifier, $1,200 job floor). Pricing anchored on ~$12/sqft (per owner). **Constraint:** three pricing spots must stay consistent if any changes — calculator coating rates (CostCalculator.tsx), the FAQ "how much does it cost" answer, and the compare-table "Typical cost (2-car)" row in App.tsx.
 - CTA scrolls to #contact (does not auto-submit a lead). Always labeled a ballpark requiring a free on-site visit.
+
+## Visual style ("basic local" look)
+- A `BASIC LOCAL LOOK` override block at the END of `src/index.css` flattens the original premium/agency styling: plain system fonts (replacing 'Outfit' display font on every heading/button selector), flat navy hero (no gradient/glow/grid pattern), squared 4px corners, 1px borders instead of large soft shadows, no hover lifts/animations, solid gold instead of gold gradients.
+- The override also tightens nav link gap/size (the wider system font overflowed the nav). To change the overall vibe, edit this block rather than hunting the original rules above it (later rules win on equal specificity).
