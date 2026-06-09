@@ -20,3 +20,8 @@ Files: `index.html`, `prerender.mts`, `src/App.tsx`, `src/components/ChatWidget.
 
 ## Lead pipeline (single endpoint)
 All site forms POST to `/api/leads` (api-server `src/routes/leads.ts`). One submission fans out to: Gmail notification, Postgres `leads` table, Google Sheets webhook (`LEADS_SHEET_WEBHOOK_URL`), and GoHighLevel webhook (`GHL_WEBHOOK_URL`). Server only reads keys in `FIELD_LABELS` (name, phone, email, zip, service, sqft, timeline, message); name+phone+email are required (email column is `notNull`). Tag a lead's source by setting the `message` field.
+
+## Cost calculator
+- Homepage has an interactive upfront cost calculator: `src/components/CostCalculator.tsx`, rendered between why-section and compare-section, nav anchor `#calculator` (labeled "Pricing"). Styles `.calc-*` in index.css.
+- Outputs a ballpark $ range (size × coating rate + concrete-condition modifier, $1,200 job floor). **Constraint:** keep its per-sqft rates consistent with the FAQ's stated $4–$8/sqft pricing if either changes.
+- CTA scrolls to #contact (does not auto-submit a lead). Always labeled a ballpark requiring a free on-site visit.

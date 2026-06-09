@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { cities } from "./data/cities";
 import { Icon } from "./components/Icon";
 import LeadPopup from "./components/LeadPopup";
+import CostCalculator from "./components/CostCalculator";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -52,6 +53,7 @@ function App() {
           <div className="nav-links">
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#calculator">Pricing</a>
             <a href="#gallery">Gallery</a>
             <a href="#countertops">Countertops</a>
             <a href="#compare">Compare</a>
@@ -75,6 +77,7 @@ function App() {
         <div className={`mobile-menu${menuOpen ? " show" : ""}`}>
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+          <a href="#calculator" onClick={() => setMenuOpen(false)}>Pricing</a>
           <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
           <a href="#countertops" onClick={() => setMenuOpen(false)}>Countertops</a>
           <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
@@ -262,6 +265,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <CostCalculator />
 
       <section id="compare" className="compare-section">
         <div className="section-inner">
