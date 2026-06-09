@@ -118,7 +118,7 @@ function App() {
           </div>
           <div className="hero-visual">
             <div className="hero-image-card">
-              <img src="/gallery/garage-metallic-blue.jpg" alt="Metallic blue epoxy garage floor in Elizabethtown KY" />
+              <img src="/gallery/garage-after-poly.jpg" alt="Polyaspartic garage floor coating in Elizabethtown KY" />
               <div className="hero-image-badge">
                 <div className="hero-image-badge-num">15+</div>
                 <div className="hero-image-badge-label">Year<br/>Durability</div>
@@ -345,7 +345,6 @@ function App() {
           <div className="gallery-grid">
             {[
               { src: "/gallery/garage-flake-gray.jpg", label: "Gray Flake Garage Floor", tag: "Residential" },
-              { src: "/gallery/garage-metallic-blue.jpg", label: "Metallic Blue Epoxy Garage", tag: "Decorative" },
               { src: "/gallery/basement-polyaspartic.jpg", label: "Polyaspartic Basement Coating", tag: "Basement" },
               { src: "/gallery/garage-after-poly.jpg", label: "Polyaspartic Garage Finish", tag: "Residential" },
               { src: "/gallery/commercial-showroom.jpg", label: "High-Gloss Commercial Floor", tag: "Commercial" },
