@@ -11,10 +11,10 @@ const SIZES: (Opt & { sqft: number; hint: string })[] = [
 ];
 
 const COATINGS: (Opt & { low: number; high: number; desc: string })[] = [
-  { key: "solid", label: "Solid Color Epoxy", low: 10, high: 12, desc: "Clean, one-color finish" },
-  { key: "flake", label: "Decorative Flake", low: 11, high: 13, desc: "Most popular — speckled look" },
-  { key: "metallic", label: "Metallic Epoxy", low: 14, high: 17, desc: "High-end, marbled finish" },
-  { key: "poly", label: "Polyaspartic (1-Day)", low: 12, high: 15, desc: "Fastest — walk on next day" },
+  { key: "solid", label: "Solid Color Epoxy", low: 4, high: 5, desc: "Clean, one-color finish" },
+  { key: "flake", label: "Decorative Flake", low: 4, high: 6, desc: "Most popular — speckled look" },
+  { key: "metallic", label: "Metallic Epoxy", low: 6, high: 8, desc: "High-end, marbled finish" },
+  { key: "poly", label: "Polyaspartic (1-Day)", low: 5, high: 7, desc: "Fastest — walk on next day" },
 ];
 
 const CONDITIONS: (Opt & { low: number; high: number })[] = [
@@ -133,7 +133,7 @@ function CostCalculator() {
           <div className="calc-result">
             {hasEstimate ? (
               <>
-                <div className="calc-result-label">Estimated project cost</div>
+                <div className="calc-result-label">Estimated Cost — This is an estimate only</div>
                 <div className="calc-result-range">
                   {money(low)} <span>–</span> {money(high)}
                 </div>
@@ -144,8 +144,8 @@ function CostCalculator() {
                   Get My Exact Free Quote
                 </a>
                 <p className="calc-note">
-                  <Icon.Shield /> Ballpark only — your exact price comes from a
-                  free on-site visit. No pressure, no obligation.
+                  <Icon.Shield /> This is an estimate only. Your exact price depends on an
+                  on-site visit — which is free, with no pressure or obligation.
                 </p>
               </>
             ) : (
