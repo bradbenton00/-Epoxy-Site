@@ -118,14 +118,14 @@ function App() {
           </div>
           <div className="hero-visual">
             <div className="hero-image-card">
-              <img src="/gallery/garage-after-poly.jpg" alt="Polyaspartic garage floor coating in Elizabethtown KY" />
+              <img src="/gallery/garage-flake-gray.jpg" alt="Gray flake epoxy garage floor coating in Elizabethtown KY" />
               <div className="hero-image-badge">
                 <div className="hero-image-badge-num">15+</div>
                 <div className="hero-image-badge-label">Year<br/>Durability</div>
               </div>
             </div>
             <div className="hero-image-card-sm">
-              <img src="/gallery/garage-flake-gray.jpg" alt="Gray flake garage floor coating" />
+              <img src="/gallery/concrete-grinding.jpg" alt="Diamond grinding concrete floor before epoxy coating" />
             </div>
           </div>
         </div>
@@ -345,6 +345,7 @@ function App() {
           <div className="gallery-grid">
             {[
               { src: "/gallery/garage-flake-gray.jpg", label: "Gray Flake Garage Floor", tag: "Residential" },
+              { src: "/gallery/concrete-grinding.jpg", label: "Diamond Grinding — Concrete Prep", tag: "Process" },
               { src: "/gallery/basement-polyaspartic.jpg", label: "Polyaspartic Basement Coating", tag: "Basement" },
               { src: "/gallery/garage-after-poly.jpg", label: "Polyaspartic Garage Finish", tag: "Residential" },
               { src: "/gallery/commercial-showroom.jpg", label: "High-Gloss Commercial Floor", tag: "Commercial" },
