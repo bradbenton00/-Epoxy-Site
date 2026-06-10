@@ -70,14 +70,17 @@ function cityJsonLd(city: City) {
   return `<script type="application/ld+json">${JSON.stringify(obj)}</script>`;
 }
 
+const HOMEPAGE_BREADCRUMB = `<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Elizabethtown Epoxy Flooring","item":"${SITE}"}]}</script>`;
+
 const routes: Route[] = [
   {
     path: "/",
     outDir: distDir,
-    title: "Epoxy Flooring Elizabethtown KY | Garage, Basement & Commercial",
+    title: "Epoxy Flooring Elizabethtown KY | 15-Year Warranty | Elizabethtown Epoxy Flooring",
     description:
-      "Epoxy garage floors, basement coatings & commercial systems in Elizabethtown, KY. Diamond-ground prep, 15+ year warranty. Free estimate — (502) 747-1716.",
+      "Kentucky-owned epoxy floor coatings with a written 15-year warranty. Garage, basement & commercial systems. Diamond-ground prep, one-day install. Free estimate — (502) 747-1716.",
     canonical: SITE,
+    extraHead: HOMEPAGE_BREADCRUMB,
   },
   ...cities.filter((city) => !STATIC_OVERRIDES.has(city.slug)).map((city): Route => ({
     path: `/epoxy-flooring/${city.slug}`,

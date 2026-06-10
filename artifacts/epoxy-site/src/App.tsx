@@ -95,7 +95,7 @@ function App() {
               <span className="hero-badge-dot" /> Serving {SITE.serviceArea}
             </div>
             <h1>
-              <span>Epoxy Flooring</span> in {SITE.city}, {SITE.state} — Garage, Basement &amp; Commercial
+              Epoxy Garage Floors in {SITE.city}, {SITE.state}
             </h1>
             <p>
               Simple, affordable floor coatings done right by {SITE.state}-based pros. We make it easy —
