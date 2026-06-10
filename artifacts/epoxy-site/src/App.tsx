@@ -144,7 +144,7 @@ function App() {
         <div className="section-inner about-inner">
           <div className="about-visual">
             <div className="about-image-main">
-              <img src="/gallery/commercial-showroom.jpg" alt="High-gloss commercial epoxy floor installed in Elizabethtown KY" loading="lazy" />
+              <img src="/gallery/garage-flake-gray.jpg" alt="Gray flake epoxy garage floor installed in Elizabethtown KY" loading="lazy" />
             </div>
             <div className="about-image-stat">
               <div className="about-stat-num">7+</div>
@@ -313,8 +313,6 @@ function App() {
               { src: "/gallery/concrete-grinding.jpg", label: "Diamond Grinding — Concrete Prep", tag: "Process" },
               { src: "/gallery/basement-polyaspartic.jpg", label: "Polyaspartic Basement Coating", tag: "Basement" },
               { src: "/gallery/garage-after-poly.jpg", label: "Polyaspartic Garage Finish", tag: "Residential" },
-              { src: "/gallery/commercial-showroom.jpg", label: "High-Gloss Commercial Floor", tag: "Commercial" },
-              { src: "/gallery/decorative-metallic.jpg", label: "Decorative Metallic Epoxy", tag: "Decorative" },
             ].map((g) => (
               <div className="gallery-item" key={g.src}>
                 <img src={g.src} alt={g.label} loading="lazy" />
