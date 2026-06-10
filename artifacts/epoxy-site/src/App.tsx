@@ -4,6 +4,7 @@ import { cities } from "./data/cities";
 import { Icon } from "./components/Icon";
 import LeadPopup from "./components/LeadPopup";
 import CostCalculator from "./components/CostCalculator";
+import { SITE } from "./config";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ function App() {
       setSubmitted(true);
     } catch {
       setError(
-        "Something went wrong sending your request. Please try again or call us at (502) 747-1716.",
+        `Something went wrong sending your request. Please try again or call us at ${SITE.phone.display}.`,
       );
     } finally {
       setSubmitting(false);
@@ -47,7 +48,7 @@ function App() {
           <a href="#" className="nav-logo">
             <span className="nav-logo-mark"><Icon.Logo /></span>
             <span className="nav-logo-text">
-              Elizabethtown <span>Epoxy Flooring</span>
+              {SITE.city} <span>Epoxy Flooring</span>
             </span>
           </a>
           <div className="nav-links">
@@ -58,7 +59,7 @@ function App() {
             <a href="#countertops">Countertops</a>
             <a href="#reviews">Reviews</a>
             <a href="#faq">FAQ</a>
-            <a href="tel:+15027471716" className="nav-phone">(502) 747-1716</a>
+            <a href={`tel:${SITE.phone.tel}`} className="nav-phone">{SITE.phone.display}</a>
             <a href="#contact" className="nav-cta">Free Estimate</a>
           </div>
           <button
@@ -80,10 +81,9 @@ function App() {
           <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
           <a href="#countertops" onClick={() => setMenuOpen(false)}>Countertops</a>
           <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
-
           <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
           <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
-          <a href="tel:+15027471716" onClick={() => setMenuOpen(false)}>Call (502) 747-1716</a>
+          <a href={`tel:${SITE.phone.tel}`} onClick={() => setMenuOpen(false)}>Call {SITE.phone.display}</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Free Estimate</a>
         </div>
       </nav>
@@ -92,33 +92,33 @@ function App() {
         <div className="hero-inner">
           <div className="hero-text">
             <div className="hero-badge">
-              <span className="hero-badge-dot" /> Serving Louisville, Elizabethtown &amp; All of Central &amp; Western Kentucky
+              <span className="hero-badge-dot" /> Serving {SITE.serviceArea}
             </div>
             <h1>
-              <span>Epoxy Flooring</span> in Elizabethtown, KY — Garage, Basement &amp; Commercial
+              <span>Epoxy Flooring</span> in {SITE.city}, {SITE.state} — Garage, Basement &amp; Commercial
             </h1>
             <p>
-              Simple, affordable floor coatings done right by Kentucky-based pros. We make it easy —
+              Simple, affordable floor coatings done right by {SITE.state}-based pros. We make it easy —
               one free visit, one upfront price, most jobs finished in a single day. Garage, basement,
               and commercial floors built to last 15+ years, backed by a written warranty.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
-              <a href="tel:+15027471716" className="hero-cta-phone">
+              <a href={`tel:${SITE.phone.tel}`} className="hero-cta-phone">
                 <span className="hero-cta-phone-icon"><Icon.Phone /></span>
-                (502) 747-1716
+                {SITE.phone.display}
               </a>
             </div>
             <div className="hero-rating">
               <div className="hero-stars">
                 {[0,1,2,3,4].map(i => <span key={i} className="hero-star"><Icon.Star /></span>)}
               </div>
-              <span className="hero-rating-text">5.0 · Trusted by Kentucky homeowners &amp; businesses</span>
+              <span className="hero-rating-text">5.0 · Trusted by {SITE.state} homeowners &amp; businesses</span>
             </div>
           </div>
           <div className="hero-visual">
             <div className="hero-image-card">
-              <img src="/gallery/garage-flake-gray.jpg" alt="Gray flake epoxy garage floor coating in Elizabethtown KY" />
+              <img src="/gallery/garage-flake-gray.jpg" alt={`Gray flake epoxy garage floor coating in ${SITE.city} ${SITE.state}`} />
               <div className="hero-image-badge">
                 <div className="hero-image-badge-num">15+</div>
                 <div className="hero-image-badge-label">Year<br/>Durability</div>
@@ -136,7 +136,7 @@ function App() {
           <div className="trust-item"><span className="trust-icon"><Icon.Shield /></span> Licensed &amp; Insured</div>
           <div className="trust-item"><span className="trust-icon"><Icon.Check /></span> Free Estimates</div>
           <div className="trust-item"><span className="trust-icon"><Icon.Clock /></span> 15+ Year Durability</div>
-          <div className="trust-item"><span className="trust-icon"><Icon.MapPin /></span> Kentucky Owned &amp; Operated</div>
+          <div className="trust-item"><span className="trust-icon"><Icon.MapPin /></span> {SITE.state} Owned &amp; Operated</div>
         </div>
       </div>
 
@@ -144,24 +144,23 @@ function App() {
         <div className="section-inner about-inner">
           <div className="about-visual">
             <div className="about-image-main">
-              <img src="/gallery/garage-flake-gray.jpg" alt="Gray flake epoxy garage floor installed in Elizabethtown KY" loading="lazy" />
+              <img src="/gallery/garage-flake-gray.jpg" alt={`Gray flake epoxy garage floor installed in ${SITE.city} ${SITE.state}`} loading="lazy" />
             </div>
             <div className="about-image-stat">
               <div className="about-stat-num">7+</div>
-              <div className="about-stat-label">Years coating floors<br/>across Kentucky</div>
+              <div className="about-stat-label">Years coating floors<br/>across {SITE.state}</div>
             </div>
           </div>
           <div className="about-text">
             <div className="section-label">About Us</div>
             <h2 className="section-title">Locally Owned. Built on Doing the Job Right.</h2>
             <p className="about-lead">
-              Elizabethtown Epoxy Flooring is a Kentucky-owned and operated floor coating company
-              serving homeowners and businesses throughout Louisville, Elizabethtown, and all of
-              Central and Western Kentucky.
+              {SITE.businessName} is a {SITE.state}-owned and operated floor coating company
+              serving homeowners and businesses throughout {SITE.serviceArea}.
             </p>
             <p>
               We started this company because we kept seeing the same problem in garages all
-              around Elizabethtown — beautiful epoxy jobs that started peeling and bubbling
+              around {SITE.city} — beautiful epoxy jobs that started peeling and bubbling
               within a year or two because the installer skipped the prep. Concrete that's been
               acid-etched instead of diamond-ground will fail. Bargain-grade big-box materials
               will yellow and chip. So we built our business on the opposite philosophy: do the
@@ -175,9 +174,9 @@ function App() {
               single day and ready for foot traffic the next morning.
             </p>
             <p>
-              Whether it's a 2-car garage in Radcliff, a basement workshop in Vine Grove, an auto
-              shop in Elizabethtown, or a 5,000 sq ft warehouse near Fort Knox — we bring the
-              same prep, the same materials, and the same workmanship to every job.
+              Whether it's a 2-car garage, a basement workshop, an auto shop in {SITE.city}, or
+              a 5,000 sq ft warehouse — we bring the same prep, the same materials, and the same
+              workmanship to every job.
             </p>
             <div className="about-values">
               <div className="about-value">
@@ -190,8 +189,8 @@ function App() {
               <div className="about-value">
                 <div className="about-value-icon"><Icon.MapPin /></div>
                 <div>
-                  <strong>Statewide Kentucky Coverage</strong>
-                  <span>Based in Elizabethtown, serving Louisville and all of Central &amp; Western KY.</span>
+                  <strong>{SITE.serviceAreaShort} Coverage</strong>
+                  <span>Based in {SITE.city}, serving {SITE.serviceArea}.</span>
                 </div>
               </div>
               <div className="about-value">
@@ -216,7 +215,7 @@ function App() {
           </div>
           <div className="services-grid">
             {[
-              { icon: <Icon.Garage />, title: "Garage Floor Epoxy", desc: "The most popular upgrade for Elizabethtown homeowners. Resists stains, chemicals, hot tires, and daily wear. Available in dozens of colors and flake patterns." },
+              { icon: <Icon.Garage />, title: "Garage Floor Epoxy", desc: `The most popular upgrade for ${SITE.city} homeowners. Resists stains, chemicals, hot tires, and daily wear. Available in dozens of colors and flake patterns.` },
               { icon: <Icon.Building />, title: "Commercial Epoxy Flooring", desc: "Heavy-duty floor coatings for warehouses, showrooms, restaurants, and retail spaces. Built to handle high traffic and meet commercial standards." },
               { icon: <Icon.Bolt />, title: "Polyaspartic Coatings", desc: "The fastest cure time in the industry. Polyaspartic coatings can be applied and ready for use in a single day — perfect for businesses that can't afford downtime." },
               { icon: <Icon.Droplet />, title: "Basement Floor Coating", desc: "Seal out moisture and transform your basement into a clean, usable space. Perfect for finished basements, workshops, and home gyms." },
@@ -332,26 +331,22 @@ function App() {
           <div className="section-title">Countertop Transformations — Before &amp; After</div>
           <div className="section-desc">
             Custom-poured countertops applied right over your existing surface — no demolition, no full
-            replacement. Real kitchens we resurfaced across Elizabethtown and Central Kentucky.
+            replacement. Real kitchens we resurfaced across {SITE.city} and {SITE.serviceAreaShort}.
           </div>
           <div className="ba-grid">
             {[
               {
                 before: "/gallery/countertops-white-before.jpg",
                 after: "/gallery/countertops-white-after.jpg",
-                beforeAlt:
-                  "Kitchen countertop before resurfacing — plain gray base coat with white cabinets in an Elizabethtown, KY kitchen",
-                afterAlt:
-                  "Kitchen countertop after resurfacing — glossy white marble-look poured countertop finish in Elizabethtown, KY",
+                beforeAlt: `Kitchen countertop before resurfacing in ${SITE.city}, ${SITE.state}`,
+                afterAlt: `Kitchen countertop after resurfacing — white marble finish in ${SITE.city}, ${SITE.state}`,
                 label: "White Marble Finish",
               },
               {
                 before: "/gallery/countertops-oak-before.jpg",
                 after: "/gallery/countertops-oak-after.jpg",
-                beforeAlt:
-                  "Kitchen countertop before resurfacing — dated wood-laminate countertop with oak cabinets",
-                afterAlt:
-                  "Kitchen countertop after resurfacing — high-gloss black and copper marble-look poured finish",
+                beforeAlt: "Kitchen countertop before resurfacing — dated wood-laminate countertop with oak cabinets",
+                afterAlt: "Kitchen countertop after resurfacing — high-gloss black and copper marble-look poured finish",
                 label: "Black & Copper Finish",
               },
             ].map((b) => (
@@ -378,13 +373,13 @@ function App() {
           <div className="section-label">Customer Reviews</div>
           <div className="section-title">What Local Homeowners Are Saying</div>
           <div className="section-desc">
-            Real feedback from Elizabethtown and Hardin County customers.
+            Real feedback from {SITE.city} and {SITE.county} customers.
           </div>
           <div className="reviews-grid">
             {[
               {
                 name: "Mark D.",
-                location: "Elizabethtown, KY",
+                location: `${SITE.city}, ${SITE.state}`,
                 service: "2-Car Garage Epoxy",
                 quote: "Easily the best money I've spent on the house. They ground the concrete down to bare surface and the gray flake finish looks like a showroom. Two years in and it still wipes clean with a mop.",
               },
@@ -418,7 +413,7 @@ function App() {
               {[0,1,2,3,4].map(i => <span key={i}><Icon.Star /></span>)}
             </span>
             <span className="reviews-cta-text"><strong>5.0 average</strong> · Based on customer feedback</span>
-            <a href="https://g.page/r/CWhLb1jIlCywEAE/review" target="_blank" rel="noopener" className="reviews-cta-btn">Leave us a Google review</a>
+            <a href={SITE.googleReviewUrl} target="_blank" rel="noopener" className="reviews-cta-btn">Leave us a Google review</a>
           </div>
         </div>
       </section>
@@ -428,13 +423,13 @@ function App() {
           <div className="section-label">Common Questions</div>
           <div className="section-title">Epoxy Flooring FAQs</div>
           <div className="section-desc">
-            Answers to the questions Elizabethtown homeowners and business owners ask us most often.
+            Answers to the questions {SITE.city} homeowners and business owners ask us most often.
           </div>
           <div className="faq-list">
             {[
               {
-                q: "How much does epoxy flooring cost in Elizabethtown, KY?",
-                a: "For a typical 2-car garage in the Elizabethtown area (about 400-500 sq ft), professional epoxy flooring runs roughly $4-$6 per square foot installed, or about $1,800-$2,700 total. These are estimates only — your exact price depends on the condition of your concrete, the finish you choose, and an on-site measurement. We give free, no-pressure quotes.",
+                q: `How much does epoxy flooring cost in ${SITE.city}, ${SITE.state}?`,
+                a: `For a typical 2-car garage in the ${SITE.city} area (about 400-500 sq ft), professional epoxy flooring runs roughly $4-$6 per square foot installed, or about $1,800-$2,700 total. These are estimates only — your exact price depends on the condition of your concrete, the finish you choose, and an on-site measurement. We give free, no-pressure quotes.`,
               },
               {
                 q: "How long does epoxy flooring last?",
@@ -442,15 +437,15 @@ function App() {
               },
               {
                 q: "Epoxy vs. polyaspartic — which is better for my garage?",
-                a: "Both are excellent. Epoxy is the most cost-effective option and offers the widest range of decorative looks. Polyaspartic cures faster (your garage can be back in use the same day instead of 2-3 days), is more UV stable, and has slightly better flexibility. For most Elizabethtown homeowners we recommend a hybrid system — epoxy base coat with a polyaspartic top coat — to get the best of both.",
+                a: `Both are excellent. Epoxy is the most cost-effective option and offers the widest range of decorative looks. Polyaspartic cures faster (your garage can be back in use the same day instead of 2-3 days), is more UV stable, and has slightly better flexibility. For most ${SITE.city} homeowners we recommend a hybrid system — epoxy base coat with a polyaspartic top coat — to get the best of both.`,
               },
               {
                 q: "How long until I can park on my new garage floor?",
                 a: "With a polyaspartic system, you can walk on the floor in about 4-6 hours and park vehicles within 24 hours. Standard epoxy takes 24 hours for foot traffic and 3-5 days before you should park heavy vehicles on it. We'll give you exact timing for your specific install.",
               },
               {
-                q: "Do you serve Louisville, Hardin County, and the rest of Central & Western Kentucky?",
-                a: "Yes — and a lot more. We service Louisville and the entire Jefferson County metro, all of Hardin County (Elizabethtown, Radcliff, Vine Grove, Fort Knox, Cecilia, Sonora, Rineyville), Bullitt County (Shepherdsville, Mt Washington), Meade County (Brandenburg, Muldraugh), LaRue County (Hodgenville), Nelson County (Bardstown), and Grayson County (Leitchfield) — essentially all of Central and Western Kentucky. There's no extra trip charge anywhere in our service area.",
+                q: `Do you serve ${SITE.serviceAreaShort}?`,
+                a: `Yes — and a lot more. We service ${SITE.serviceArea} including Louisville and the entire Jefferson County metro, all of Hardin County (${SITE.city}, Radcliff, Vine Grove, Fort Knox, Cecilia, Sonora, Rineyville), Bullitt County (Shepherdsville, Mt Washington), Meade County (Brandenburg, Muldraugh), LaRue County (Hodgenville), Nelson County (Bardstown), and Grayson County (Leitchfield). There's no extra trip charge anywhere in our service area.`,
               },
               {
                 q: "Will epoxy stick to my old, stained, or cracked concrete?",
@@ -462,7 +457,7 @@ function App() {
               },
               {
                 q: "Can you apply epoxy in cold weather?",
-                a: "Yes — we work year-round in Kentucky. Modern polyaspartic and low-temperature epoxy formulations cure properly down to about 35°F. For unheated garages in the dead of winter we use temporary heaters to maintain the working temperature. Most jobs in our area happen seamlessly from spring through fall.",
+                a: `Yes — we work year-round in ${SITE.state}. Modern polyaspartic and low-temperature epoxy formulations cure properly down to about 35°F. For unheated garages in the dead of winter we use temporary heaters to maintain the working temperature. Most jobs in our area happen seamlessly from spring through fall.`,
               },
               {
                 q: "Do you offer a warranty on your epoxy floors?",
@@ -470,7 +465,7 @@ function App() {
               },
               {
                 q: "How do I get a free estimate?",
-                a: "Easiest options: call (502) 747-1716 or fill out the form below. We'll usually respond within an hour during business hours, schedule a free on-site visit, measure your space, discuss color and finish options, and email you a written quote. No deposit, no pressure.",
+                a: `Easiest options: call ${SITE.phone.display} or fill out the form below. We'll usually respond within an hour during business hours, schedule a free on-site visit, measure your space, discuss color and finish options, and email you a written quote. No deposit, no pressure.`,
               },
             ].map((item) => (
               <details className="faq-item" key={item.q}>
@@ -488,10 +483,10 @@ function App() {
       <section id="areas" className="areas-section">
         <div className="section-inner">
           <div className="section-label">Service Areas</div>
-          <div className="section-title">Serving Louisville, Elizabethtown &amp; All of Central &amp; Western Kentucky</div>
-          <div className="section-desc">We provide professional epoxy flooring services across Kentucky — from the Louisville metro down through Hardin, LaRue, Nelson, Bullitt, Meade, and Grayson counties.</div>
+          <div className="section-title">Serving {SITE.serviceArea}</div>
+          <div className="section-desc">We provide professional epoxy flooring services across {SITE.state} — from the Louisville metro down through Hardin, LaRue, Nelson, Bullitt, Meade, and Grayson counties.</div>
           <div className="areas-list">
-            <span className="area-tag"><Icon.MapPin />Elizabethtown</span>
+            <span className="area-tag"><Icon.MapPin />{SITE.city}</span>
             {cities.map((c) => (
               <Link key={c.slug} href={`/epoxy-flooring/${c.slug}/`} className="area-tag area-tag-link">
                 <Icon.MapPin />{c.name}
@@ -524,9 +519,9 @@ function App() {
         <p>Getting started is simple — book a free, no-obligation quote today and we'll handle the rest.</p>
         <div className="cta-actions">
           <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
-          <a href="tel:+15027471716" className="hero-cta-phone">
+          <a href={`tel:${SITE.phone.tel}`} className="hero-cta-phone">
             <span className="hero-cta-phone-icon"><Icon.Phone /></span>
-            (502) 747-1716
+            {SITE.phone.display}
           </a>
         </div>
       </section>
@@ -605,14 +600,14 @@ function App() {
                 <span className="contact-icon"><Icon.Phone /></span>
                 <div>
                   <div className="contact-label">Call or Text</div>
-                  <a href="tel:+15027471716" className="contact-value-strong">(502) 747-1716</a>
+                  <a href={`tel:${SITE.phone.tel}`} className="contact-value-strong">{SITE.phone.display}</a>
                 </div>
               </div>
               <div className="contact-item">
                 <span className="contact-icon"><Icon.MapPin /></span>
                 <div>
                   <div className="contact-label">Based In</div>
-                  <div className="contact-value">Elizabethtown, KY 42701</div>
+                  <div className="contact-value">{SITE.city}, {SITE.state} {SITE.zip}</div>
                 </div>
               </div>
               <div className="contact-item">
@@ -626,7 +621,7 @@ function App() {
                 <span className="contact-icon"><Icon.Map /></span>
                 <div>
                   <div className="contact-label">Service Area</div>
-                  <div className="contact-value">Louisville, Elizabethtown &amp; all of Central &amp; Western Kentucky</div>
+                  <div className="contact-value">{SITE.serviceArea}</div>
                 </div>
               </div>
               <div className="contact-promise">
@@ -646,8 +641,8 @@ function App() {
 
       <div className="map-section">
         <iframe
-          title="Elizabethtown KY map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50532.26599088652!2d-85.89!3d37.69!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886849e5a1bcb7dd%3A0x32a5a809b98ae773!2sElizabethtown%2C%20KY%2042701!5e0!3m2!1sen!1sus!4v1"
+          title={`${SITE.city} ${SITE.state} map`}
+          src={SITE.mapsEmbedUrl}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -660,10 +655,10 @@ function App() {
             <div className="footer-brand">
               <div className="footer-name">
                 <span className="footer-logo-mark"><Icon.Logo /></span>
-                <span>Elizabethtown <span className="gold">Epoxy Flooring</span></span>
+                <span>{SITE.city} <span className="gold">Epoxy Flooring</span></span>
               </div>
               <p className="footer-text">
-                Professional epoxy and polyaspartic floor coatings in Elizabethtown, KY and surrounding areas.
+                Professional epoxy and polyaspartic floor coatings in {SITE.city}, {SITE.state} and surrounding areas.
                 Licensed, insured, and locally operated.
               </p>
             </div>
@@ -680,7 +675,7 @@ function App() {
               <a href="#gallery">Gallery</a>
               <a href="#reviews">Reviews</a>
               <a href="#faq">FAQ</a>
-              <a href="https://www.facebook.com/people/Elizabethtown-Epoxy-Flooring/61590315914006" target="_blank" rel="noopener">Facebook</a>
+              <a href={SITE.facebookUrl} target="_blank" rel="noopener">Facebook</a>
             </div>
             <div className="footer-col">
               <h4>Service Areas</h4>
@@ -690,22 +685,22 @@ function App() {
             </div>
             <div className="footer-col">
               <h4>Contact</h4>
-              <a href="tel:+15027471716" className="footer-contact-phone">(502) 747-1716</a>
-              <div className="footer-contact-line">Elizabethtown, KY 42701</div>
+              <a href={`tel:${SITE.phone.tel}`} className="footer-contact-phone">{SITE.phone.display}</a>
+              <div className="footer-contact-line">{SITE.city}, {SITE.state} {SITE.zip}</div>
               <div className="footer-contact-line">Mon-Fri: 7am - 6pm</div>
               <div className="footer-contact-line">Sat: 8am - 2pm</div>
             </div>
           </div>
           <div className="footer-bottom">
-            © 2026 Elizabethtown Epoxy Flooring. All rights reserved.
+            © {new Date().getFullYear()} {SITE.businessName}. All rights reserved.
           </div>
         </div>
       </footer>
 
       <div className="sticky-cta" role="region" aria-label="Quick contact">
-        <a href="tel:+15027471716" className="sticky-cta-btn sticky-cta-call">
+        <a href={`tel:${SITE.phone.tel}`} className="sticky-cta-btn sticky-cta-call">
           <Icon.Phone />
-          <span>Call (502) 747-1716</span>
+          <span>Call {SITE.phone.display}</span>
         </a>
         <a href="#contact" className="sticky-cta-btn sticky-cta-quote">
           <span>Free Estimate</span>

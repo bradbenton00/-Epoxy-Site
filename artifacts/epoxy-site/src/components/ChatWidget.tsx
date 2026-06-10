@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { SITE } from "../config";
 
 type Msg = { from: "bot" | "user"; text: string };
 type Step =
@@ -11,8 +12,8 @@ type Step =
   | "done"
   | "error";
 
-const PHONE_DISPLAY = "(502) 747-1716";
-const PHONE_TEL = "5027471716";
+const PHONE_DISPLAY = SITE.phone.display;
+const PHONE_TEL = SITE.phone.digits;
 
 const QUICK_REPLIES: { label: string; reply: string }[] = [
   {
@@ -33,7 +34,7 @@ const QUICK_REPLIES: { label: string; reply: string }[] = [
   {
     label: "Do you serve my area?",
     reply:
-      "We're based in Elizabethtown and cover all of Hardin County plus Radcliff, Vine Grove, Fort Knox, Hodgenville, and Bardstown — no travel charge. If you'd like a free estimate, what's your first name?",
+      `We're based in ${SITE.city} and cover all of ${SITE.county} plus surrounding areas — no travel charge. If you'd like a free estimate, what's your first name?`,
   },
   {
     label: "Talk to someone now",

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import { Icon } from "../components/Icon";
 import { cityBySlug, cities } from "../data/cities";
+import { SITE } from "../config";
 
 export default function CityPage() {
   const [, params] = useRoute("/epoxy-flooring/:slug");
@@ -15,15 +16,15 @@ export default function CityPage() {
   useEffect(() => {
     if (!city) return;
     const title = `Epoxy Flooring ${city.name}, ${city.state} | Garage Floors & Coatings`;
-    const desc = `Professional epoxy and polyaspartic floor coatings in ${city.name}, ${city.state}. Diamond-ground prep, commercial-grade materials, written warranty. Free estimates — call (502) 747-1716.`;
+    const desc = `Professional epoxy and polyaspartic floor coatings in ${city.name}, ${city.state}. Diamond-ground prep, commercial-grade materials, written warranty. Free estimates — call ${SITE.phone.display}.`;
     document.title = title;
     setMeta("description", desc);
     setMeta("og:title", title, true);
     setMeta("og:description", desc, true);
-    setMeta("og:url", `https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}/`, true);
+    setMeta("og:url", `${SITE.domainUrl}/epoxy-flooring/${city.slug}/`, true);
     setMeta("twitter:title", title);
     setMeta("twitter:description", desc);
-    setCanonical(`https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}/`);
+    setCanonical(`${SITE.domainUrl}/epoxy-flooring/${city.slug}/`);
     setLocalBusinessSchema(city);
     window.scrollTo(0, 0);
   }, [city]);
@@ -59,7 +60,7 @@ export default function CityPage() {
       setSubmitted(true);
     } catch {
       setError(
-        "Something went wrong sending your request. Please try again or call us at (502) 747-1716.",
+        `Something went wrong sending your request. Please try again or call us at ${SITE.phone.display}.`,
       );
     } finally {
       setSubmitting(false);
@@ -73,7 +74,7 @@ export default function CityPage() {
           <Link href="/" className="nav-logo">
             <span className="nav-logo-mark"><Icon.Logo /></span>
             <span className="nav-logo-text">
-              Elizabethtown <span>Epoxy Flooring</span>
+              {SITE.city} <span>Epoxy Flooring</span>
             </span>
           </Link>
           <div className="nav-links">
@@ -82,7 +83,7 @@ export default function CityPage() {
             <Link href="/#gallery">Gallery</Link>
             <Link href="/#reviews">Reviews</Link>
             <Link href="/#faq">FAQ</Link>
-            <a href="tel:+15027471716" className="nav-phone">(502) 747-1716</a>
+            <a href={`tel:${SITE.phone.tel}`} className="nav-phone">{SITE.phone.display}</a>
             <a href="#contact" className="nav-cta">Free Estimate</a>
           </div>
           <button
@@ -102,7 +103,7 @@ export default function CityPage() {
           <Link href="/#services" onClick={() => setMenuOpen(false)}>Services</Link>
           <Link href="/#gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>
           <Link href="/#faq" onClick={() => setMenuOpen(false)}>FAQ</Link>
-          <a href="tel:+15027471716" onClick={() => setMenuOpen(false)}>Call (502) 747-1716</a>
+          <a href={`tel:${SITE.phone.tel}`} onClick={() => setMenuOpen(false)}>Call {SITE.phone.display}</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Free Estimate</a>
         </div>
       </nav>
@@ -119,14 +120,14 @@ export default function CityPage() {
             </h1>
             <p className="hero-subtitle">
               Premium garage, basement, and commercial floor coatings installed by your local
-              Elizabethtown epoxy crew — {city.distanceFromEtown}. Diamond-ground prep,
+              {SITE.city} epoxy crew — {city.distanceFromEtown}. Diamond-ground prep,
               commercial-grade resins, written warranty.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="hero-cta">Get Your Free {city.name} Estimate</a>
-              <a href="tel:+15027471716" className="hero-cta-phone">
+              <a href={`tel:${SITE.phone.tel}`} className="hero-cta-phone">
                 <span className="hero-cta-phone-icon"><Icon.Phone /></span>
-                (502) 747-1716
+                {SITE.phone.display}
               </a>
             </div>
             <div className="hero-rating">
@@ -161,7 +162,7 @@ export default function CityPage() {
             <p className="about-lead">{city.intro}</p>
             <p>{city.localFlavor}</p>
             <p>
-              We're based in Elizabethtown, so {city.name} is right in our daily service area —
+              We're based in {SITE.city}, so {city.name} is right in our daily service area —
               there's no long-distance travel charge, no waiting weeks for a quote, and no
               third-party subcontractors. The same crew that grinds your floor pours your epoxy
               and applies your top coat. Most {city.name} garage projects are completed in a
@@ -325,8 +326,7 @@ export default function CityPage() {
                 ))}
               </ul>
               <p style={{ marginTop: 18, fontSize: 14, color: "var(--muted)" }}>
-                Don't see your area? We cover all of {city.county} — call us at (502) 747-1716
-                to confirm.
+                Don't see your area? We cover all of {city.county} — call us at {SITE.phone.display} to confirm.
               </p>
             </div>
           </div>
@@ -338,9 +338,9 @@ export default function CityPage() {
         <p>Free, no-pressure estimate. Most {city.name} garages installed in a single day.</p>
         <div className="cta-actions">
           <a href="#contact" className="hero-cta">Get Your Free Estimate</a>
-          <a href="tel:+15027471716" className="hero-cta-phone">
+          <a href={`tel:${SITE.phone.tel}`} className="hero-cta-phone">
             <span className="hero-cta-phone-icon"><Icon.Phone /></span>
-            (502) 747-1716
+            {SITE.phone.display}
           </a>
         </div>
       </section>
@@ -420,7 +420,7 @@ export default function CityPage() {
                 <span className="contact-icon"><Icon.Phone /></span>
                 <div>
                   <div className="contact-label">Call or Text</div>
-                  <a href="tel:+15027471716" className="contact-value-strong">(502) 747-1716</a>
+                  <a href={`tel:${SITE.phone.tel}`} className="contact-value-strong">{SITE.phone.display}</a>
                 </div>
               </div>
               <div className="contact-item">
@@ -484,8 +484,8 @@ export default function CityPage() {
               style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
             >
               <div className="service-icon"><Icon.MapPin /></div>
-              <h3>Elizabethtown</h3>
-              <p>Our home base. Hardin County, KY 42701.</p>
+              <h3>{SITE.city}</h3>
+              <p>Our home base. {SITE.county}, {SITE.state} {SITE.zip}.</p>
             </Link>
           </div>
         </div>
@@ -497,7 +497,7 @@ export default function CityPage() {
             <div className="footer-brand">
               <div className="footer-name">
                 <span className="footer-logo-mark"><Icon.Logo /></span>
-                <span>Elizabethtown <span className="gold">Epoxy Flooring</span></span>
+                <span>{SITE.city} <span className="gold">Epoxy Flooring</span></span>
               </div>
               <p className="footer-text">
                 Professional epoxy and polyaspartic floor coatings serving {city.name} and all of
@@ -513,20 +513,20 @@ export default function CityPage() {
             </div>
             <div className="footer-col">
               <h4>Service Areas</h4>
-              <Link href="/">Elizabethtown</Link>
+              <Link href="/">{SITE.city}</Link>
               {cities.map((c) => (
                 <Link key={c.slug} href={`/epoxy-flooring/${c.slug}`}>{c.name}</Link>
               ))}
             </div>
             <div className="footer-col">
               <h4>Contact</h4>
-              <a href="tel:+15027471716" className="footer-contact-phone">(502) 747-1716</a>
+              <a href={`tel:${SITE.phone.tel}`} className="footer-contact-phone">{SITE.phone.display}</a>
               <div className="footer-contact-line">{city.name}, KY {city.zip}</div>
               <div className="footer-contact-line">Mon-Fri 7am-6pm</div>
             </div>
           </div>
           <div className="footer-bottom">
-            <div>© {new Date().getFullYear()} Elizabethtown Epoxy Flooring · Licensed &amp; Insured</div>
+            <div>© {new Date().getFullYear()} {SITE.businessName} · Licensed &amp; Insured</div>
             <div><Link href="/">Home</Link></div>
           </div>
         </div>
@@ -537,7 +537,7 @@ export default function CityPage() {
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? "property" : "name";
-  let el = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement | null;
+  let el = document.querySelector(`meta[${attr}="${name}"]`);
   if (!el) {
     el = document.createElement("meta");
     el.setAttribute(attr, name);
@@ -547,7 +547,7 @@ function setMeta(name: string, content: string, isProperty = false) {
 }
 
 function setCanonical(href: string) {
-  let el = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+  let el = document.querySelector('link[rel="canonical"]');
   if (!el) {
     el = document.createElement("link");
     el.setAttribute("rel", "canonical");
@@ -556,27 +556,21 @@ function setCanonical(href: string) {
   el.setAttribute("href", href);
 }
 
-function setLocalBusinessSchema(city: { name: string; slug: string; county: string; state: string; zip: string }) {
-  const id = "city-localbusiness-jsonld";
-  document.getElementById(id)?.remove();
+function setLocalBusinessSchema(city: ReturnType<typeof cityBySlug>) {
+  if (!city) return;
+  const existing = document.getElementById("city-schema");
+  if (existing) existing.remove();
   const script = document.createElement("script");
+  script.id = "city-schema";
   script.type = "application/ld+json";
-  script.id = id;
-  script.text = JSON.stringify({
+  script.textContent = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": `https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}#business`,
-    name: `Elizabethtown Epoxy Flooring — ${city.name}`,
-    image: "https://elizabethtownepoxyflooring.com/opengraph.jpg",
-    url: `https://elizabethtownepoxyflooring.com/epoxy-flooring/${city.slug}`,
-    telephone: "+1-502-747-1716",
-    priceRange: "$$",
-    areaServed: {
-      "@type": "City",
-      name: city.name,
-      addressRegion: city.state,
-      containedInPlace: { "@type": "AdministrativeArea", name: city.county },
-    },
+    "@id": `${SITE.domainUrl}/epoxy-flooring/${city.slug}#business`,
+    name: `${SITE.businessName} — ${city.name}`,
+    image: `${SITE.domainUrl}/opengraph.jpg`,
+    url: `${SITE.domainUrl}/epoxy-flooring/${city.slug}`,
+    telephone: SITE.phone.tel,
     address: {
       "@type": "PostalAddress",
       addressLocality: city.name,
@@ -584,11 +578,20 @@ function setLocalBusinessSchema(city: { name: string; slug: string; county: stri
       postalCode: city.zip,
       addressCountry: "US",
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "27",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: city.lat,
+      longitude: city.lng,
     },
+    areaServed: {
+      "@type": "City",
+      name: city.name,
+    },
+    priceRange: "$$",
+    openingHoursSpecification: [
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "07:00", closes: "18:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday"], opens: "08:00", closes: "14:00" },
+    ],
   });
   document.head.appendChild(script);
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./Icon";
+import { SITE } from "../config";
 
 const STORAGE_KEY = "eef_lead_popup_seen";
 
@@ -74,7 +75,7 @@ function LeadPopup() {
       setSubmitted(true);
     } catch {
       setError(
-        "Something went wrong. Please try again or call (502) 747-1716.",
+        `Something went wrong. Please try again or call ${SITE.phone.display}.`,
       );
     } finally {
       setSubmitting(false);
