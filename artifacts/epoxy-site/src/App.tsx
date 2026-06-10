@@ -56,7 +56,6 @@ function App() {
             <a href="#calculator">Pricing</a>
             <a href="#gallery">Gallery</a>
             <a href="#countertops">Countertops</a>
-            <a href="#compare">Compare</a>
             <a href="#reviews">Reviews</a>
             <a href="#faq">FAQ</a>
             <a href="tel:+15027471716" className="nav-phone">(502) 747-1716</a>
@@ -81,6 +80,7 @@ function App() {
           <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
           <a href="#countertops" onClick={() => setMenuOpen(false)}>Countertops</a>
           <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
+
           <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
           <a href="#areas" onClick={() => setMenuOpen(false)}>Service Areas</a>
           <a href="tel:+15027471716" onClick={() => setMenuOpen(false)}>Call (502) 747-1716</a>
@@ -268,41 +268,6 @@ function App() {
 
       <CostCalculator />
 
-      <section id="compare" className="compare-section">
-        <div className="section-inner">
-          <div className="section-label">Coating Systems</div>
-          <div className="section-title">Which Floor Coating Is Right For You?</div>
-          <div className="section-desc">
-            Not every project needs the most expensive system. Here's an honest, head-to-head comparison of the three floor coatings we install most often.
-          </div>
-          <div className="compare-table-wrap">
-            <table className="compare-table">
-              <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th>Standard Epoxy</th>
-                  <th className="compare-best">Epoxy + Polyaspartic <span className="compare-pill">Most Popular</span></th>
-                  <th>Polyaspartic Only</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>Lifespan</td><td>10-15 years</td><td>15-20+ years</td><td>15-20+ years</td></tr>
-                <tr><td>Cure time (walk-on)</td><td>24 hours</td><td>12-24 hours</td><td>4-6 hours</td></tr>
-                <tr><td>Cure time (drive-on)</td><td>3-5 days</td><td>24-48 hours</td><td>24 hours</td></tr>
-                <tr><td>UV stable (no yellowing)</td><td>No</td><td>Yes</td><td>Yes</td></tr>
-                <tr><td>Chemical resistance</td><td>Good</td><td>Excellent</td><td>Excellent</td></tr>
-                <tr><td>Decorative options</td><td>Wide</td><td>Widest</td><td>Limited</td></tr>
-                <tr><td>Typical cost (2-car)*</td><td>$1,800-$2,500</td><td>$2,200-$2,800</td><td>$2,500-$3,200</td></tr>
-                <tr><td>Best for</td><td>Budget-conscious garages</td><td>Most homeowners</td><td>Shops needing fast turnaround</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="compare-note">
-            All three include diamond-ground prep, written warranty, and a free on-site consultation. We'll walk through your floor and recommend honestly — no upselling.
-          </div>
-          <div className="compare-note" style={{fontSize:"13px",marginTop:"8px",color:"var(--muted)"}}>* Prices are estimates only. Your exact cost depends on sq ft, concrete condition, and finish choice. Free on-site quote with no obligation.</div>
-        </div>
-      </section>
 
       <section id="process">
         <div className="section-inner">
