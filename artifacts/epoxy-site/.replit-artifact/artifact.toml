@@ -23,7 +23,11 @@ publicDir = "artifacts/epoxy-site/dist/public"
 serve = "static"
 
 [[services.production.rewrites]]
-from = "/*"
+from = "/admin"
+to = "/index.html"
+
+[[services.production.rewrites]]
+from = "/admin/*"
 to = "/index.html"
 
 [services.env]

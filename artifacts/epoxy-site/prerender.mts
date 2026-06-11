@@ -36,7 +36,6 @@ type Route = {
 
 const SITE = "https://elizabethtownepoxyflooring.com";
 
-const STATIC_OVERRIDES = new Set(["radcliff", "shepherdsville", "louisville", "vine-grove", "fort-knox", "hodgenville", "bardstown", "mt-washington"]);
 
 function escapeHtml(s: string) {
   return s
@@ -82,7 +81,7 @@ const routes: Route[] = [
     canonical: SITE,
     extraHead: HOMEPAGE_BREADCRUMB,
   },
-  ...cities.filter((city) => !STATIC_OVERRIDES.has(city.slug)).map((city): Route => ({
+  ...cities.map((city): Route => ({
     path: `/epoxy-flooring/${city.slug}`,
     outDir: join(distDir, "epoxy-flooring", city.slug),
     title: `Epoxy Flooring ${city.name}, ${city.state} | Garage Floors & Coatings`,
