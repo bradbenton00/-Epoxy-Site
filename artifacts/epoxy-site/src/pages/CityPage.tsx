@@ -5,7 +5,7 @@ import { cityBySlug, cities } from "../data/cities";
 import { SITE } from "../config";
 
 export default function CityPage() {
-  const [, params] = useRoute("/epoxy-flooring/:slug");
+  const [, params] = useRoute("/epoxy-flooring-:slug");
   const city = params?.slug ? cityBySlug(params.slug) : undefined;
 
   const [submitted, setSubmitted] = useState(false);
@@ -21,10 +21,10 @@ export default function CityPage() {
     setMeta("description", desc);
     setMeta("og:title", title, true);
     setMeta("og:description", desc, true);
-    setMeta("og:url", `${SITE.domainUrl}/epoxy-flooring/${city.slug}/`, true);
+    setMeta("og:url", `${SITE.domainUrl}/epoxy-flooring-${city.slug}/`, true);
     setMeta("twitter:title", title);
     setMeta("twitter:description", desc);
-    setCanonical(`${SITE.domainUrl}/epoxy-flooring/${city.slug}/`);
+    setCanonical(`${SITE.domainUrl}/epoxy-flooring-${city.slug}/`);
     setLocalBusinessSchema(city);
     window.scrollTo(0, 0);
   }, [city]);
@@ -469,7 +469,7 @@ export default function CityPage() {
               .map((c) => (
                 <Link
                   key={c.slug}
-                  href={`/epoxy-flooring/${c.slug}/`}
+                  href={`/epoxy-flooring-${c.slug}/`}
                   className="service-card"
                   style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
                 >
@@ -515,7 +515,7 @@ export default function CityPage() {
               <h4>Service Areas</h4>
               <Link href="/">{SITE.city}</Link>
               {cities.map((c) => (
-                <Link key={c.slug} href={`/epoxy-flooring/${c.slug}`}>{c.name}</Link>
+                <Link key={c.slug} href={`/epoxy-flooring-${c.slug}`}>{c.name}</Link>
               ))}
             </div>
             <div className="footer-col">
@@ -566,10 +566,10 @@ function setLocalBusinessSchema(city: ReturnType<typeof cityBySlug>) {
   script.textContent = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": `${SITE.domainUrl}/epoxy-flooring/${city.slug}#business`,
+    "@id": `${SITE.domainUrl}/epoxy-flooring-${city.slug}#business`,
     name: `${SITE.businessName} — ${city.name}`,
     image: `${SITE.domainUrl}/opengraph.jpg`,
-    url: `${SITE.domainUrl}/epoxy-flooring/${city.slug}`,
+    url: `${SITE.domainUrl}/epoxy-flooring-${city.slug}`,
     telephone: SITE.phone.tel,
     address: {
       "@type": "PostalAddress",

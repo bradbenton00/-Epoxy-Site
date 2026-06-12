@@ -488,7 +488,7 @@ function App() {
           <div className="areas-list">
             <span className="area-tag"><Icon.MapPin />{SITE.city}</span>
             {cities.map((c) => (
-              <Link key={c.slug} href={`/epoxy-flooring/${c.slug}/`} className="area-tag area-tag-link">
+              <Link key={c.slug} href={`/epoxy-flooring-${c.slug}/`} className="area-tag area-tag-link">
                 <Icon.MapPin />{c.name}
               </Link>
             ))}
@@ -504,7 +504,7 @@ function App() {
             Looking for service in a specific city? See our dedicated pages for{" "}
             {cities.map((c, i) => (
               <span key={c.slug}>
-                <Link href={`/epoxy-flooring/${c.slug}/`} style={{ color: "var(--gold-dark)", fontWeight: 600 }}>
+                <Link href={`/epoxy-flooring-${c.slug}/`} style={{ color: "var(--gold-dark)", fontWeight: 600 }}>
                   {c.name}
                 </Link>
                 {i < cities.length - 2 ? ", " : i === cities.length - 2 ? ", and " : "."}
@@ -680,7 +680,7 @@ function App() {
             <div className="footer-col">
               <h4>Service Areas</h4>
               {cities.map((c) => (
-                <Link key={c.slug} href={`/epoxy-flooring/${c.slug}/`}>{c.name}</Link>
+                <Link key={c.slug} href={`/epoxy-flooring-${c.slug}/`}>{c.name}</Link>
               ))}
             </div>
             <div className="footer-col">

@@ -12,7 +12,7 @@ function Root() {
       <Switch>
         <Route path="/admin/leads" component={AdminLeads} />
         <Route path="/" component={App} />
-        <Route path="/epoxy-flooring/:slug" component={CityPage} />
+        <Route path="/epoxy-flooring-:slug" component={CityPage} />
         <Route>
           <App />
         </Route>
