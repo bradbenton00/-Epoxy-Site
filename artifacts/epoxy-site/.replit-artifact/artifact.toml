@@ -30,6 +30,46 @@ to = "/index.html"
 from = "/admin/*"
 to = "/index.html"
 
+[[services.production.rewrites]]
+from = "/epoxy-flooring/radcliff/"
+to = "/epoxy-flooring-radcliff/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/vine-grove/"
+to = "/epoxy-flooring-vine-grove/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/fort-knox/"
+to = "/epoxy-flooring-fort-knox/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/hodgenville/"
+to = "/epoxy-flooring-hodgenville/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/bardstown/"
+to = "/epoxy-flooring-bardstown/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/louisville/"
+to = "/epoxy-flooring-louisville/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/shepherdsville/"
+to = "/epoxy-flooring-shepherdsville/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/mt-washington/"
+to = "/epoxy-flooring-mt-washington/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/brandenburg/"
+to = "/epoxy-flooring-brandenburg/index.html"
+
+[[services.production.rewrites]]
+from = "/epoxy-flooring/leitchfield/"
+to = "/epoxy-flooring-leitchfield/index.html"
+
 [services.env]
 PORT = "24903"
 BASE_PATH = "/"
