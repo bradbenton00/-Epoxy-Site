@@ -5,9 +5,9 @@
 export const SITE = {
   businessName: "Elizabethtown Epoxy Flooring",
   phone: {
-    display: "(502) 747-1716",
-    tel: "+15027471716",
-    digits: "5027471716",
+    display: "(502) 488-2621",
+    tel: "+15024882621",
+    digits: "5024882621",
   },
   city: "Elizabethtown",
   state: "KY",
