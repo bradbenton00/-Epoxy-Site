@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- City Pages -->
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring-radcliff/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring-vine-grove/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring-fort-knox/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/epoxy-flooring-hardin-county/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Service Pages -->
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/garage-floor-epoxy/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/basement-floor-coating/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/commercial-epoxy-flooring/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/polyaspartic-floor-coating/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/blog/epoxy-flooring-cost-kentucky/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/blog/epoxy-vs-polyaspartic-garage-floor/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://elizabethtownepoxyflooring.com/blog/how-long-does-epoxy-flooring-last/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

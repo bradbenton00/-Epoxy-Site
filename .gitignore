@@ -2,6 +2,9 @@
 
 # compiled output
 dist
+# Exception: static-epoxy-site/dist contains the deployable HTML — must be tracked
+!artifacts/static-epoxy-site/dist
+!artifacts/static-epoxy-site/dist/**
 tmp
 out-tsc
 *.tsbuildinfo

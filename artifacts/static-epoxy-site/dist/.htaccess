@@ -1,0 +1,59 @@
+# ================================================================
+# Elizabethtown Epoxy Flooring — Apache / SiteGround .htaccess
+# Upload to public_html/.htaccess
+# ================================================================
+
+DirectoryIndex index.html
+
+# --- Canonical trailing slash ---
+RewriteEngine On
+
+# Force www → non-www (optional, adjust to your preference)
+# RewriteCond %{HTTP_HOST} ^www\.elizabethtownepoxyflooring\.com [NC]
+# RewriteRule ^ https://elizabethtownepoxyflooring.com%{REQUEST_URI} [R=301,L]
+
+# Add trailing slash to directories (skip files with extensions)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
+
+# --- Clean URLs: serve /path/ → /path/index.html ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)/?$ /$1/index.html [L]
+
+# --- Custom 404 ---
+ErrorDocument 404 /404.html
+
+# ================================================================
+# Cache Headers
+# ================================================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html              "access plus 1 hour"
+  ExpiresByType text/css               "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png              "access plus 1 year"
+  ExpiresByType image/jpeg             "access plus 1 year"
+  ExpiresByType image/webp             "access plus 1 year"
+  ExpiresByType image/svg+xml         "access plus 1 year"
+  ExpiresByType image/x-icon          "access plus 1 year"
+  ExpiresByType application/xml       "access plus 1 day"
+  ExpiresByType text/plain            "access plus 1 day"
+</IfModule>
+
+# ================================================================
+# Security Headers
+# ================================================================
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# --- Gzip compression ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/xml text/plain
+</IfModule>
