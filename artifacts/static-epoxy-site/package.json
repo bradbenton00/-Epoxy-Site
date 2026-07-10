@@ -1,0 +1,10 @@
+{
+  "name": "@workspace/static-epoxy-site",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "typecheck": "echo 'No TypeScript — plain HTML site'"
+  }
+}
