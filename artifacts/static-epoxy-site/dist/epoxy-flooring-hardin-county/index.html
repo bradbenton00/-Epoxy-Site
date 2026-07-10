@@ -100,7 +100,6 @@
           <h3>Free Estimate — Hardin County</h3>
           <!-- LEAD FORM — Replace WEBHOOK_URL_HERE with your endpoint -->
           <form class="form-grid" method="POST" action="WEBHOOK_URL_HERE">
-            <input type="hidden" name="city" value="Hardin County">
             <div class="form-group">
               <label for="name">Your Name *</label>
               <input type="text" id="name" name="name" placeholder="John Smith" required>
@@ -109,23 +108,13 @@
               <label for="phone">Phone Number *</label>
               <input type="tel" id="phone" name="phone" placeholder="(502) 555-1234" required>
             </div>
-            <div class="form-group full">
+            <div class="form-group">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="john@example.com">
             </div>
             <div class="form-group">
-              <label for="zip">Your Zip Code</label>
-              <input type="text" id="zip" name="zip" placeholder="42701">
-            </div>
-            <div class="form-group">
-              <label for="service">Service Needed</label>
-              <select id="service" name="service">
-                <option value="">Select...</option>
-                <option>Garage Floor Epoxy</option>
-                <option>Basement Coating</option>
-                <option>Commercial Epoxy</option>
-                <option>Polyaspartic Coating</option>
-              </select>
+              <label for="city">Your City</label>
+              <input type="text" id="city" name="city" value="Hardin County" placeholder="Elizabethtown">
             </div>
             <div class="form-group full">
               <label for="message">Project Details</label>
