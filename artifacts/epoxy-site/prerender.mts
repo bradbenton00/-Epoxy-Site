@@ -65,6 +65,11 @@ function cityJsonLd(city: City) {
       addressCountry: "US",
     },
     areaServed: { "@type": "City", name: city.name, address: { "@type": "PostalAddress", addressRegion: city.state, postalCode: city.zip } },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: city.lat,
+      longitude: city.lng,
+    },
   };
   return `<script type="application/ld+json">${JSON.stringify(obj)}</script>`;
 }

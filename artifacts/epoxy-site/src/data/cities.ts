@@ -12,6 +12,8 @@ export type City = {
   neighborhoods: string[];
   landmarks: string[];
   heroImage: string;
+  lat: number;
+  lng: number;
 };
 
 export const cities: City[] = [
@@ -42,6 +44,8 @@ export const cities: City[] = [
     ],
     landmarks: ["Fort Knox", "Saunders Springs Nature Preserve", "Lincoln Trail Boulevard"],
     heroImage: "/gallery/garage-flake-gray.jpg",
+    lat: 37.8401,
+    lng: -85.9494,
   },
   {
     slug: "vine-grove",
@@ -69,6 +73,8 @@ export const cities: City[] = [
     ],
     landmarks: ["Optimist Park", "Pearman Park", "Vine Grove Lake"],
     heroImage: "/gallery/garage-metallic-blue.jpg",
+    lat: 37.8093,
+    lng: -85.9808,
   },
   {
     slug: "fort-knox",
@@ -96,6 +102,8 @@ export const cities: City[] = [
     ],
     landmarks: ["U.S. Bullion Depository", "Patton Museum area", "General George Patton Museum"],
     heroImage: "/gallery/garage-after-poly.jpg",
+    lat: 37.8897,
+    lng: -85.9636,
   },
   {
     slug: "hodgenville",
@@ -127,6 +135,8 @@ export const cities: City[] = [
       "LaRue County High School area",
     ],
     heroImage: "/gallery/basement-polyaspartic.jpg",
+    lat: 37.5737,
+    lng: -85.7397,
   },
   {
     slug: "bardstown",
@@ -159,6 +169,8 @@ export const cities: City[] = [
       "Federal Hill",
     ],
     heroImage: "/gallery/decorative-metallic.jpg",
+    lat: 37.8084,
+    lng: -85.4669,
   },
   {
     slug: "louisville",
@@ -188,6 +200,8 @@ export const cities: City[] = [
     ],
     landmarks: ["Churchill Downs", "Louisville Slugger Field", "Cherokee Park", "Waterfront Park"],
     heroImage: "/gallery/garage-metallic-blue.jpg",
+    lat: 38.2527,
+    lng: -85.7585,
   },
   {
     slug: "shepherdsville",
@@ -216,6 +230,8 @@ export const cities: City[] = [
     ],
     landmarks: ["Bernheim Arboretum & Research Forest", "Paroquet Springs Conference Centre", "Pioneer Village"],
     heroImage: "/gallery/garage-flake-gray.jpg",
+    lat: 37.9887,
+    lng: -85.7185,
   },
   {
     slug: "mt-washington",
@@ -243,6 +259,8 @@ export const cities: City[] = [
     ],
     landmarks: ["Mt Washington City Park", "Bullitt East High School", "Highway 44 commercial district"],
     heroImage: "/gallery/garage-metallic-blue.jpg",
+    lat: 38.0412,
+    lng: -85.5502,
   },
   {
     slug: "brandenburg",
@@ -270,6 +288,8 @@ export const cities: City[] = [
     ],
     landmarks: ["Doe Valley Resort", "Otter Creek Outdoor Recreation Area", "Brandenburg riverfront"],
     heroImage: "/gallery/garage-after-poly.jpg",
+    lat: 37.9998,
+    lng: -86.1675,
   },
   {
     slug: "leitchfield",
@@ -297,6 +317,8 @@ export const cities: City[] = [
     ],
     landmarks: ["Rough River Dam State Resort Park", "Nolin Lake State Park", "Grayson County Courthouse"],
     heroImage: "/gallery/basement-polyaspartic.jpg",
+    lat: 37.4801,
+    lng: -86.2941,
   },
 ];
 

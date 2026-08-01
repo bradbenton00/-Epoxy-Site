@@ -582,6 +582,11 @@ function setLocalBusinessSchema(city: ReturnType<typeof cityBySlug>) {
       "@type": "City",
       name: city.name,
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: city.lat,
+      longitude: city.lng,
+    },
     priceRange: "$$",
     openingHoursSpecification: [
       { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "07:00", closes: "18:00" },
