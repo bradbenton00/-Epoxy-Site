@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "e35YQqBAmXZNWi_mlr6D3"
+uri = "file://static-epoxy-site-siteground.zip"
+type = "unspecified"
+title = "static-epoxy-site-siteground.zip — SiteGround upload package"
