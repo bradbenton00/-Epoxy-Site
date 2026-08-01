@@ -578,11 +578,6 @@ function setLocalBusinessSchema(city: ReturnType<typeof cityBySlug>) {
       postalCode: city.zip,
       addressCountry: "US",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: city.lat,
-      longitude: city.lng,
-    },
     areaServed: {
       "@type": "City",
       name: city.name,
