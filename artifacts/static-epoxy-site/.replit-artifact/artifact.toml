@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/static-epoxy-site/"
-title = "Static Epoxy Site (SiteGround)"
+title = "Static Epoxy Site (Cloudflare)"
 version = "1.0.0"
 id = "artifacts/static-epoxy-site"
 router = "path"
