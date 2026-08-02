@@ -1,0 +1,7 @@
+{
+  "name": "epoxy-site",
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    "directory": "./artifacts/static-epoxy-site/dist"
+  }
+}
