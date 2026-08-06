@@ -2,5 +2,5 @@
 # Clean URLs are handled automatically by Cloudflare Pages (directory index.html is served)
 # 404 is handled automatically by 404.html in the root
 
-# Redirect www → non-www (enable once domain is connected)
-# https://www.elizabethtownepoxyflooring.com/* https://elizabethtownepoxyflooring.com/:splat 301
+# Redirect www → non-www
+https://www.elizabethtownepoxyflooring.com/* https://elizabethtownepoxyflooring.com/:splat 301
