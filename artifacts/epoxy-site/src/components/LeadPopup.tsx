@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./Icon";
-import { SITE } from "../config";
+import { API_BASE, SITE } from "../config";
 
 const STORAGE_KEY = "eef_lead_popup_seen";
 
@@ -66,7 +66,7 @@ function LeadPopup() {
         payload[k] = String(v);
       });
       payload["message"] = "Requested a free estimate via website popup.";
-      const res = await fetch("/api/leads", {
+      const res = await fetch(`${API_BASE}/api/leads`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

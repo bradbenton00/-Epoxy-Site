@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { SITE } from "../config";
+import { API_BASE, SITE } from "../config";
 
 type Msg = { from: "bot" | "user"; text: string };
 type Step =
@@ -193,7 +193,7 @@ export function ChatWidget() {
         .filter(Boolean)
         .join("\n");
 
-      const res = await fetch("/api/leads", {
+      const res = await fetch(`${API_BASE}/api/leads`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -4,7 +4,7 @@ import { cities } from "./data/cities";
 import { Icon } from "./components/Icon";
 import LeadPopup from "./components/LeadPopup";
 import CostCalculator from "./components/CostCalculator";
-import { SITE } from "./config";
+import { API_BASE, SITE } from "./config";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +23,7 @@ function App() {
       formData.forEach((v, k) => {
         payload[k] = String(v);
       });
-      const res = await fetch("/api/leads", {
+      const res = await fetch(`${API_BASE}/api/leads`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

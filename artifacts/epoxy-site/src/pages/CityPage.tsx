@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import { Icon } from "../components/Icon";
 import { cityBySlug, cities } from "../data/cities";
-import { SITE } from "../config";
+import { API_BASE, SITE } from "../config";
 
 export default function CityPage() {
   const [, params] = useRoute("/epoxy-flooring-:slug");
@@ -51,7 +51,7 @@ export default function CityPage() {
       formData.forEach((v, k) => {
         payload[k] = String(v);
       });
-      const res = await fetch("/api/leads", {
+      const res = await fetch(`${API_BASE}/api/leads`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
