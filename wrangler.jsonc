@@ -2,6 +2,10 @@
   "name": "epoxy-site",
   "compatibility_date": "2026-08-01",
   "assets": {
-    "directory": "./artifacts/static-epoxy-site/dist"
+    "directory": "./artifacts/epoxy-site/dist/public",
+    "not_found_handling": "single-page-application"
+  },
+  "build": {
+    "command": "PORT=3000 BASE_PATH=/ pnpm --filter @workspace/epoxy-site run build"
   }
 }
