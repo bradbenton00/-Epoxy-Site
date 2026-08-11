@@ -1,1 +1,2 @@
 - [epoxy-site phone & leads](epoxy-site-phone-and-leads.md) — phone number spans ~14 files in 4 formats (edit all + rebuild + verify dist); all forms POST to /api/leads which fans out to email/DB/Sheets/GHL.
+- [pnpm packageManager pin loop](pnpm-packagemanager-pin.md) — the packageManager pin must stay (Cloudflare), but local pnpm needs manage-package-manager-versions=false or every command hangs.
