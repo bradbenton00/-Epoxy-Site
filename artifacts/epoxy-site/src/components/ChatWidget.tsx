@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { API_BASE, SITE } from "../config";
+import { trackLead } from "../lib/analytics";
 
 type Msg = { from: "bot" | "user"; text: string };
 type Step =
@@ -205,6 +206,7 @@ export function ChatWidget() {
         }),
       });
       if (!res.ok) throw new Error("send failed");
+      trackLead("chat_widget");
       setStep("done");
       botSay(
         `Thanks ${finalLead.name}! We'll be in touch within a few hours during business hours. For anything urgent, call ${PHONE_DISPLAY}.`,

@@ -3,6 +3,7 @@ import { Link, useRoute } from "wouter";
 import { Icon } from "../components/Icon";
 import { cityBySlug, cities } from "../data/cities";
 import { API_BASE, SITE } from "../config";
+import { trackLead } from "../lib/analytics";
 
 export default function CityPage() {
   const [, params] = useRoute("/epoxy-flooring-:slug");
@@ -57,6 +58,7 @@ export default function CityPage() {
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error("Request failed");
+      trackLead("city_page_form");
       setSubmitted(true);
     } catch {
       setError(

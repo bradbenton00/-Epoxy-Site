@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./Icon";
 import { API_BASE, SITE } from "../config";
+import { trackLead } from "../lib/analytics";
 
 const STORAGE_KEY = "eef_lead_popup_seen";
 
@@ -72,6 +73,7 @@ function LeadPopup() {
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error("Request failed");
+      trackLead("popup");
       setSubmitted(true);
     } catch {
       setError(
